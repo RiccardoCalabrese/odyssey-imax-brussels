@@ -44,20 +44,25 @@ jobs:
       - name: Publish if changed
         if: inputs.probe == ''
         run: |
-          if git diff --quiet data.json; then
-            echo "No change."
-            exit 0
-          fi
+          # data.json is generated output. Merging it is never correct - a rebase
+          # conflict here is what once wrote conflict markers into the published file.
+          # So we never merge: we rebuild the commit on top of whatever remote has.
+          cp data.json /tmp/fresh.json
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json
-          git commit -m "refresh: $(date -u '+%Y-%m-%d %H:%M UTC')"
-          # Someone (a manual refresh.sh run, or an overlapping job) may have pushed
-          # meanwhile. Rebase onto whatever is there and retry a few times.
           for i in 1 2 3; do
-            if git push; then echo "Published."; exit 0; fi
-            echo "Push rejected, rebasing (attempt $i)…"
-            git pull --rebase --autostash origin main || true
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp /tmp/fresh.json data.json
+            if git diff --quiet data.json; then echo "No change."; exit 0; fi
+            git add data.json
+            git commit -q -m "refresh: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            if git push -q origin HEAD:main; then echo "Published."; exit 0; fi
+            echo "Push rejected; rebuilding on top of remote (attempt $i)…"
           done
-          echo "Could not push after 3 attempts." >&2
+          echo "Could not publish after 3 attempts." >&2
           exit 1
+
+      - name: Verify published JSON is parseable
+        if: inputs.probe == ''
+        run: node -e "const d=require('./data.json');if(!d.shows)throw new Error('bad data.json');console.log('data.json OK:',JSON.stringify(d.counts))"

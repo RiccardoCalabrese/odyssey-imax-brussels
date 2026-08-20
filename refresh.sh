@@ -3,18 +3,27 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# GitHub Actions also pushes refreshes, so sync before doing our own.
-git pull --rebase --autostash -q origin main || true
+# We rebuild the commit on top of remote below (never merge generated output),
+# so refuse to run if there are other uncommitted changes to lose.
+if [ -n "$(git status --porcelain | grep -v ' data.json$' | grep -v '^??' || true)" ]; then
+  echo "Working tree has other uncommitted changes. Commit or stash them first." >&2
+  exit 1
+fi
 
 node scrape.mjs
-if ! git diff --quiet data.json; then
+TMP=$(mktemp)
+cp data.json "$TMP"
+
+for i in 1 2 3; do
+  git fetch -q origin main
+  git reset -q --hard origin/main
+  cp "$TMP" data.json
+  if git diff --quiet data.json; then echo "No change."; rm -f "$TMP"; exit 0; fi
   git add data.json
   git commit -q -m "refresh: $(date '+%Y-%m-%d %H:%M')"
-  for i in 1 2 3; do
-    if git push -q origin main 2>/dev/null; then echo "Published."; exit 0; fi
-    git pull --rebase --autostash -q origin main || true
-  done
-  echo "Could not push after 3 attempts." >&2; exit 1
-else
-  echo "No change."
-fi
+  if git push -q origin HEAD:main 2>/dev/null; then echo "Published."; rm -f "$TMP"; exit 0; fi
+  echo "Push rejected; rebuilding on top of remote (attempt $i)…"
+done
+rm -f "$TMP"
+echo "Could not publish after 3 attempts." >&2
+exit 1

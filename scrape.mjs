@@ -160,10 +160,17 @@ async function checkSession(br, vs, expect) {
     if (/Seating/i.test(u)) {
       const n = await br.evalJs("document.querySelectorAll('.seat-input').length");
       if (n > 0) {
-        await sleep(1200);   // let occupancy finish painting
-        seats = await br.evalJs(`(()=>[...document.querySelectorAll('.seat-input')].map(i=>{
+        // Seats render before occupancy is painted, so a map read too early looks
+        // completely empty. Poll until some seat is marked taken, or give up and let
+        // the zero-taken guard below reject it.
+        const read = async () => br.evalJs(`(()=>[...document.querySelectorAll('.seat-input')].map(i=>{
           let v={};try{v=JSON.parse(i.value)}catch(e){}
           return {row:String(v.Row), col:Number(v.Column), free:!i.disabled};}))()`);
+        const tEnd = Date.now() + 10000;
+        do {
+          await sleep(1000);
+          seats = await read();
+        } while (seats && !seats.some(x => !x.free) && Date.now() < tEnd);
         break;
       }
     } else if (/complète|sold ?out/i.test(await br.bodyText(2000))) {
@@ -239,7 +246,6 @@ try {
       day: p.day, date: p.date, time: p.time, hall: s.hall,
       status: r.status, note: r.note || null,
       seatsFree: r.free ?? 0, seatsTotal: r.total ?? 0, maxBlock: r.maxBlock ?? 0, fits,
-      apiSaidSoldOut: !!s.isSoldOut,   // kept only to show how wrong the flag is
       bookUrl: `https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/${COMPLEX}/0`,
     });
     console.log(`  ${p.day} ${p.date} ${p.time}  ${r.status.padEnd(8)} free=${r.free ?? '-'} block=${r.maxBlock ?? '-'}`);
