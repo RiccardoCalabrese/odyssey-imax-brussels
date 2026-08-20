@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T20:13:06.187Z",
+  "updated": "2026-08-20T20:38:37.171Z",
   "movie": "L'Odyssée",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -26,8 +26,8 @@
   "counts": {
     "checked": 96,
     "open": 0,
-    "soldOut": 95,
-    "errors": 1
+    "soldOut": 94,
+    "errors": 2
   },
   "shows": [
     {
@@ -48,7 +48,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389692/0/KBRU/0"
     },
     {
@@ -69,7 +68,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389693/0/KBRU/0"
     },
     {
@@ -90,7 +88,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389694/0/KBRU/0"
     },
     {
@@ -111,7 +108,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389695/0/KBRU/0"
     },
     {
@@ -132,7 +128,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389696/0/KBRU/0"
     },
     {
@@ -153,7 +148,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389697/0/KBRU/0"
     },
     {
@@ -174,7 +168,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389698/0/KBRU/0"
     },
     {
@@ -195,7 +188,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389699/0/KBRU/0"
     },
     {
@@ -216,7 +208,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389700/0/KBRU/0"
     },
     {
@@ -237,7 +228,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389701/0/KBRU/0"
     },
     {
@@ -258,7 +248,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390586/0/KBRU/0"
     },
     {
@@ -279,7 +268,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389702/0/KBRU/0"
     },
     {
@@ -300,7 +288,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389703/0/KBRU/0"
     },
     {
@@ -321,7 +308,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389704/0/KBRU/0"
     },
     {
@@ -342,7 +328,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390587/0/KBRU/0"
     },
     {
@@ -363,7 +348,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389705/0/KBRU/0"
     },
     {
@@ -384,7 +368,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389706/0/KBRU/0"
     },
     {
@@ -405,7 +388,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389707/0/KBRU/0"
     },
     {
@@ -426,7 +408,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390615/0/KBRU/0"
     },
     {
@@ -447,7 +428,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390616/0/KBRU/0"
     },
     {
@@ -468,7 +448,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390617/0/KBRU/0"
     },
     {
@@ -489,7 +468,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390618/0/KBRU/0"
     },
     {
@@ -510,7 +488,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390619/0/KBRU/0"
     },
     {
@@ -531,7 +508,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390620/0/KBRU/0"
     },
     {
@@ -552,7 +528,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390621/0/KBRU/0"
     },
     {
@@ -573,7 +548,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390622/0/KBRU/0"
     },
     {
@@ -594,7 +568,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390623/0/KBRU/0"
     },
     {
@@ -615,7 +588,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390624/0/KBRU/0"
     },
     {
@@ -636,7 +608,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390625/0/KBRU/0"
     },
     {
@@ -657,7 +628,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390626/0/KBRU/0"
     },
     {
@@ -678,7 +648,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390627/0/KBRU/0"
     },
     {
@@ -699,7 +668,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390628/0/KBRU/0"
     },
     {
@@ -720,7 +688,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390592/0/KBRU/0"
     },
     {
@@ -741,7 +708,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390593/0/KBRU/0"
     },
     {
@@ -762,7 +728,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390594/0/KBRU/0"
     },
     {
@@ -783,7 +748,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390595/0/KBRU/0"
     },
     {
@@ -804,7 +768,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390596/0/KBRU/0"
     },
     {
@@ -825,7 +788,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390597/0/KBRU/0"
     },
     {
@@ -846,7 +808,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390598/0/KBRU/0"
     },
     {
@@ -867,7 +828,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390599/0/KBRU/0"
     },
     {
@@ -888,7 +848,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390600/0/KBRU/0"
     },
     {
@@ -909,7 +868,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390601/0/KBRU/0"
     },
     {
@@ -930,7 +888,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390602/0/KBRU/0"
     },
     {
@@ -951,7 +908,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390603/0/KBRU/0"
     },
     {
@@ -972,7 +928,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390604/0/KBRU/0"
     },
     {
@@ -993,7 +948,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390605/0/KBRU/0"
     },
     {
@@ -1014,7 +968,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390606/0/KBRU/0"
     },
     {
@@ -1035,7 +988,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390607/0/KBRU/0"
     },
     {
@@ -1056,7 +1008,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390608/0/KBRU/0"
     },
     {
@@ -1077,7 +1028,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390609/0/KBRU/0"
     },
     {
@@ -1098,7 +1048,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390610/0/KBRU/0"
     },
     {
@@ -1119,7 +1068,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390611/0/KBRU/0"
     },
     {
@@ -1140,7 +1088,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390612/0/KBRU/0"
     },
     {
@@ -1161,7 +1108,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390613/0/KBRU/0"
     },
     {
@@ -1182,7 +1128,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391417/0/KBRU/0"
     },
     {
@@ -1203,7 +1148,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391416/0/KBRU/0"
     },
     {
@@ -1224,7 +1168,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391418/0/KBRU/0"
     },
     {
@@ -1245,7 +1188,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391419/0/KBRU/0"
     },
     {
@@ -1266,7 +1208,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391420/0/KBRU/0"
     },
     {
@@ -1287,7 +1228,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391421/0/KBRU/0"
     },
     {
@@ -1308,7 +1248,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391422/0/KBRU/0"
     },
     {
@@ -1329,7 +1268,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391423/0/KBRU/0"
     },
     {
@@ -1350,7 +1288,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391424/0/KBRU/0"
     },
     {
@@ -1371,7 +1308,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391425/0/KBRU/0"
     },
     {
@@ -1392,7 +1328,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391426/0/KBRU/0"
     },
     {
@@ -1413,7 +1348,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391661/0/KBRU/0"
     },
     {
@@ -1434,7 +1368,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391427/0/KBRU/0"
     },
     {
@@ -1455,7 +1388,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391428/0/KBRU/0"
     },
     {
@@ -1476,7 +1408,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391429/0/KBRU/0"
     },
     {
@@ -1497,7 +1428,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391430/0/KBRU/0"
     },
     {
@@ -1518,7 +1448,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391431/0/KBRU/0"
     },
     {
@@ -1539,7 +1468,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391432/0/KBRU/0"
     },
     {
@@ -1560,7 +1488,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391433/0/KBRU/0"
     },
     {
@@ -1581,7 +1508,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391434/0/KBRU/0"
     },
     {
@@ -1602,7 +1528,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391435/0/KBRU/0"
     },
     {
@@ -1623,7 +1548,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391438/0/KBRU/0"
     },
     {
@@ -1644,7 +1568,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391437/0/KBRU/0"
     },
     {
@@ -1665,7 +1588,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391436/0/KBRU/0"
     },
     {
@@ -1686,7 +1608,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391439/0/KBRU/0"
     },
     {
@@ -1707,7 +1628,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391440/0/KBRU/0"
     },
     {
@@ -1728,7 +1648,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391441/0/KBRU/0"
     },
     {
@@ -1749,7 +1668,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391442/0/KBRU/0"
     },
     {
@@ -1770,7 +1688,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391443/0/KBRU/0"
     },
     {
@@ -1791,7 +1708,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391444/0/KBRU/0"
     },
     {
@@ -1812,7 +1728,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391445/0/KBRU/0"
     },
     {
@@ -1833,7 +1748,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391446/0/KBRU/0"
     },
     {
@@ -1854,7 +1768,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391662/0/KBRU/0"
     },
     {
@@ -1875,7 +1788,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391447/0/KBRU/0"
     },
     {
@@ -1896,7 +1808,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391448/0/KBRU/0"
     },
     {
@@ -1905,27 +1816,6 @@
       "day": "Sun",
       "date": "20 Sep",
       "time": "21:00",
-      "hall": 28,
-      "status": "error",
-      "note": "suspicious: 400 seats, none taken",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "apiSaidSoldOut": false,
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391449/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391450,
-      "isoDate": "2026-Sept-21",
-      "day": "Mon",
-      "date": "21 Sep",
-      "time": "13:30",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -1938,7 +1828,26 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391449/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391450,
+      "isoDate": "2026-Sept-21",
+      "day": "Mon",
+      "date": "21 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "error",
+      "note": "suspicious: 400 seats, none taken",
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391450/0/KBRU/0"
     },
     {
@@ -1959,7 +1868,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391451/0/KBRU/0"
     },
     {
@@ -1980,7 +1888,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391452/0/KBRU/0"
     },
     {
@@ -1990,8 +1897,8 @@
       "date": "22 Sep",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -2001,7 +1908,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391453/0/KBRU/0"
     },
     {
@@ -2022,7 +1928,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391454/0/KBRU/0"
     },
     {
@@ -2043,7 +1948,6 @@
         "6": false,
         "8": false
       },
-      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391455/0/KBRU/0"
     }
   ]
