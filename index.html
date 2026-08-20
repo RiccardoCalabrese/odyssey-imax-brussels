@@ -180,7 +180,7 @@ function foot(){
     ? `<span class="dot"></span>Verified: the scraper proved it can still detect free seats (control showed ${data.verification.controlSeatsFree} seats).`
     : `<span class="dot bad"></span>Not verified this run.`;
   const errs = data.counts.errors
-    ? `<br><span class="dot bad"></span>${data.counts.errors} screening${data.counts.errors===1?'':'s'} could not be checked this run — they are not listed above.`
+    ? `<br><span class="dot bad"></span>${data.counts.errors} screening${data.counts.errors===1?'':'s'} could not be checked this run — ${data.counts.errors===1?'it is':'they are'} not listed above.`
     : '';
   document.getElementById('foot').innerHTML=
     `${v}${errs}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
