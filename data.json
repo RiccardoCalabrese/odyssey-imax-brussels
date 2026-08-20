@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T16:59:40.407Z",
+  "updated": "2026-08-20T17:48:49.259Z",
   "movie": "L'Odyssée",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -24,8 +24,8 @@
   },
   "counts": {
     "checked": 97,
-    "open": 0,
-    "soldOut": 97,
+    "open": 2,
+    "soldOut": 95,
     "errors": 0
   },
   "shows": [
@@ -183,16 +183,16 @@
       "date": "23 Aug",
       "time": "09:45",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 400,
+      "seatsTotal": 400,
+      "maxBlock": 18,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389698/0/KBRU/0"
@@ -792,16 +792,16 @@
       "date": "03 Sep",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 400,
+      "seatsTotal": 400,
+      "maxBlock": 18,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390595/0/KBRU/0"
