@@ -18,7 +18,13 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+// Chrome location differs per host: macOS locally, /usr/bin on a CI runner.
+const CHROME = process.env.CHROME_PATH
+  || (process.platform === 'darwin'
+      ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+      : 'google-chrome');
+// Linux/CI containers need these; harmless on macOS.
+const EXTRA_FLAGS = process.platform === 'darwin' ? [] : ['--no-sandbox','--disable-dev-shm-usage'];
 const MOVIE = { id: '35300', ho: 'HO00013434', slug: 'l-odyssee' };
 const COMPLEX = 'KBRU';
 const FORMAT = 'IMAX 2D 70MM';
@@ -51,7 +57,7 @@ const parts = iso => {
 
 async function chrome() {
   const dir = mkdtempSync(join(tmpdir(), 'ody-'));
-  const proc = spawn(CHROME, ['--headless=new','--disable-gpu','--no-first-run','--remote-debugging-port=0',
+  const proc = spawn(CHROME, [...EXTRA_FLAGS,'--headless=new','--disable-gpu','--no-first-run','--remote-debugging-port=0',
     `--user-data-dir=${dir}`,'--window-size=1280,1000','--lang=fr-BE',
     '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
     'about:blank'], { stdio:['ignore','ignore','pipe'] });
