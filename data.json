@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "updated": "2026-08-20T19:49:45.857Z",
+=======
+  "updated": "2026-08-20T20:13:06.187Z",
+>>>>>>> Stashed changes
   "movie": "L'Odyssée",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -18,14 +22,20 @@
     "tried": [
       {
         "vs": 375290,
-        "status": "open"
+        "status": "open",
+        "note": null
       }
     ]
   },
   "counts": {
     "checked": 96,
+<<<<<<< Updated upstream
     "open": 3,
     "soldOut": 92,
+=======
+    "open": 0,
+    "soldOut": 95,
+>>>>>>> Stashed changes
     "errors": 1
   },
   "shows": [
@@ -1905,8 +1915,8 @@
       "date": "20 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "suspicious: 400 seats, none taken",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,

@@ -124,7 +124,7 @@ function render(){
       + (party==='any'?'':` for <b>${party}</b> together`)
       + ` · of ${data.counts.checked} checked.`
     : (party==='any'
-        ? `<b>No seats anywhere.</b> All ${data.counts.checked} future screenings are sold out.`
+        ? `<b>No seats anywhere.</b> All ${data.counts.soldOut} screenings checked are sold out.`
         : `No screening can seat <b>${party}</b> together. ${withSeats.length} have some seats — try “Any”.`);
 
   list.innerHTML='';
@@ -179,8 +179,11 @@ function foot(){
   const v=data.verified
     ? `<span class="dot"></span>Verified: the scraper proved it can still detect free seats (control showed ${data.verification.controlSeatsFree} seats).`
     : `<span class="dot bad"></span>Not verified this run.`;
+  const errs = data.counts.errors
+    ? `<br><span class="dot bad"></span>${data.counts.errors} screening${data.counts.errors===1?'':'s'} could not be checked this run — they are not listed above.`
+    : '';
   document.getElementById('foot').innerHTML=
-    `${v}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
+    `${v}${errs}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
     + `rechecked automatically every hour.<br>`
     + `“Together” means consecutive seats in one row — what matters for a group.`;
 }
