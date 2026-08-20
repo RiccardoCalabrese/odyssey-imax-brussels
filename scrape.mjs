@@ -81,10 +81,19 @@ async function chrome() {
     return r?.result?.result?.value;
   };
   const goto = async url => { await send('Page.navigate', { url }, sessionId); await sleep(2500); };
+  // document.body can be null while a navigation is committing; poll until it exists.
+  const bodyText = async (ms=15000) => { const t0 = Date.now();
+    while (Date.now()-t0 < ms) {
+      const t = await evalJs('(document.body && document.body.innerText) || ""');
+      if (t && t.trim()) return t;
+      await sleep(600);
+    }
+    return '';
+  };
   const waitUrl = async (rx, ms=20000) => { const t0=Date.now();
     while (Date.now()-t0 < ms) { const u = await evalJs('location.href'); if (rx.test(u||'')) return u; await sleep(700); }
     return null; };
-  return { evalJs, goto, waitUrl,
+  return { evalJs, goto, waitUrl, bodyText,
     clearCookies: () => send('Network.clearBrowserCookies', {}, sessionId),
     close: () => { try { ws.close(); } catch {} proc.kill('SIGKILL'); } };
 }
@@ -111,18 +120,18 @@ async function checkSession(br, vs) {
   await br.goto(`https://kinepolis.be/fr/direct-vista-redirect/${vs}/0/${COMPLEX}/0`);
   if (!await br.waitUrl(/tickets\.kinepolis\.be/)) return { status:'error', note:'no redirect' };
   await sleep(1200);
-  const txt = await br.evalJs('document.body.innerText');
+  const txt = await br.bodyText();
   if (/complète|complete|sold ?out/i.test(txt || '')) return { status:'soldout' };
 
   const picked = await br.evalJs(`(()=>{const s=[...document.querySelectorAll('select')].find(x=>/^ticket/.test(x.name||''));
-    if(!s) return /Complet|Uitverkocht|Full/i.test(document.body.innerText)?'full':'nosel'; s.value='1'; s.dispatchEvent(new Event('change',{bubbles:true}));
+    if(!s) return /Complet|Uitverkocht|Full/i.test((document.body&&document.body.innerText)||'')?'full':'nosel'; s.value='1'; s.dispatchEvent(new Event('change',{bubbles:true}));
     const b=[...document.querySelectorAll('button')].find(x=>/Continuer|Continue|Doorgaan/i.test(x.innerText||''));
     if(!b)return 'nobtn'; b.click(); return 'ok';})()`);
   if (picked === 'full') return { status:'soldout' };
   if (picked !== 'ok') return { status:'error', note:picked };
 
   if (!await br.waitUrl(/Seating/i, 20000)) {
-    const t2 = await br.evalJs('document.body.innerText');
+    const t2 = await br.bodyText();
     if (/complète|sold ?out/i.test(t2 || '')) return { status:'soldout' };
     return { status:'error', note:'no seat map' };
   }
