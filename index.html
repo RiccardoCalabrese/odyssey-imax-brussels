@@ -4,79 +4,72 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Odyssey · IMAX 70mm · Brussels</title>
-<meta name="description" content="Live seat availability for The Odyssey in IMAX 2D 70MM at Kinepolis Brussels.">
+<meta name="description" content="Verified seat availability for The Odyssey in IMAX 2D 70MM at Kinepolis Brussels.">
 <meta property="og:title" content="Odyssey · IMAX 70mm · Brussels">
-<meta property="og:description" content="Live seat availability for Friday & Saturday nights and Sunday afternoons.">
+<meta property="og:description" content="Which screenings actually have seats — checked against the real booking system.">
 <style>
 :root{
   --bg:#faf9f7; --panel:#fff; --ink:#14131a; --muted:#6b6875; --line:#e8e5e0;
-  --ok:#0f7a4d; --ok-bg:#e8f5ee; --dim:#a8a4b0; --accent:#14131a;
-  --radius:14px;
+  --ok:#0f7a4d; --ok-bg:#e8f5ee; --warn:#8a5a00; --warn-bg:#fdf4e3; --dim:#a8a4b0;
+  --accent:#14131a; --radius:14px;
 }
 @media (prefers-color-scheme:dark){
   :root{ --bg:#0e0d12; --panel:#17161d; --ink:#f2f0f5; --muted:#9a96a6; --line:#26242e;
-         --ok:#4ade80; --ok-bg:#12291d; --dim:#514d5c; --accent:#f2f0f5; }
+         --ok:#4ade80; --ok-bg:#12291d; --warn:#fbbf24; --warn-bg:#2a2010; --dim:#514d5c;
+         --accent:#f2f0f5; }
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{
-  background:var(--bg); color:var(--ink);
+body{background:var(--bg);color:var(--ink);
   font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing:antialiased;
-  padding:32px 20px 64px;
-}
+  -webkit-font-smoothing:antialiased;padding:32px 20px 64px}
 .wrap{max-width:640px;margin:0 auto}
-
-header{margin-bottom:28px}
+header{margin-bottom:22px}
 h1{font-size:26px;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
 .sub{color:var(--muted);font-size:14px;margin:0}
 .sub b{color:var(--ink);font-weight:600}
 
-.controls{margin:24px 0 8px}
+.banner{border-radius:12px;padding:12px 14px;font-size:14px;margin:16px 0;
+  background:var(--warn-bg);color:var(--warn);border:1px solid transparent}
+.banner b{display:block;margin-bottom:2px}
+
+.controls{margin:22px 0 6px}
 .label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
 .seg{display:flex;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:5px}
-.seg button{
-  flex:1;appearance:none;border:0;background:transparent;color:var(--muted);
+.seg button{flex:1;appearance:none;border:0;background:transparent;color:var(--muted);
   font:inherit;font-weight:600;font-size:15px;padding:9px 4px;border-radius:8px;cursor:pointer;
-  transition:background .15s,color .15s;
-}
+  transition:background .15s,color .15s}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
 
-.summary{margin:20px 0 14px;font-size:15px;color:var(--muted)}
+.summary{margin:18px 0 12px;font-size:15px;color:var(--muted)}
 .summary b{color:var(--ink)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+  margin:26px 0 10px;font-weight:600}
 
 ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
-li{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:14px 16px;display:flex;align-items:center;gap:14px;
-}
+li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;display:flex;align-items:center;gap:14px}
 li.fits{border-color:var(--ok)}
-li.out .when,li.out .meta{color:var(--dim)}
 .when{flex:1;min-width:0}
 .day{font-weight:650;font-size:16px;letter-spacing:-.01em}
 .meta{color:var(--muted);font-size:13px;margin-top:2px}
 .state{text-align:right;flex-shrink:0}
-.pill{
-  display:inline-block;font-size:12px;font-weight:650;padding:5px 10px;border-radius:999px;
-  background:var(--ok-bg);color:var(--ok);white-space:nowrap;
-}
+.pill{display:inline-block;font-size:12px;font-weight:650;padding:5px 10px;border-radius:999px;
+  background:var(--ok-bg);color:var(--ok);white-space:nowrap}
+.pill.hint{background:var(--warn-bg);color:var(--warn)}
 .pill.no{background:transparent;color:var(--dim);border:1px solid var(--line)}
-.book{
-  display:inline-block;margin-top:7px;font-size:13px;font-weight:650;
-  color:var(--bg);background:var(--accent);text-decoration:none;padding:7px 13px;border-radius:8px;
-}
-.empty{
-  background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);
-  padding:28px 20px;text-align:center;color:var(--muted);font-size:15px;
-}
+.book{display:inline-block;margin-top:7px;font-size:13px;font-weight:650;color:var(--bg);
+  background:var(--accent);text-decoration:none;padding:7px 13px;border-radius:8px}
+.empty{background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);
+  padding:28px 20px;text-align:center;color:var(--muted);font-size:15px}
 .empty b{display:block;color:var(--ink);font-size:16px;margin-bottom:6px}
-footer{margin-top:28px;color:var(--muted);font-size:12.5px;line-height:1.6}
-footer a{color:inherit}
+footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
+  border-top:1px solid var(--line);padding-top:16px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px}
+.dot.bad{background:var(--warn)}
 @media(max-width:420px){
-  body{padding:24px 14px 48px}
-  h1{font-size:22px}
-  li{padding:13px 14px;gap:10px}
-  .seg button{font-size:14px;padding:9px 2px}
+  body{padding:24px 14px 48px} h1{font-size:22px}
+  li{padding:13px 14px;gap:10px} .seg button{font-size:14px;padding:9px 2px}
 }
 </style>
 </head>
@@ -87,73 +80,138 @@ footer a{color:inherit}
     <p class="sub"><b>Kinepolis Brussel</b> · IMAX 2D 70MM · Version Anglaise, ST FR/NL</p>
   </header>
 
+  <div id="trust"></div>
+
   <div class="controls">
-    <div class="label">How many of us?</div>
-    <div class="seg" id="seg" role="group" aria-label="Party size"></div>
+    <div class="label">Seats together</div>
+    <div class="seg" id="seg" role="group" aria-label="Group size"></div>
   </div>
 
   <p class="summary" id="summary">Loading…</p>
   <ul id="list"></ul>
 
+  <div id="live"></div>
   <footer id="foot"></footer>
 </div>
 
 <script>
-const GROUPS=[8,6,4,2];
-let party=8, data=null;
+const OPTS=[{k:'any',t:'Any'},{k:2,t:'2'},{k:4,t:'4'},{k:6,t:'6'},{k:8,t:'8'}];
+let party='any', data=null, liveNote=null;
 
 const seg=document.getElementById('seg');
-GROUPS.forEach(g=>{
+OPTS.forEach(o=>{
   const b=document.createElement('button');
-  b.textContent=g; b.setAttribute('aria-pressed',g===party);
-  b.onclick=()=>{party=g;[...seg.children].forEach(c=>c.setAttribute('aria-pressed',c.textContent==String(g)));render();};
+  b.textContent=o.t; b.dataset.k=o.k; b.setAttribute('aria-pressed',o.k===party);
+  b.onclick=()=>{party=(o.k==='any'?'any':Number(o.k));
+    [...seg.children].forEach(c=>c.setAttribute('aria-pressed',c.dataset.k==String(o.k)));
+    render();};
   seg.appendChild(b);
 });
 
-const ago=iso=>{
-  const m=Math.round((Date.now()-new Date(iso))/60000);
+const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
   if(m<1)return'just now'; if(m<60)return m+' min ago';
   const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
-  return Math.round(h/24)+' days ago';
-};
+  return Math.round(h/24)+' days ago';};
 
 function render(){
-  const list=document.getElementById('list');
-  const sum=document.getElementById('summary');
-  const shows=data.shows;
-  const fitting=shows.filter(s=>s.status==='open'&&s.maxBlock>=party);
+  const list=document.getElementById('list'), sum=document.getElementById('summary');
+  // Only screenings the booking system actually offered seats for.
+  const withSeats=data.shows.filter(s=>s.status==='open'&&s.seatsFree>0);
+  const shown=party==='any'?withSeats:withSeats.filter(s=>s.maxBlock>=party);
 
-  sum.innerHTML=fitting.length
-    ? `<b>${fitting.length}</b> of ${shows.length} screenings can seat <b>${party}</b> together.`
-    : `No screening can seat <b>${party}</b> together right now — all ${shows.length} are sold out.`;
+  sum.innerHTML = shown.length
+    ? `<b>${shown.length}</b> screening${shown.length===1?'':'s'} with seats`
+      + (party==='any'?'':` for <b>${party}</b> together`)
+      + ` · of ${data.counts.checked} checked.`
+    : (party==='any'
+        ? `<b>No seats anywhere.</b> All ${data.counts.checked} future screenings are sold out.`
+        : `No screening can seat <b>${party}</b> together. ${withSeats.length} have some seats — try “Any”.`);
 
   list.innerHTML='';
-  if(!shows.length){
-    list.innerHTML='<div class="empty"><b>No screenings scheduled</b>Friday nights, Saturday nights and Sunday afternoons only.</div>';
+  if(!shown.length){
+    list.innerHTML=`<div class="empty"><b>Nothing available right now</b>`
+      + `Checked against the real booking system ${ago(data.updated)}. This page updates automatically.</div>`;
     return;
   }
-  for(const s of shows){
-    const fits=s.status==='open'&&s.maxBlock>=party;
+  for(const s of shown){
     const li=document.createElement('li');
-    li.className=fits?'fits':(s.status==='open'?'':'out');
-    const right=s.status==='open'
-      ? (fits
-          ? `<span class="pill">${s.maxBlock} seats together</span><br><a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a>`
-          : `<span class="pill no">${s.maxBlock} together · ${s.seatsFree} free</span>`)
-      : `<span class="pill no">${s.status==='error'?'Unknown':'Sold out'}</span>`;
+    li.className=s.maxBlock>=(party==='any'?2:party)?'fits':'';
     li.innerHTML=`<div class="when">
         <div class="day">${s.day} ${s.date} · ${s.time}</div>
-        <div class="meta">${s.slot}</div>
-      </div><div class="state">${right}</div>`;
+        <div class="meta">${s.seatsFree} seat${s.seatsFree===1?'':'s'} free of ${s.seatsTotal}</div>
+      </div>
+      <div class="state">
+        <span class="pill">${s.maxBlock} together</span><br>
+        <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a>
+      </div>`;
     list.appendChild(li);
   }
 }
 
-fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
-  data=d; render();
+function renderTrust(){
+  const el=document.getElementById('trust');
+  if(data.verified){el.innerHTML='';return;}
+  el.innerHTML=`<div class="banner"><b>⚠ This check could not verify itself</b>
+    The scraper failed its own control test, so “sold out” may just mean it broke.
+    Treat everything below as unreliable until the next run.</div>`;
+}
+
+function renderLive(){
+  const el=document.getElementById('live');
+  if(!liveNote){el.innerHTML='';return;}
+  const {added,maybe}=liveNote;
+  if(!added.length&&!maybe.length){el.innerHTML='';return;}
+  let h='<h2>Unconfirmed — since the last full check</h2><ul>';
+  for(const s of added) h+=`<li><div class="when"><div class="day">${s.day} ${s.date} · ${s.time}</div>
+    <div class="meta">Newly added screening — not seat-checked yet</div></div>
+    <div class="state"><span class="pill hint">New</span><br>
+    <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Check</a></div></li>`;
+  for(const s of maybe) h+=`<li><div class="when"><div class="day">${s.day} ${s.date} · ${s.time}</div>
+    <div class="meta">Kinepolis no longer flags this as sold out</div></div>
+    <div class="state"><span class="pill hint">Maybe</span><br>
+    <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Check</a></div></li>`;
+  el.innerHTML=h+'</ul><p class="summary" style="font-size:13px">Kinepolis’ own flag is unreliable, so these are hints to click, not confirmed seats. The next automatic check confirms them properly.</p>';
+}
+
+function foot(){
+  const v=data.verified
+    ? `<span class="dot"></span>Verified: the scraper proved it can still detect free seats (control showed ${data.verification.controlSeatsFree} seats).`
+    : `<span class="dot bad"></span>Not verified this run.`;
   document.getElementById('foot').innerHTML=
-    `Checked ${ago(d.updated)} · seat maps read live from the Kinepolis booking system.<br>`+
-    `“Seats together” means consecutive seats in one row — what actually matters for a group.`;
+    `${v}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
+    + `rechecked automatically every hour.<br>`
+    + `“Together” means consecutive seats in one row — what matters for a group.`;
+}
+
+// Live check: the showtime list is readable straight from the browser, so we can spot
+// changes since the last full scrape. It carries no seat counts, only Kinepolis'
+// unreliable sold-out flag — so anything it finds is shown as a hint, never as fact.
+async function liveCheck(){
+  try{
+    const r=await fetch('https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/35300/WWW/Cinema/KinepolisBelgium');
+    if(!r.ok)return;
+    const all=await r.json();
+    const BRU=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Brussels',weekday:'short',
+      day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false});
+    const fmt=iso=>{const o=BRU.formatToParts(new Date(iso)).reduce((a,x)=>(a[x.type]=x.value,a),{});
+      return {day:o.weekday,date:`${o.day} ${o.month.slice(0,3)}`,time:`${o.hour}:${o.minute}`};};
+    const now=Date.now();
+    const live=all.filter(s=>s.mainComplex==='KBRU'&&s.film&&s.film.format&&s.film.format.name==='IMAX 2D 70MM'
+      &&new Date(s.showtime).getTime()>now);
+    const known=new Map(data.shows.map(s=>[s.vistaSessionId,s]));
+    const added=[],maybe=[];
+    for(const s of live){
+      const mk=()=>({...fmt(s.showtime),bookUrl:`https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/KBRU/0`});
+      const k=known.get(s.vistaSessionId);
+      if(!k) added.push(mk());
+      else if(k.status==='soldout'&&!s.isSoldOut) maybe.push(mk());
+    }
+    liveNote={added,maybe}; renderLive();
+  }catch(e){/* offline or blocked - the page still works from data.json */}
+}
+
+fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+  data=d; renderTrust(); render(); foot(); liveCheck();
 }).catch(()=>{
   document.getElementById('summary').textContent='';
   document.getElementById('list').innerHTML='<div class="empty"><b>Could not load data</b>Try refreshing in a moment.</div>';

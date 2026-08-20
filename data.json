@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T15:51:08.875Z",
+  "updated": "2026-08-20T16:46:40.568Z",
   "movie": "L'Odyssée",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -10,19 +10,94 @@
     4,
     2
   ],
-  "slots": [
-    "Friday night",
-    "Saturday night",
-    "Sunday afternoon"
-  ],
+  "verified": true,
+  "verification": {
+    "ok": true,
+    "controlSessionId": 375290,
+    "controlSeatsFree": 374,
+    "tried": [
+      {
+        "vs": 375290,
+        "status": "open"
+      }
+    ]
+  },
+  "counts": {
+    "checked": 97,
+    "open": 0,
+    "soldOut": 97,
+    "errors": 0
+  },
   "shows": [
     {
+      "vistaSessionId": 389730,
+      "isoDate": "2026-Aug-20",
+      "day": "Thu",
+      "date": "20 Aug",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389730/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389692,
+      "isoDate": "2026-Aug-21",
+      "day": "Fri",
+      "date": "21 Aug",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389692/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389693,
+      "isoDate": "2026-Aug-21",
+      "day": "Fri",
+      "date": "21 Aug",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389693/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 389694,
-      "iso": "2026-08-21T19:00",
+      "isoDate": "2026-Aug-21",
       "day": "Fri",
       "date": "21 Aug",
       "time": "21:00",
-      "slot": "Friday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -35,15 +110,57 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389694/0/KBRU/0"
     },
     {
+      "vistaSessionId": 389695,
+      "isoDate": "2026-Aug-22",
+      "day": "Sat",
+      "date": "22 Aug",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389695/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389696,
+      "isoDate": "2026-Aug-22",
+      "day": "Sat",
+      "date": "22 Aug",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389696/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 389697,
-      "iso": "2026-08-22T19:00",
+      "isoDate": "2026-Aug-22",
       "day": "Sat",
       "date": "22 Aug",
       "time": "21:00",
-      "slot": "Saturday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -56,15 +173,15 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389697/0/KBRU/0"
     },
     {
-      "vistaSessionId": 389699,
-      "iso": "2026-08-23T11:30",
+      "vistaSessionId": 389698,
+      "isoDate": "2026-Aug-23",
       "day": "Sun",
       "date": "23 Aug",
-      "time": "13:30",
-      "slot": "Sunday afternoon",
+      "time": "09:45",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -77,15 +194,36 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389698/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389699,
+      "isoDate": "2026-Aug-23",
+      "day": "Sun",
+      "date": "23 Aug",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389699/0/KBRU/0"
     },
     {
       "vistaSessionId": 389700,
-      "iso": "2026-08-23T15:15",
+      "isoDate": "2026-Aug-23",
       "day": "Sun",
       "date": "23 Aug",
       "time": "17:15",
-      "slot": "Sunday afternoon",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -98,15 +236,309 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389700/0/KBRU/0"
     },
     {
+      "vistaSessionId": 389701,
+      "isoDate": "2026-Aug-23",
+      "day": "Sun",
+      "date": "23 Aug",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389701/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390586,
+      "isoDate": "2026-Aug-24",
+      "day": "Mon",
+      "date": "24 Aug",
+      "time": "09:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390586/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389702,
+      "isoDate": "2026-Aug-24",
+      "day": "Mon",
+      "date": "24 Aug",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389702/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389703,
+      "isoDate": "2026-Aug-24",
+      "day": "Mon",
+      "date": "24 Aug",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389703/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389704,
+      "isoDate": "2026-Aug-24",
+      "day": "Mon",
+      "date": "24 Aug",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389704/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390587,
+      "isoDate": "2026-Aug-25",
+      "day": "Tue",
+      "date": "25 Aug",
+      "time": "09:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390587/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389705,
+      "isoDate": "2026-Aug-25",
+      "day": "Tue",
+      "date": "25 Aug",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389705/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389706,
+      "isoDate": "2026-Aug-25",
+      "day": "Tue",
+      "date": "25 Aug",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389706/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389707,
+      "isoDate": "2026-Aug-25",
+      "day": "Tue",
+      "date": "25 Aug",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389707/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390615,
+      "isoDate": "2026-Aug-26",
+      "day": "Wed",
+      "date": "26 Aug",
+      "time": "16:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390615/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390616,
+      "isoDate": "2026-Aug-26",
+      "day": "Wed",
+      "date": "26 Aug",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390616/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390617,
+      "isoDate": "2026-Aug-27",
+      "day": "Thu",
+      "date": "27 Aug",
+      "time": "16:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390617/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390618,
+      "isoDate": "2026-Aug-27",
+      "day": "Thu",
+      "date": "27 Aug",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390618/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390619,
+      "isoDate": "2026-Aug-28",
+      "day": "Fri",
+      "date": "28 Aug",
+      "time": "16:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390619/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 390620,
-      "iso": "2026-08-28T18:30",
+      "isoDate": "2026-Aug-28",
       "day": "Fri",
       "date": "28 Aug",
       "time": "20:30",
-      "slot": "Friday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -119,15 +551,15 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390620/0/KBRU/0"
     },
     {
-      "vistaSessionId": 390622,
-      "iso": "2026-08-29T18:30",
+      "vistaSessionId": 390621,
+      "isoDate": "2026-Aug-29",
       "day": "Sat",
       "date": "29 Aug",
-      "time": "20:30",
-      "slot": "Saturday night",
+      "time": "16:45",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -140,15 +572,36 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390621/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390622,
+      "isoDate": "2026-Aug-29",
+      "day": "Sat",
+      "date": "29 Aug",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390622/0/KBRU/0"
     },
     {
       "vistaSessionId": 390623,
-      "iso": "2026-08-30T14:45",
+      "isoDate": "2026-Aug-30",
       "day": "Sun",
       "date": "30 Aug",
       "time": "16:45",
-      "slot": "Sunday afternoon",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -161,15 +614,288 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390623/0/KBRU/0"
     },
     {
+      "vistaSessionId": 390624,
+      "isoDate": "2026-Aug-30",
+      "day": "Sun",
+      "date": "30 Aug",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390624/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390625,
+      "isoDate": "2026-Aug-31",
+      "day": "Mon",
+      "date": "31 Aug",
+      "time": "16:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390625/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390626,
+      "isoDate": "2026-Aug-31",
+      "day": "Mon",
+      "date": "31 Aug",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390626/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390627,
+      "isoDate": "2026-Sept-01",
+      "day": "Tue",
+      "date": "01 Sep",
+      "time": "16:45",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390627/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390628,
+      "isoDate": "2026-Sept-01",
+      "day": "Tue",
+      "date": "01 Sep",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390628/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390592,
+      "isoDate": "2026-Sept-02",
+      "day": "Wed",
+      "date": "02 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390592/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390593,
+      "isoDate": "2026-Sept-02",
+      "day": "Wed",
+      "date": "02 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390593/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390594,
+      "isoDate": "2026-Sept-02",
+      "day": "Wed",
+      "date": "02 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390594/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390595,
+      "isoDate": "2026-Sept-03",
+      "day": "Thu",
+      "date": "03 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390595/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390596,
+      "isoDate": "2026-Sept-03",
+      "day": "Thu",
+      "date": "03 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390596/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390597,
+      "isoDate": "2026-Sept-03",
+      "day": "Thu",
+      "date": "03 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390597/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390598,
+      "isoDate": "2026-Sept-04",
+      "day": "Fri",
+      "date": "04 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390598/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390599,
+      "isoDate": "2026-Sept-04",
+      "day": "Fri",
+      "date": "04 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390599/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 390600,
-      "iso": "2026-09-04T19:00",
+      "isoDate": "2026-Sept-04",
       "day": "Fri",
       "date": "04 Sep",
       "time": "21:00",
-      "slot": "Friday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -182,15 +908,57 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390600/0/KBRU/0"
     },
     {
+      "vistaSessionId": 390601,
+      "isoDate": "2026-Sept-05",
+      "day": "Sat",
+      "date": "05 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390601/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390602,
+      "isoDate": "2026-Sept-05",
+      "day": "Sat",
+      "date": "05 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390602/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 390603,
-      "iso": "2026-09-05T19:00",
+      "isoDate": "2026-Sept-05",
       "day": "Sat",
       "date": "05 Sep",
       "time": "21:00",
-      "slot": "Saturday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -203,15 +971,15 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390603/0/KBRU/0"
     },
     {
-      "vistaSessionId": 390605,
-      "iso": "2026-09-06T11:30",
+      "vistaSessionId": 390604,
+      "isoDate": "2026-Sept-06",
       "day": "Sun",
       "date": "06 Sep",
-      "time": "13:30",
-      "slot": "Sunday afternoon",
+      "time": "09:45",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -224,15 +992,36 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390604/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390605,
+      "isoDate": "2026-Sept-06",
+      "day": "Sun",
+      "date": "06 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390605/0/KBRU/0"
     },
     {
       "vistaSessionId": 390606,
-      "iso": "2026-09-06T15:15",
+      "isoDate": "2026-Sept-06",
       "day": "Sun",
       "date": "06 Sep",
       "time": "17:15",
-      "slot": "Sunday afternoon",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -245,15 +1034,309 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390606/0/KBRU/0"
     },
     {
+      "vistaSessionId": 390607,
+      "isoDate": "2026-Sept-06",
+      "day": "Sun",
+      "date": "06 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390607/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390608,
+      "isoDate": "2026-Sept-07",
+      "day": "Mon",
+      "date": "07 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390608/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390609,
+      "isoDate": "2026-Sept-07",
+      "day": "Mon",
+      "date": "07 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390609/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390610,
+      "isoDate": "2026-Sept-07",
+      "day": "Mon",
+      "date": "07 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390610/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390611,
+      "isoDate": "2026-Sept-08",
+      "day": "Tue",
+      "date": "08 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390611/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390612,
+      "isoDate": "2026-Sept-08",
+      "day": "Tue",
+      "date": "08 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390612/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390613,
+      "isoDate": "2026-Sept-08",
+      "day": "Tue",
+      "date": "08 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390613/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391417,
+      "isoDate": "2026-Sept-09",
+      "day": "Wed",
+      "date": "09 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391417/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391416,
+      "isoDate": "2026-Sept-09",
+      "day": "Wed",
+      "date": "09 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391416/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391418,
+      "isoDate": "2026-Sept-10",
+      "day": "Thu",
+      "date": "10 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391418/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391419,
+      "isoDate": "2026-Sept-10",
+      "day": "Thu",
+      "date": "10 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391419/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391420,
+      "isoDate": "2026-Sept-10",
+      "day": "Thu",
+      "date": "10 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391420/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391421,
+      "isoDate": "2026-Sept-11",
+      "day": "Fri",
+      "date": "11 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391421/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391422,
+      "isoDate": "2026-Sept-11",
+      "day": "Fri",
+      "date": "11 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391422/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 391423,
-      "iso": "2026-09-11T19:00",
+      "isoDate": "2026-Sept-11",
       "day": "Fri",
       "date": "11 Sep",
       "time": "21:00",
-      "slot": "Friday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -266,15 +1349,57 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391423/0/KBRU/0"
     },
     {
+      "vistaSessionId": 391424,
+      "isoDate": "2026-Sept-12",
+      "day": "Sat",
+      "date": "12 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391424/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391425,
+      "isoDate": "2026-Sept-12",
+      "day": "Sat",
+      "date": "12 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391425/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 391426,
-      "iso": "2026-09-12T19:00",
+      "isoDate": "2026-Sept-12",
       "day": "Sat",
       "date": "12 Sep",
       "time": "21:00",
-      "slot": "Saturday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -287,15 +1412,15 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391426/0/KBRU/0"
     },
     {
-      "vistaSessionId": 391427,
-      "iso": "2026-09-13T11:30",
+      "vistaSessionId": 391661,
+      "isoDate": "2026-Sept-13",
       "day": "Sun",
       "date": "13 Sep",
-      "time": "13:30",
-      "slot": "Sunday afternoon",
+      "time": "09:45",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -308,15 +1433,36 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391661/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391427,
+      "isoDate": "2026-Sept-13",
+      "day": "Sun",
+      "date": "13 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391427/0/KBRU/0"
     },
     {
       "vistaSessionId": 391428,
-      "iso": "2026-09-13T15:15",
+      "isoDate": "2026-Sept-13",
       "day": "Sun",
       "date": "13 Sep",
       "time": "17:15",
-      "slot": "Sunday afternoon",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -329,15 +1475,372 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391428/0/KBRU/0"
     },
     {
+      "vistaSessionId": 391429,
+      "isoDate": "2026-Sept-13",
+      "day": "Sun",
+      "date": "13 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391429/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391430,
+      "isoDate": "2026-Sept-14",
+      "day": "Mon",
+      "date": "14 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391430/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391431,
+      "isoDate": "2026-Sept-14",
+      "day": "Mon",
+      "date": "14 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391431/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391432,
+      "isoDate": "2026-Sept-14",
+      "day": "Mon",
+      "date": "14 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391432/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391433,
+      "isoDate": "2026-Sept-15",
+      "day": "Tue",
+      "date": "15 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391433/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391434,
+      "isoDate": "2026-Sept-15",
+      "day": "Tue",
+      "date": "15 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391434/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391435,
+      "isoDate": "2026-Sept-15",
+      "day": "Tue",
+      "date": "15 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391435/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391438,
+      "isoDate": "2026-Sept-16",
+      "day": "Wed",
+      "date": "16 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391438/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391437,
+      "isoDate": "2026-Sept-16",
+      "day": "Wed",
+      "date": "16 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391437/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391436,
+      "isoDate": "2026-Sept-16",
+      "day": "Wed",
+      "date": "16 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391436/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391439,
+      "isoDate": "2026-Sept-17",
+      "day": "Thu",
+      "date": "17 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391439/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391440,
+      "isoDate": "2026-Sept-17",
+      "day": "Thu",
+      "date": "17 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391440/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391441,
+      "isoDate": "2026-Sept-17",
+      "day": "Thu",
+      "date": "17 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391441/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391442,
+      "isoDate": "2026-Sept-18",
+      "day": "Fri",
+      "date": "18 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391442/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391443,
+      "isoDate": "2026-Sept-18",
+      "day": "Fri",
+      "date": "18 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391443/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391444,
+      "isoDate": "2026-Sept-19",
+      "day": "Sat",
+      "date": "19 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391444/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391445,
+      "isoDate": "2026-Sept-19",
+      "day": "Sat",
+      "date": "19 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391445/0/KBRU/0"
+    },
+    {
       "vistaSessionId": 391446,
-      "iso": "2026-09-19T19:00",
+      "isoDate": "2026-Sept-19",
       "day": "Sat",
       "date": "19 Sep",
       "time": "21:00",
-      "slot": "Saturday night",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -350,15 +1853,15 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391446/0/KBRU/0"
     },
     {
-      "vistaSessionId": 391447,
-      "iso": "2026-09-20T11:30",
+      "vistaSessionId": 391662,
+      "isoDate": "2026-Sept-20",
       "day": "Sun",
       "date": "20 Sep",
-      "time": "13:30",
-      "slot": "Sunday afternoon",
+      "time": "09:45",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -371,15 +1874,36 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391662/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391447,
+      "isoDate": "2026-Sept-20",
+      "day": "Sun",
+      "date": "20 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391447/0/KBRU/0"
     },
     {
       "vistaSessionId": 391448,
-      "iso": "2026-09-20T15:15",
+      "isoDate": "2026-Sept-20",
       "day": "Sun",
       "date": "20 Sep",
       "time": "17:15",
-      "slot": "Sunday afternoon",
       "hall": 28,
       "status": "soldout",
       "note": null,
@@ -392,7 +1916,155 @@
         "6": false,
         "8": false
       },
+      "apiSaidSoldOut": true,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391448/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391449,
+      "isoDate": "2026-Sept-20",
+      "day": "Sun",
+      "date": "20 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391449/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391450,
+      "isoDate": "2026-Sept-21",
+      "day": "Mon",
+      "date": "21 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391450/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391451,
+      "isoDate": "2026-Sept-21",
+      "day": "Mon",
+      "date": "21 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391451/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391452,
+      "isoDate": "2026-Sept-21",
+      "day": "Mon",
+      "date": "21 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391452/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391453,
+      "isoDate": "2026-Sept-22",
+      "day": "Tue",
+      "date": "22 Sep",
+      "time": "13:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": false,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391453/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391454,
+      "isoDate": "2026-Sept-22",
+      "day": "Tue",
+      "date": "22 Sep",
+      "time": "17:15",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391454/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391455,
+      "isoDate": "2026-Sept-22",
+      "day": "Tue",
+      "date": "22 Sep",
+      "time": "21:00",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "apiSaidSoldOut": true,
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391455/0/KBRU/0"
     }
   ]
 }
