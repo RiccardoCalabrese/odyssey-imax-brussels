@@ -25,11 +25,43 @@ The only trustworthy source is the Vista booking engine's seat map.
 
 It stops at the seat map (step 2 of 5). No seat is selected, nothing is held or booked.
 
-## Run it
+## Automatic refresh
+
+A GitHub Actions workflow (`.github/workflows/refresh.yml`) runs **hourly**, scrapes,
+and commits `data.json` — so the site stays current with nothing running locally.
+Verified working from GitHub's runners: Akamai does not block them.
+
+Trigger it by hand from the **Actions** tab, or:
 
 ```bash
-node scrape.mjs              # full check, writes data.json
+gh workflow run refresh.yml
+```
+
+### Self-test
+
+Because every Odyssey screening is currently sold out, a green run doesn't by itself
+prove the scraper can still *detect* availability. Probe a known-bookable session
+(any `vistaSessionId` from the Kinepolis site) to exercise the "open" path:
+
+```bash
+gh workflow run refresh.yml -f probe=375290
+```
+
+Expected output: `probe 375290: {"status":"open","total":422,"free":374,...}`
+
+## Run it locally
+
+```bash
+./refresh.sh                 # scrape, commit, push
+node scrape.mjs              # scrape only
 node scrape.mjs --probe <id> # self-test one session
 ```
 
-Then commit `data.json` to refresh the site.
+Both the workflow and `refresh.sh` rebase-and-retry on push, so a manual run and a
+scheduled run can't clobber each other.
+
+## Being a good citizen
+
+Each run opens the booking flow once per tracked screening (18 at the moment) and stops
+at the seat map. Hourly is a deliberate ceiling — don't raise it much. Nothing is ever
+selected, held, or purchased.
