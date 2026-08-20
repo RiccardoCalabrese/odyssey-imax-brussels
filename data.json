@@ -1,0 +1,398 @@
+{
+  "updated": "2026-08-20T12:12:30.558Z",
+  "movie": "L'Odyssée",
+  "cinema": "Kinepolis Brussel",
+  "format": "IMAX 2D 70MM",
+  "version": "Version Anglaise · ST FR/NL",
+  "groups": [
+    8,
+    6,
+    4,
+    2
+  ],
+  "slots": [
+    "Friday night",
+    "Saturday night",
+    "Sunday afternoon"
+  ],
+  "shows": [
+    {
+      "vistaSessionId": 389694,
+      "iso": "2026-08-21T19:00",
+      "day": "Fri",
+      "date": "21 Aug",
+      "time": "21:00",
+      "slot": "Friday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389694/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389697,
+      "iso": "2026-08-22T19:00",
+      "day": "Sat",
+      "date": "22 Aug",
+      "time": "21:00",
+      "slot": "Saturday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389697/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389699,
+      "iso": "2026-08-23T11:30",
+      "day": "Sun",
+      "date": "23 Aug",
+      "time": "13:30",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389699/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 389700,
+      "iso": "2026-08-23T15:15",
+      "day": "Sun",
+      "date": "23 Aug",
+      "time": "17:15",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389700/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390620,
+      "iso": "2026-08-28T18:30",
+      "day": "Fri",
+      "date": "28 Aug",
+      "time": "20:30",
+      "slot": "Friday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390620/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390622,
+      "iso": "2026-08-29T18:30",
+      "day": "Sat",
+      "date": "29 Aug",
+      "time": "20:30",
+      "slot": "Saturday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390622/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390623,
+      "iso": "2026-08-30T14:45",
+      "day": "Sun",
+      "date": "30 Aug",
+      "time": "16:45",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390623/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390600,
+      "iso": "2026-09-04T19:00",
+      "day": "Fri",
+      "date": "04 Sept",
+      "time": "21:00",
+      "slot": "Friday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390600/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390603,
+      "iso": "2026-09-05T19:00",
+      "day": "Sat",
+      "date": "05 Sept",
+      "time": "21:00",
+      "slot": "Saturday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390603/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390605,
+      "iso": "2026-09-06T11:30",
+      "day": "Sun",
+      "date": "06 Sept",
+      "time": "13:30",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390605/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 390606,
+      "iso": "2026-09-06T15:15",
+      "day": "Sun",
+      "date": "06 Sept",
+      "time": "17:15",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390606/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391423,
+      "iso": "2026-09-11T19:00",
+      "day": "Fri",
+      "date": "11 Sept",
+      "time": "21:00",
+      "slot": "Friday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391423/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391426,
+      "iso": "2026-09-12T19:00",
+      "day": "Sat",
+      "date": "12 Sept",
+      "time": "21:00",
+      "slot": "Saturday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391426/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391427,
+      "iso": "2026-09-13T11:30",
+      "day": "Sun",
+      "date": "13 Sept",
+      "time": "13:30",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391427/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391428,
+      "iso": "2026-09-13T15:15",
+      "day": "Sun",
+      "date": "13 Sept",
+      "time": "17:15",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391428/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391446,
+      "iso": "2026-09-19T19:00",
+      "day": "Sat",
+      "date": "19 Sept",
+      "time": "21:00",
+      "slot": "Saturday night",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391446/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391447,
+      "iso": "2026-09-20T11:30",
+      "day": "Sun",
+      "date": "20 Sept",
+      "time": "13:30",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391447/0/KBRU/0"
+    },
+    {
+      "vistaSessionId": 391448,
+      "iso": "2026-09-20T15:15",
+      "day": "Sun",
+      "date": "20 Sept",
+      "time": "17:15",
+      "slot": "Sunday afternoon",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391448/0/KBRU/0"
+    }
+  ]
+}

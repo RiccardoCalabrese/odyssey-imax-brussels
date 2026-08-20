@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odyssey · IMAX 70mm · Brussels</title>
+<meta name="description" content="Live seat availability for The Odyssey in IMAX 2D 70MM at Kinepolis Brussels.">
+<meta property="og:title" content="Odyssey · IMAX 70mm · Brussels">
+<meta property="og:description" content="Live seat availability for Friday & Saturday nights and Sunday afternoons.">
+<style>
+:root{
+  --bg:#faf9f7; --panel:#fff; --ink:#14131a; --muted:#6b6875; --line:#e8e5e0;
+  --ok:#0f7a4d; --ok-bg:#e8f5ee; --dim:#a8a4b0; --accent:#14131a;
+  --radius:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0e0d12; --panel:#17161d; --ink:#f2f0f5; --muted:#9a96a6; --line:#26242e;
+         --ok:#4ade80; --ok-bg:#12291d; --dim:#514d5c; --accent:#f2f0f5; }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  padding:32px 20px 64px;
+}
+.wrap{max-width:640px;margin:0 auto}
+
+header{margin-bottom:28px}
+h1{font-size:26px;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:14px;margin:0}
+.sub b{color:var(--ink);font-weight:600}
+
+.controls{margin:24px 0 8px}
+.label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
+.seg{display:flex;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:5px}
+.seg button{
+  flex:1;appearance:none;border:0;background:transparent;color:var(--muted);
+  font:inherit;font-weight:600;font-size:15px;padding:9px 4px;border-radius:8px;cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
+
+.summary{margin:20px 0 14px;font-size:15px;color:var(--muted)}
+.summary b{color:var(--ink)}
+
+ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+li{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;display:flex;align-items:center;gap:14px;
+}
+li.fits{border-color:var(--ok)}
+li.out .when,li.out .meta{color:var(--dim)}
+.when{flex:1;min-width:0}
+.day{font-weight:650;font-size:16px;letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:13px;margin-top:2px}
+.state{text-align:right;flex-shrink:0}
+.pill{
+  display:inline-block;font-size:12px;font-weight:650;padding:5px 10px;border-radius:999px;
+  background:var(--ok-bg);color:var(--ok);white-space:nowrap;
+}
+.pill.no{background:transparent;color:var(--dim);border:1px solid var(--line)}
+.book{
+  display:inline-block;margin-top:7px;font-size:13px;font-weight:650;
+  color:var(--bg);background:var(--accent);text-decoration:none;padding:7px 13px;border-radius:8px;
+}
+.empty{
+  background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);
+  padding:28px 20px;text-align:center;color:var(--muted);font-size:15px;
+}
+.empty b{display:block;color:var(--ink);font-size:16px;margin-bottom:6px}
+footer{margin-top:28px;color:var(--muted);font-size:12.5px;line-height:1.6}
+footer a{color:inherit}
+@media(max-width:420px){
+  body{padding:24px 14px 48px}
+  h1{font-size:22px}
+  li{padding:13px 14px;gap:10px}
+  .seg button{font-size:14px;padding:9px 2px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>The Odyssey · IMAX 70mm</h1>
+    <p class="sub"><b>Kinepolis Brussel</b> · IMAX 2D 70MM · Version Anglaise, ST FR/NL</p>
+  </header>
+
+  <div class="controls">
+    <div class="label">How many of us?</div>
+    <div class="seg" id="seg" role="group" aria-label="Party size"></div>
+  </div>
+
+  <p class="summary" id="summary">Loading…</p>
+  <ul id="list"></ul>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const GROUPS=[8,6,4,2];
+let party=8, data=null;
+
+const seg=document.getElementById('seg');
+GROUPS.forEach(g=>{
+  const b=document.createElement('button');
+  b.textContent=g; b.setAttribute('aria-pressed',g===party);
+  b.onclick=()=>{party=g;[...seg.children].forEach(c=>c.setAttribute('aria-pressed',c.textContent==String(g)));render();};
+  seg.appendChild(b);
+});
+
+const ago=iso=>{
+  const m=Math.round((Date.now()-new Date(iso))/60000);
+  if(m<1)return'just now'; if(m<60)return m+' min ago';
+  const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
+  return Math.round(h/24)+' days ago';
+};
+
+function render(){
+  const list=document.getElementById('list');
+  const sum=document.getElementById('summary');
+  const shows=data.shows;
+  const fitting=shows.filter(s=>s.status==='open'&&s.maxBlock>=party);
+
+  sum.innerHTML=fitting.length
+    ? `<b>${fitting.length}</b> of ${shows.length} screenings can seat <b>${party}</b> together.`
+    : `No screening can seat <b>${party}</b> together right now — all ${shows.length} are sold out.`;
+
+  list.innerHTML='';
+  if(!shows.length){
+    list.innerHTML='<div class="empty"><b>No screenings scheduled</b>Friday nights, Saturday nights and Sunday afternoons only.</div>';
+    return;
+  }
+  for(const s of shows){
+    const fits=s.status==='open'&&s.maxBlock>=party;
+    const li=document.createElement('li');
+    li.className=fits?'fits':(s.status==='open'?'':'out');
+    const right=s.status==='open'
+      ? (fits
+          ? `<span class="pill">${s.maxBlock} seats together</span><br><a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a>`
+          : `<span class="pill no">${s.maxBlock} together · ${s.seatsFree} free</span>`)
+      : `<span class="pill no">${s.status==='error'?'Unknown':'Sold out'}</span>`;
+    li.innerHTML=`<div class="when">
+        <div class="day">${s.day} ${s.date} · ${s.time}</div>
+        <div class="meta">${s.slot}</div>
+      </div><div class="state">${right}</div>`;
+    list.appendChild(li);
+  }
+}
+
+fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+  data=d; render();
+  document.getElementById('foot').innerHTML=
+    `Checked ${ago(d.updated)} · seat maps read live from the Kinepolis booking system.<br>`+
+    `“Seats together” means consecutive seats in one row — what actually matters for a group.`;
+}).catch(()=>{
+  document.getElementById('summary').textContent='';
+  document.getElementById('list').innerHTML='<div class="empty"><b>Could not load data</b>Try refreshing in a moment.</div>';
+});
+</script>
+</body>
+</html>
