@@ -43,9 +43,10 @@ const BRU = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Brussels', weekd
   year:'numeric', month:'short', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false });
 const parts = iso => {
   const o = BRU.formatToParts(new Date(iso)).reduce((a,x)=>(a[x.type]=x.value,a),{});
-  return { d:o.day, mon:o.month, y:o.year, h:+o.hour, mi:+o.minute,
+  const mon = o.month.slice(0,3); // en-GB yields 'Sept'; keep all months 3 letters
+  return { d:o.day, mon, y:o.year, h:+o.hour, mi:+o.minute,
            dow: DAYS.indexOf(o.weekday), day:o.weekday,
-           time:`${o.hour}:${o.minute}`, date:`${o.day} ${o.month}` };
+           time:`${o.hour}:${o.minute}`, date:`${o.day} ${mon}` };
 };
 
 async function chrome() {
