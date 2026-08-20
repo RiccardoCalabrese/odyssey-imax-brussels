@@ -170,7 +170,9 @@ function renderLive(){
     <div class="meta">Kinepolis no longer flags this as sold out</div></div>
     <div class="state"><span class="pill hint">Maybe</span><br>
     <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Check</a></div></li>`;
-  el.innerHTML=h+'</ul><p class="summary" style="font-size:13px">Kinepolis’ own flag is unreliable, so these are hints to click, not confirmed seats. The next automatic check confirms them properly.</p>';
+  el.innerHTML=h+'</ul><p class="summary" style="font-size:13px">Hints only — Kinepolis’ own flag is unreliable (it wrongly showed '
+    + (data.shows.filter(x=>!x.apiSaidSoldOut&&x.status==='soldout').length)
+    + ' sold-out screenings as available at the last check). The next automatic run confirms these properly.</p>';
 }
 
 function foot(){
@@ -203,10 +205,13 @@ async function liveCheck(){
     for(const s of live){
       const mk=()=>({...fmt(s.showtime),bookUrl:`https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/KBRU/0`});
       const k=known.get(s.vistaSessionId);
-      if(!k) added.push(mk());
-      else if(k.status==='soldout'&&!s.isSoldOut) maybe.push(mk());
+      if(!k){ added.push(mk()); continue; }
+      // Only a genuine CHANGE counts. Kinepolis' flag is wrong for many shows even
+      // at scrape time, so comparing against the flag's current value alone would
+      // list dozens of screenings we already verified as sold out.
+      if(k.status==='soldout' && k.apiSaidSoldOut===true && s.isSoldOut===false) maybe.push(mk());
     }
-    liveNote={added,maybe}; renderLive();
+    liveNote={added:added.slice(0,12), maybe:maybe.slice(0,12)}; renderLive();
   }catch(e){/* offline or blocked - the page still works from data.json */}
 }
 
