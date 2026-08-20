@@ -76,8 +76,8 @@ footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
 <body>
 <div class="wrap">
   <header>
-    <h1>The Odyssey · IMAX 70mm</h1>
-    <p class="sub"><b>Kinepolis Brussel</b> · IMAX 2D 70MM · Version Anglaise, ST FR/NL</p>
+    <h1 id="title">The Odyssey · IMAX 70mm</h1>
+    <p class="sub" id="subtitle"><b>Kinepolis Brussel</b> · IMAX 2D 70MM · Version Anglaise</p>
   </header>
 
   <div id="trust"></div>
@@ -138,7 +138,7 @@ function render(){
     li.className=s.maxBlock>=(party==='any'?2:party)?'fits':'';
     li.innerHTML=`<div class="when">
         <div class="day">${s.day} ${s.date} · ${s.time}</div>
-        <div class="meta">${s.seatsFree} seat${s.seatsFree===1?'':'s'} free of ${s.seatsTotal}</div>
+        <div class="meta">${s.seatsFree} seat${s.seatsFree===1?'':'s'} available</div>
       </div>
       <div class="state">
         <span class="pill">${s.maxBlock} together</span><br>
@@ -191,7 +191,7 @@ function foot(){
 // unreliable sold-out flag — so anything it finds is shown as a hint, never as fact.
 async function liveCheck(){
   try{
-    const r=await fetch('https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/35300/WWW/Cinema/KinepolisBelgium');
+    const r=await fetch(`https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/${data.movieId}/WWW/Cinema/KinepolisBelgium`);
     if(!r.ok)return;
     const all=await r.json();
     const BRU=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Brussels',weekday:'short',
@@ -199,12 +199,14 @@ async function liveCheck(){
     const fmt=iso=>{const o=BRU.formatToParts(new Date(iso)).reduce((a,x)=>(a[x.type]=x.value,a),{});
       return {day:o.weekday,date:`${o.day} ${o.month.slice(0,3)}`,time:`${o.hour}:${o.minute}`};};
     const now=Date.now();
-    const live=all.filter(s=>s.mainComplex==='KBRU'&&s.film&&s.film.format&&s.film.format.name==='IMAX 2D 70MM'
+    const live=all.filter(s=>s.mainComplex===data.complex
+      &&s.film&&s.film.format&&s.film.format.name===data.format
+      &&s.film.data&&s.film.data.spokenLanguage&&s.film.data.spokenLanguage.name===data.version
       &&new Date(s.showtime).getTime()>now);
     const known=new Map(data.shows.map(s=>[s.vistaSessionId,s]));
     const added=[],maybe=[];
     for(const s of live){
-      const mk=()=>({...fmt(s.showtime),bookUrl:`https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/KBRU/0`});
+      const mk=()=>({...fmt(s.showtime),bookUrl:`https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/${data.complex}/0`});
       const k=known.get(s.vistaSessionId);
       // Only newly-added screenings. We deliberately ignore Kinepolis' isSoldOut flag:
       // it was wrong for 41% of screenings, always claiming seats that don't exist.
@@ -215,7 +217,11 @@ async function liveCheck(){
 }
 
 fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
-  data=d; renderTrust(); render(); foot(); liveCheck();
+  data=d;
+  document.getElementById('title').textContent=`${d.movie} · ${d.format}`;
+  document.getElementById('subtitle').innerHTML=`<b>${d.cinema}</b> · ${d.version}`;
+  document.title=`${d.movie} · ${d.format}`;
+  renderTrust(); render(); foot(); liveCheck();
 }).catch(()=>{
   document.getElementById('summary').textContent='';
   document.getElementById('list').innerHTML='<div class="empty"><b>Could not load data</b>Try refreshing in a moment.</div>';

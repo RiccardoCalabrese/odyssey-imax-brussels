@@ -26,12 +26,16 @@ const CHROME = process.env.CHROME_PATH
       : 'google-chrome');
 const EXTRA_FLAGS = process.platform === 'darwin' ? [] : ['--no-sandbox','--disable-dev-shm-usage'];
 
-const MOVIE   = { id:'35300', ho:'HO00013434', slug:'l-odyssee' };
-const COMPLEX = 'KBRU';
-const FORMAT  = 'IMAX 2D 70MM';
-const PAGE = `https://kinepolis.be/fr/movies/detail/${MOVIE.id}/${MOVIE.ho}/0/${MOVIE.slug}`;
+// Target is configurable so the same scraper can check any film / format / language.
+// Defaults to Odyssey in IMAX 70mm; override with env vars (see README).
+const MOVIE_ID = process.env.KIN_MOVIE  || '35300';
+const COMPLEX  = process.env.KIN_CINEMA || 'KBRU';
+const FORMAT   = process.env.KIN_FORMAT || 'IMAX 2D 70MM';
+const LANGUAGE = process.env.KIN_LANG   || 'Version Anglaise';
+const OUTFILE  = process.env.KIN_OUT    || 'data.json';
 const HOME = 'https://kinepolis.be/fr';
-const API  = `https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/${MOVIE.id}/WWW/Cinema/KinepolisBelgium`;
+const PAGE = HOME;
+const API  = `https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/${MOVIE_ID}/WWW/Cinema/KinepolisBelgium`;
 const GROUPS = [8, 6, 4, 2];
 const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const MAX_CONTROLS = 5;   // how many control sessions to try before giving up
@@ -112,7 +116,8 @@ async function chrome() {
 }
 
 // Largest run of consecutive free seats within a single row.
-function analyseSeats(seats) {
+function analyseSeats(all) {
+  const seats = all.filter(s => !s.cosy);   // standard seats only
   const free = seats.filter(s => s.free);
   const rows = {};
   for (const s of free) (rows[s.row] ||= []).push(s.col);
@@ -125,7 +130,8 @@ function analyseSeats(seats) {
       else { if (run > best) best = run; run = 1; }
     }
   }
-  return { total: seats.length, free: free.length, taken: seats.length - free.length, maxBlock: best };
+  return { total: seats.length, free: free.length, taken: seats.length - free.length,
+           cosy: all.length - seats.length, maxBlock: best };
 }
 
 async function checkSession(br, vs, expect) {
@@ -163,14 +169,22 @@ async function checkSession(br, vs, expect) {
         // Seats render before occupancy is painted, so a map read too early looks
         // completely empty. Poll until some seat is marked taken, or give up and let
         // the zero-taken guard below reject it.
+        // What counts as available (confirmed against the rendered seat icons):
+        //   data-seats-status="0" -> seat-available.svg   (bookable)
+        //   data-seats-status="1" -> seat-unavailable.svg (taken - and NOT disabled,
+        //                            so `disabled` alone silently counts sold seats as free)
+        //   input.disabled        -> Cosy/sofa seats, not sellable on a standard ticket
         const read = async () => br.evalJs(`(()=>[...document.querySelectorAll('.seat-input')].map(i=>{
           let v={};try{v=JSON.parse(i.value)}catch(e){}
-          return {row:String(v.Row), col:Number(v.Column), free:!i.disabled};}))()`);
+          const st=i.parentElement.getAttribute('data-seats-status');
+          return {row:String(v.Row), col:Number(v.Column),
+                  free: st==='0' && !i.disabled,
+                  cosy: !!i.disabled};}))()`);
         const tEnd = Date.now() + 10000;
         do {
           await sleep(1000);
           seats = await read();
-        } while (seats && !seats.some(x => !x.free) && Date.now() < tEnd);
+        } while (seats && !seats.some(x => !x.free && !x.cosy) && Date.now() < tEnd);
         break;
       }
     } else if (/complète|sold ?out/i.test(await br.bodyText(2000))) {
@@ -229,12 +243,15 @@ try {
 
   const now = Date.now();
   let targets = all
-    .filter(s => s.mainComplex === COMPLEX && s.film?.format?.name === FORMAT)
+    .filter(s => s.mainComplex === COMPLEX
+              && s.film?.format?.name === FORMAT
+              && s.film?.data?.spokenLanguage?.name === LANGUAGE)
     .filter(s => new Date(s.showtime).getTime() > now)
     .sort((a,b) => a.showtime < b.showtime ? -1 : 1);
   if (LIMIT) targets = targets.slice(0, LIMIT);
 
-  console.log(`Checking ${targets.length} screenings (every future ${FORMAT} show at ${COMPLEX})…`);
+  if (!targets.length) throw new Error(`no future screenings matched: ${FORMAT} / ${LANGUAGE} at ${COMPLEX}`);
+  console.log(`Checking ${targets.length} screenings — ${targets[0].film.data.title} · ${FORMAT} · ${LANGUAGE} · ${COMPLEX}…`);
   const shows = [];
   for (const s of targets) {
     const p = parts(s.showtime);
@@ -262,8 +279,9 @@ try {
   const errors = shows.filter(s => s.status === 'error');
   const out = {
     updated: new Date().toISOString(),
-    movie: "L'Odyssée", cinema:'Kinepolis Brussel', format:FORMAT,
-    version:'Version Anglaise · ST FR/NL',
+    movie: targets[0].film.data.title, cinema: targets[0].cinemaLabel || 'Kinepolis Brussel',
+    format: FORMAT, version: LANGUAGE,
+    movieId: MOVIE_ID, complex: COMPLEX,
     groups: GROUPS,
     verified: verification.ok,
     verification,
@@ -271,6 +289,6 @@ try {
               soldOut: shows.filter(s=>s.status==='soldout').length, errors: errors.length },
     shows,
   };
-  writeFileSync(join(HERE,'data.json'), JSON.stringify(out, null, 2));
-  console.log(`\nWrote data.json — ${open.length} with seats, ${out.counts.soldOut} sold out, ${errors.length} errors, verified=${verification.ok}`);
+  writeFileSync(join(HERE, OUTFILE), JSON.stringify(out, null, 2));
+  console.log(`\nWrote ${OUTFILE} — ${open.length} with seats, ${out.counts.soldOut} sold out, ${errors.length} errors, verified=${verification.ok}`);
 } finally { br.close(); }
