@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T19:03:43.885Z",
+  "updated": "2026-08-20T19:49:45.857Z",
   "movie": "L'Odyssée",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -23,33 +23,12 @@
     ]
   },
   "counts": {
-    "checked": 97,
-    "open": 1,
-    "soldOut": 96,
-    "errors": 0
+    "checked": 96,
+    "open": 3,
+    "soldOut": 92,
+    "errors": 1
   },
   "shows": [
-    {
-      "vistaSessionId": 389730,
-      "isoDate": "2026-Aug-20",
-      "day": "Thu",
-      "date": "20 Aug",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "apiSaidSoldOut": false,
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389730/0/KBRU/0"
-    },
     {
       "vistaSessionId": 389692,
       "isoDate": "2026-Aug-21",
@@ -78,16 +57,16 @@
       "date": "21 Aug",
       "time": "17:15",
       "hall": 28,
-      "status": "open",
+      "status": "soldout",
       "note": null,
-      "seatsFree": 400,
-      "seatsTotal": 400,
-      "maxBlock": 18,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
       "fits": {
-        "2": true,
-        "4": true,
-        "6": true,
-        "8": true
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389693/0/KBRU/0"
@@ -372,16 +351,16 @@
       "date": "25 Aug",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 400,
+      "seatsTotal": 400,
+      "maxBlock": 18,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389705/0/KBRU/0"
@@ -645,16 +624,16 @@
       "date": "31 Aug",
       "time": "16:45",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 400,
+      "seatsTotal": 400,
+      "maxBlock": 18,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390625/0/KBRU/0"
@@ -750,8 +729,8 @@
       "date": "02 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -1275,16 +1254,16 @@
       "date": "10 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 400,
+      "seatsTotal": 400,
+      "maxBlock": 18,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "apiSaidSoldOut": false,
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391420/0/KBRU/0"
