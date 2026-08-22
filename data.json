@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T18:55:20.367Z",
+  "updated": "2026-08-22T19:40:25.625Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -26,32 +26,12 @@
     ]
   },
   "counts": {
-    "checked": 91,
-    "open": 2,
-    "soldOut": 89,
+    "checked": 90,
+    "open": 0,
+    "soldOut": 90,
     "errors": 0
   },
   "shows": [
-    {
-      "vistaSessionId": 389697,
-      "isoDate": "2026-Aug-22",
-      "day": "Sat",
-      "date": "22 Aug",
-      "time": "21:00",
-      "hall": 28,
-      "status": "open",
-      "note": null,
-      "seatsFree": 1,
-      "seatsTotal": 400,
-      "maxBlock": 1,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/389697/0/KBRU/0"
-    },
     {
       "vistaSessionId": 389698,
       "isoDate": "2026-Aug-23",
@@ -239,11 +219,11 @@
       "date": "25 Aug",
       "time": "13:30",
       "hall": 28,
-      "status": "open",
+      "status": "soldout",
       "note": null,
-      "seatsFree": 1,
-      "seatsTotal": 400,
-      "maxBlock": 1,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
       "fits": {
         "2": false,
         "4": false,
