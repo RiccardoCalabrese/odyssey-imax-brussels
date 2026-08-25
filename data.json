@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T09:03:05.074Z",
+  "updated": "2026-08-25T09:56:03.691Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -16,7 +16,7 @@
   "verification": {
     "ok": true,
     "controlSessionId": 375290,
-    "controlSeatsFree": 352,
+    "controlSeatsFree": 353,
     "tried": [
       {
         "vs": 375290,
