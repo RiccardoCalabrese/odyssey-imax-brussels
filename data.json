@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T05:53:30.228Z",
+  "updated": "2026-08-26T07:23:20.025Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -28,8 +28,8 @@
   "counts": {
     "checked": 78,
     "open": 0,
-    "soldOut": 78,
-    "errors": 0
+    "soldOut": 76,
+    "errors": 2
   },
   "shows": [
     {
@@ -419,8 +419,8 @@
       "date": "03 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "session mismatch (wanted 3 septembre 2026 21:00)",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -539,8 +539,8 @@
       "date": "05 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "session mismatch (wanted 5 septembre 2026 21:00)",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
