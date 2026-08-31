@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T13:44:31.754Z",
+  "updated": "2026-08-31T23:55:29.863Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -26,52 +26,12 @@
     ]
   },
   "counts": {
-    "checked": 86,
-    "open": 5,
-    "soldOut": 79,
-    "errors": 2
+    "checked": 84,
+    "open": 15,
+    "soldOut": 69,
+    "errors": 0
   },
   "shows": [
-    {
-      "vistaSessionId": 390625,
-      "isoDate": "2026-Aug-31",
-      "day": "Mon",
-      "date": "31 Aug",
-      "time": "16:45",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390625/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 390626,
-      "isoDate": "2026-Aug-31",
-      "day": "Mon",
-      "date": "31 Aug",
-      "time": "20:30",
-      "hall": 28,
-      "status": "error",
-      "note": "no seat map",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390626/0/KBRU/0"
-    },
     {
       "vistaSessionId": 390627,
       "isoDate": "2026-Sept-01",
@@ -419,11 +379,11 @@
       "date": "06 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 1,
+      "seatsTotal": 400,
+      "maxBlock": 1,
       "fits": {
         "2": false,
         "4": false,
@@ -1099,11 +1059,11 @@
       "date": "18 Sep",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 1,
+      "seatsTotal": 400,
+      "maxBlock": 1,
       "fits": {
         "2": false,
         "4": false,
@@ -1401,14 +1361,14 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 56,
+      "seatsFree": 86,
       "seatsTotal": 400,
-      "maxBlock": 4,
+      "maxBlock": 8,
       "fits": {
         "2": true,
         "4": true,
-        "6": false,
-        "8": false
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394273/0/KBRU/0"
     },
@@ -1419,15 +1379,15 @@
       "date": "23 Sep",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 29,
+      "seatsTotal": 400,
+      "maxBlock": 7,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
+        "2": true,
+        "4": true,
+        "6": true,
         "8": false
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394274/0/KBRU/0"
@@ -1461,14 +1421,14 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 59,
+      "seatsFree": 83,
       "seatsTotal": 400,
-      "maxBlock": 6,
+      "maxBlock": 10,
       "fits": {
         "2": true,
         "4": true,
         "6": true,
-        "8": false
+        "8": true
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394277/0/KBRU/0"
     },
@@ -1481,14 +1441,14 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 9,
+      "seatsFree": 37,
       "seatsTotal": 400,
-      "maxBlock": 2,
+      "maxBlock": 8,
       "fits": {
         "2": true,
-        "4": false,
-        "6": false,
-        "8": false
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394278/0/KBRU/0"
     },
@@ -1499,13 +1459,13 @@
       "date": "24 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 7,
+      "seatsTotal": 400,
+      "maxBlock": 3,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -1519,16 +1479,16 @@
       "date": "25 Sep",
       "time": "09:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 62,
+      "seatsTotal": 400,
+      "maxBlock": 8,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394281/0/KBRU/0"
     },
@@ -1559,13 +1519,13 @@
       "date": "26 Sep",
       "time": "00:15",
       "hall": 28,
-      "status": "error",
-      "note": "no seat map",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "status": "open",
+      "note": null,
+      "seatsFree": 8,
+      "seatsTotal": 400,
+      "maxBlock": 2,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -1579,14 +1539,14 @@
       "date": "26 Sep",
       "time": "09:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 13,
+      "seatsTotal": 400,
+      "maxBlock": 5,
       "fits": {
-        "2": false,
-        "4": false,
+        "2": true,
+        "4": true,
         "6": false,
         "8": false
       },
@@ -1619,13 +1579,13 @@
       "date": "26 Sep",
       "time": "20:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 8,
+      "seatsTotal": 400,
+      "maxBlock": 2,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -1641,13 +1601,13 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 21,
+      "seatsFree": 19,
       "seatsTotal": 400,
-      "maxBlock": 3,
+      "maxBlock": 7,
       "fits": {
         "2": true,
-        "4": false,
-        "6": false,
+        "4": true,
+        "6": true,
         "8": false
       },
       "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394290/0/KBRU/0"
@@ -1661,12 +1621,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 8,
+      "seatsFree": 9,
       "seatsTotal": 400,
-      "maxBlock": 2,
+      "maxBlock": 4,
       "fits": {
         "2": true,
-        "4": false,
+        "4": true,
         "6": false,
         "8": false
       },
@@ -1679,13 +1639,13 @@
       "date": "27 Sep",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 7,
+      "seatsTotal": 400,
+      "maxBlock": 3,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -1719,14 +1679,14 @@
       "date": "28 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 17,
+      "seatsTotal": 400,
+      "maxBlock": 4,
       "fits": {
-        "2": false,
-        "4": false,
+        "2": true,
+        "4": true,
         "6": false,
         "8": false
       },
