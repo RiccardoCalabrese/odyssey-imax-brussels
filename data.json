@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T21:31:11.490Z",
+  "updated": "2026-09-05T00:06:04.125Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -1261,11 +1261,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 5,
+      "seatsFree": 4,
       "seatsTotal": 400,
-      "maxBlock": 1,
+      "maxBlock": 2,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
