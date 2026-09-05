@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T18:19:34.347Z",
+  "updated": "2026-09-05T23:56:09.273Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -26,32 +26,12 @@
     ]
   },
   "counts": {
-    "checked": 71,
-    "open": 2,
+    "checked": 70,
+    "open": 1,
     "soldOut": 68,
     "errors": 1
   },
   "shows": [
-    {
-      "vistaSessionId": 390603,
-      "isoDate": "2026-Sept-05",
-      "day": "Sat",
-      "date": "05 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/390603/0/KBRU/0"
-    },
     {
       "vistaSessionId": 390604,
       "isoDate": "2026-Sept-06",
@@ -599,11 +579,11 @@
       "date": "14 Sep",
       "time": "21:00",
       "hall": 28,
-      "status": "open",
+      "status": "soldout",
       "note": null,
-      "seatsFree": 1,
-      "seatsTotal": 400,
-      "maxBlock": 1,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
       "fits": {
         "2": false,
         "4": false,
@@ -1159,8 +1139,8 @@
       "date": "24 Sep",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "no seat map",
+      "status": "soldout",
+      "note": null,
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -1221,12 +1201,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 5,
+      "seatsFree": 7,
       "seatsTotal": 400,
-      "maxBlock": 1,
+      "maxBlock": 5,
       "fits": {
-        "2": false,
-        "4": false,
+        "2": true,
+        "4": true,
         "6": false,
         "8": false
       },
@@ -1259,8 +1239,8 @@
       "date": "26 Sep",
       "time": "00:15",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
