@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T22:35:44.481Z",
+  "updated": "2026-09-11T01:10:27.964Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -12,24 +12,43 @@
     4,
     2
   ],
-  "verified": true,
+  "verified": false,
   "verification": {
-    "ok": true,
-    "controlSessionId": 375290,
-    "controlSeatsFree": 353,
+    "ok": false,
+    "reason": "no control session reached its seat map (5 tried)",
     "tried": [
       {
         "vs": 375290,
-        "status": "open",
-        "note": null
+        "status": "error",
+        "note": "no seat map"
+      },
+      {
+        "vs": 385660,
+        "status": "error",
+        "note": "no seat map"
+      },
+      {
+        "vs": 387390,
+        "status": "error",
+        "note": "no seat map"
+      },
+      {
+        "vs": 387391,
+        "status": "error",
+        "note": "no seat map"
+      },
+      {
+        "vs": 387392,
+        "status": "error",
+        "note": "no seat map"
       }
     ]
   },
   "counts": {
     "checked": 55,
     "open": 0,
-    "soldOut": 54,
-    "errors": 1
+    "soldOut": 52,
+    "errors": 3
   },
   "shows": [
     {
@@ -59,8 +78,8 @@
       "date": "11 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -319,8 +338,8 @@
       "date": "15 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -919,8 +938,8 @@
       "date": "25 Sep",
       "time": "16:45",
       "hall": 28,
-      "status": "error",
-      "note": "no seat map",
+      "status": "soldout",
+      "note": null,
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
@@ -1099,8 +1118,8 @@
       "date": "28 Sep",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
-      "note": null,
+      "status": "error",
+      "note": "no seat map",
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
