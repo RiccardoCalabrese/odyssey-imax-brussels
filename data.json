@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T11:16:28.811Z",
+  "updated": "2026-09-11T16:29:29.143Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -26,52 +26,12 @@
     ]
   },
   "counts": {
-    "checked": 55,
+    "checked": 53,
     "open": 0,
-    "soldOut": 55,
+    "soldOut": 53,
     "errors": 0
   },
   "shows": [
-    {
-      "vistaSessionId": 391421,
-      "isoDate": "2026-Sept-11",
-      "day": "Fri",
-      "date": "11 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391421/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391422,
-      "isoDate": "2026-Sept-11",
-      "day": "Fri",
-      "date": "11 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391422/0/KBRU/0"
-    },
     {
       "vistaSessionId": 391423,
       "isoDate": "2026-Sept-11",
