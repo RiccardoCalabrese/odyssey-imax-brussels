@@ -57,13 +57,14 @@ const argOf = n => { const i = argv.indexOf(n); return i > -1 ? argv[i+1] : null
 const LIMIT = Number(argOf('--limit') || 0);
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const MONTH_NUM={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
 const eq = (a,b) => String(a??'').trim().toLowerCase() === String(b??'').trim().toLowerCase();
 const BRU = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Brussels', weekday:'short',
   year:'numeric', month:'short', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false });
 const parts = iso => {
   const o = BRU.formatToParts(new Date(iso)).reduce((a,x)=>(a[x.type]=x.value,a),{});
   return { day:o.weekday, date:`${o.day} ${o.month.slice(0,3)}`, time:`${o.hour}:${o.minute}`,
-           isoDate:`${o.year}-${o.month}-${o.day}`, dayNum:o.day };
+           isoDate:`${o.year}-${String(MONTH_NUM[o.month.slice(0,3)]).padStart(2,'0')}-${o.day}`, dayNum:o.day };
 };
 
 async function chrome() {
