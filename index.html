@@ -51,59 +51,54 @@ h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .toggle span{user-select:none}
 .seats-line{color:var(--muted);font-size:13px;margin-top:2px}
 
-/* calendar */
-.month{margin-top:22px}
-.month h3{font-size:14px;font-weight:700;letter-spacing:-.01em;margin:0 0 10px;color:var(--ink)}
-.dow,.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
-.dow div{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
-  text-align:center;padding-bottom:5px}
-.cell{min-height:62px;border:1px solid var(--line);border-radius:9px;padding:4px 3px 5px;
-  background:var(--panel);display:flex;flex-direction:column;gap:2px}
-.cell.blank{border-color:transparent;background:transparent;min-height:0}
-.cell.none{opacity:.45}
-.cell.hit{border-color:var(--ok)}
-.dnum{font-size:10.5px;color:var(--muted);text-align:center;line-height:1.3}
-.cell.hit .dnum{color:var(--ink);font-weight:700}
-.chip{display:block;text-align:center;font-size:10px;line-height:1.5;padding:1px 2px;
-  border-radius:4px;text-decoration:none;white-space:nowrap}
-.chip.match{background:var(--ok-bg);color:var(--ok);font-weight:700}
-.chip.other{color:var(--dim)}
-.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;color:var(--muted)}
-.legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:middle}
-.legend i.m{background:var(--ok)} .legend i.o{background:var(--dim)}
-.best h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
-  margin:26px 0 10px;font-weight:600}
-@media(max-width:420px){
-  .dow,.grid{gap:3px}
-  .cell{min-height:54px;padding:3px 1px 4px;border-radius:7px}
-  .chip{font-size:9px;padding:1px 1px}
-  .dnum{font-size:9.5px}
-}
-.where{font-size:12.5px;color:var(--ok);margin-top:4px}
-ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
-li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:14px 16px;display:flex;align-items:center;gap:14px}
-li.fits{border-color:var(--ok)}
-.when{flex:1;min-width:0}
-.day{font-weight:650;font-size:16px;letter-spacing:-.01em}
-.meta{color:var(--muted);font-size:13px;margin-top:2px}
-.state{text-align:right;flex-shrink:0}
-.pill{display:inline-block;font-size:12px;font-weight:650;padding:5px 10px;border-radius:999px;
-  background:var(--ok-bg);color:var(--ok);white-space:nowrap}
-.pill.hint{background:var(--warn-bg);color:var(--warn)}
-.pill.no{background:transparent;color:var(--dim);border:1px solid var(--line)}
-.book{display:inline-block;margin-top:7px;font-size:13px;font-weight:650;color:var(--bg);
-  background:var(--accent);text-decoration:none;padding:7px 13px;border-radius:8px}
-.empty{background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);
+/* timetable */
+.tt{--daycol:68px;margin-top:20px}
+.tt-head{display:grid;grid-template-columns:var(--daycol) repeat(4,1fr);gap:2px;
+  position:sticky;top:0;z-index:3;background:var(--bg);padding:10px 0 10px}
+.tt-head div{text-align:center}
+.tt-head .bl{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.6}
+.tt-head .bc{font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.5}
+.tt-head .bc.on{color:var(--ok);font-weight:650}
+.tt-month{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  padding:24px 0 6px;border-bottom:1px solid var(--line)}
+.tt-row{display:grid;grid-template-columns:var(--daycol) repeat(4,1fr);gap:2px;
+  border-bottom:1px solid var(--line)}
+.tt-day{display:flex;align-items:center;font-size:12.5px;color:var(--dim);
+  font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.tt-row.we .tt-day{color:var(--ink)}
+.cellbtn{appearance:none;border:0;background:transparent;width:100%;height:46px;
+  font:inherit;font-size:13px;font-variant-numeric:tabular-nums;color:var(--dim);
+  border-radius:8px;cursor:pointer;transition:background .12s,color .12s;letter-spacing:-.01em}
+.cellbtn:hover{background:var(--panel)}
+.cellbtn.avail{color:var(--ink);background:var(--panel)}
+.cellbtn.match{color:var(--ok);font-weight:700;background:var(--ok-bg)}
+.cellbtn.none{color:var(--line);cursor:default}
+.cellbtn.none:hover{background:transparent}
+.cellbtn.sel{outline:1.5px solid var(--ok);outline-offset:-1.5px}
+.detail{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;
+  gap:14px;padding:12px 2px 14px}
+.detail .d1{font-size:13.5px;color:var(--ink);font-weight:600}
+.detail .d2{font-size:12.5px;color:var(--muted);margin-top:2px}
+.detail .d2 b{color:var(--ok);font-weight:650}
+.book{display:inline-block;font-size:13px;font-weight:650;color:var(--bg);
+  background:var(--accent);text-decoration:none;padding:9px 16px;border-radius:9px;
+  white-space:nowrap;flex-shrink:0}
+.empty{background:var(--panel);border:1px dashed var(--line);border-radius:14px;
   padding:28px 20px;text-align:center;color:var(--muted);font-size:15px}
 .empty b{display:block;color:var(--ink);font-size:16px;margin-bottom:6px}
-footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
+footer{margin-top:30px;color:var(--muted);font-size:12.5px;line-height:1.65;
   border-top:1px solid var(--line);padding-top:16px}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px}
 .dot.bad{background:var(--warn)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:11.5px;color:var(--muted)}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.legend i.m{background:var(--ok)} .legend i.o{background:var(--dim)}
 @media(max-width:420px){
   body{padding:24px 14px 48px} h1{font-size:22px}
-  li{padding:13px 14px;gap:10px} .seg button{font-size:14px;padding:9px 2px}
+  .tt{--daycol:58px}
+  .tt-day{font-size:11.5px}
+  .cellbtn{font-size:12.5px;height:44px}
+  .seg button{font-size:14px;padding:9px 2px}
 }
 </style>
 </head>
@@ -124,8 +119,7 @@ footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
   </div>
 
   <p class="summary" id="summary">Loading…</p>
-  <div id="cal"></div>
-  <div id="best"></div>
+  <div id="cal" class="tt"></div>
 
   <div id="live"></div>
   <footer id="foot"></footer>
@@ -160,26 +154,32 @@ const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
   const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
   return Math.round(h/24)+' days ago';};
 
-const MONTHS={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Jul:6,Aug:7,Sep:8,Sept:8,Oct:9,Nov:10,Dec:11};
+const MONTHS={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Sept:8,Oct:9,Nov:10,Dec:11};
 const MNAME=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+// Kinepolis runs four fixed slots a day. That structure is what lets 92 screenings
+// collapse into a timetable instead of 92 small targets.
+const BANDS=[{k:'morning',l:'Morning'},{k:'afternoon',l:'Afternoon'},{k:'late',l:'Late'},{k:'evening',l:'Evening'}];
+const bandOf=t=>{let h=+((/^(\d{1,2}):/.exec(t)||[])[1]||0); if(h<5)h+=24;
+  return h<12?'morning':h<16?'afternoon':h<19?'late':'evening';};
 // isoDate arrives as 2026-Sept-25 (or 2026-09-25 from newer runs) - accept both.
 function dayOf(s){
   const m=/^(\d{4})-([A-Za-z]+|\d{1,2})-(\d{1,2})$/.exec(s.isoDate||'');
   if(!m) return null;
   const mo=isNaN(+m[2])?MONTHS[m[2]]:(+m[2]-1);
-  if(mo==null) return null;
-  return new Date(Date.UTC(+m[1],mo,+m[3]));
+  return mo==null?null:new Date(Date.UTC(+m[1],mo,+m[3]));
 }
-const key=d=>d.toISOString().slice(0,10);
+let picked=null;
 
 function render(){
-  const cal=document.getElementById('cal'), best=document.getElementById('best');
-  const sum=document.getElementById('summary');
+  const cal=document.getElementById('cal'), sum=document.getElementById('summary');
   const centre=document.getElementById('centreOnly').checked;
   const weekend=document.getElementById('weekendOnly').checked;
   const need=party==='any'?1:party;
 
-  // Only screenings the booking system actually offered seats for.
+  // Colour earns its place only when a filter narrows things. With nothing selected,
+  // every screening qualifies, so accenting them all would say nothing.
+  const narrowed = centre || weekend || party!=='any';
   const withSeats=data.shows.filter(s=>s.status==='open'&&s.seatsFree>0);
   const passes=s=>(!weekend||isWeekend(s))
     && (centre ? (s.goldenMaxBlock||0)>=Math.max(need,2) : (s.maxBlock||0)>=need);
@@ -192,75 +192,80 @@ function render(){
     ? `<b>${shown.length}</b> ${weekend?'weekend ':''}screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
     : `No ${weekend?'weekend ':''}screening has ${what} right now · ${data.counts.checked} checked.`;
 
-  // Bucket every screening-with-seats by calendar day.
-  const byDay=new Map();
-  let lo=null, hi=null;
+  // day -> band -> screenings
+  const days=new Map();
   for(const s of withSeats){
     const d=dayOf(s); if(!d) continue;
-    if(!lo||d<lo) lo=d; if(!hi||d>hi) hi=d;
-    const k=key(d); if(!byDay.has(k)) byDay.set(k,[]);
-    byDay.get(k).push({s,match:passes(s)});
+    const k=d.toISOString().slice(0,10);
+    if(!days.has(k)) days.set(k,{d,bands:{}});
+    (days.get(k).bands[bandOf(s.time)] ??= []).push(s);
   }
-  cal.innerHTML=''; best.innerHTML='';
-  if(!lo){
+  const keys=[...days.keys()].sort();
+  cal.innerHTML='';
+  if(!keys.length){
     cal.innerHTML=`<div class="empty"><b>Nothing available right now</b>`
       +`Checked against the real booking system ${ago(data.updated)}. This page updates automatically.</div>`;
     return;
   }
 
-  // One grid per month, Monday-first.
-  const cur=new Date(Date.UTC(lo.getUTCFullYear(),lo.getUTCMonth(),1));
-  const end=new Date(Date.UTC(hi.getUTCFullYear(),hi.getUTCMonth(),1));
-  while(cur<=end){
-    const y=cur.getUTCFullYear(), mo=cur.getUTCMonth();
-    const first=new Date(Date.UTC(y,mo,1)), days=new Date(Date.UTC(y,mo+1,0)).getUTCDate();
-    const lead=(first.getUTCDay()+6)%7;   // Monday = 0
-    const wrap=document.createElement('div'); wrap.className='month';
-    let html=`<h3>${MNAME[mo]} ${y}</h3><div class="dow">`
-      +['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d=>`<div>${d}</div>`).join('')+`</div><div class="grid">`;
-    for(let i=0;i<lead;i++) html+=`<div class="cell blank"></div>`;
-    for(let d=1;d<=days;d++){
-      const k=key(new Date(Date.UTC(y,mo,d)));
-      const list=(byDay.get(k)||[]).sort((a,b)=>a.s.time<b.s.time?-1:1);
-      const hits=list.filter(x=>x.match);
-      const cls=hits.length?'cell hit':(list.length?'cell':'cell none');
-      html+=`<div class="${cls}"><div class="dnum">${d}</div>`;
-      for(const {s,match} of list){
-        const label=match&&centre?`${s.time}`:s.time;
-        const tip=match
-          ? `${s.seatsFree} seats free · ${centre?s.goldenMaxBlock+' together in the centre':s.maxBlock+' together'}`
-          : `${s.seatsFree} seats free · doesn't match the filter`;
-        html+=`<a class="chip ${match?'match':'other'}" href="${s.bookUrl}" target="_blank" rel="noopener" title="${tip}">${label}</a>`;
-      }
-      html+=`</div>`;
-    }
-    html+=`</div>`;
-    wrap.innerHTML=html; cal.appendChild(wrap);
-    cur.setUTCMonth(cur.getUTCMonth()+1);
+  // header: how many days each slot works on - the fastest answer to "when should I go?"
+  const perBand={};
+  for(const k of keys){ for(const b of BANDS){
+    const list=days.get(k).bands[b.k]||[];
+    if(list.some(passes)) perBand[b.k]=(perBand[b.k]||0)+1; } }
+  let h=`<div class="tt-head"><div></div>`;
+  for(const b of BANDS){
+    const n=perBand[b.k]||0;
+    h+=`<div><div class="bl">${b.l}</div><div class="bc ${n&&narrowed?'on':''}">${n?n+' day'+(n===1?'':'s'):'—'}</div></div>`;
   }
-  const leg=document.createElement('div'); leg.className='legend';
-  leg.innerHTML=`<span><i class="m"></i>matches your filters</span><span><i class="o"></i>has seats, doesn’t match</span>`;
-  cal.appendChild(leg);
+  h+=`</div>`;
 
-  // The detail the calendar can't show: exactly which seats.
-  if(shown.length){
-    const rank=[...shown].sort((a,b)=>
-      (centre?b.goldenMaxBlock-a.goldenMaxBlock:b.maxBlock-a.maxBlock) || (a.isoDate<b.isoDate?-1:1));
-    let h='<h3>Best options</h3><ul>';
-    for(const s of rank.slice(0,5)){
-      const runs=(s.goldenRuns||[]).filter(r=>r.size>=Math.max(need,2)).slice(0,2);
-      const where=centre&&runs.length
-        ? `<div class="where">${runs.map(r=>`Row ${r.row}, seats ${r.seats[0]}–${r.seats[r.seats.length-1]}`).join(' · ')}</div>`:'';
-      h+=`<li><div class="when">
-            <div class="day">${s.day} ${s.date} · ${s.time}</div>
-            <div class="seats-line">${s.seatsFree} seat${s.seatsFree===1?'':'s'} available${s.goldenFree?` · ${s.goldenFree} in the centre`:''}</div>
-            ${where}
-          </div>
-          <div class="state"><span class="pill">${centre?s.goldenMaxBlock+' together in centre':s.maxBlock+' together'}</span><br>
-          <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a></div></li>`;
+  let month=null;
+  for(const k of keys){
+    const {d,bands}=days.get(k);
+    const mk=d.getUTCFullYear()+'-'+d.getUTCMonth();
+    if(mk!==month){ month=mk; h+=`<div class="tt-month">${MNAME[d.getUTCMonth()]} ${d.getUTCFullYear()}</div>`; }
+    const dow=DOW[d.getUTCDay()];
+    const we=(dow==='Sat'||dow==='Sun'||dow==='Fri');
+    h+=`<div class="tt-row${we?' we':''}" data-day="${k}"><div class="tt-day">${dow} ${d.getUTCDate()}</div>`;
+    for(const b of BANDS){
+      const list=(bands[b.k]||[]).sort((a,c)=>a.time<c.time?-1:1);
+      if(!list.length){ h+=`<button class="cellbtn none" disabled>·</button>`; continue; }
+      for(const s of list){
+        const ok=passes(s);
+        const cls=!narrowed?'avail':(ok?'match':'');
+        h+=`<button class="cellbtn ${cls}" data-vs="${s.vistaSessionId}">${s.time}</button>`;
+      }
     }
-    best.className='best'; best.innerHTML=h+'</ul>';
+    h+=`</div>`;
   }
+  h+= narrowed
+    ? `<div class="legend"><span><i class="m"></i>matches your filters</span>`
+      +`<span><i class="o"></i>has seats, doesn’t match</span></div>`
+    : `<div class="legend"><span>Every screening listed has seats. Narrow with the filters above.</span></div>`;
+  cal.innerHTML=h;
+
+  // detail on demand: the grid stays clean, the specifics are one tap away
+  cal.querySelectorAll('.cellbtn[data-vs]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const vs=+btn.dataset.vs;
+      const row=btn.closest('.tt-row');
+      cal.querySelectorAll('.detail').forEach(e=>e.remove());
+      cal.querySelectorAll('.cellbtn.sel').forEach(e=>e.classList.remove('sel'));
+      if(picked===vs){ picked=null; return; }
+      picked=vs; btn.classList.add('sel');
+      const s=data.shows.find(x=>x.vistaSessionId===vs);
+      const runs=(s.goldenRuns||[]).slice(0,1)
+        .map(r=>`Row ${r.row}, seats ${r.seats[0]}–${r.seats[r.seats.length-1]}`).join('');
+      const det=document.createElement('div'); det.className='detail';
+      det.innerHTML=`<div><div class="d1">${s.day} ${s.date} · ${s.time}</div>
+          <div class="d2">${s.seatsFree} seats free`
+        +(s.goldenFree?` · <b>${s.goldenMaxBlock} together in the centre</b>`:'')
+        +(runs?` · ${runs}`:'')+`</div></div>
+        <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a>`;
+      row.insertAdjacentElement('afterend',det);
+    });
+  });
 }
 
 function renderTrust(){
