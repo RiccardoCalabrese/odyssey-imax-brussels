@@ -22,7 +22,27 @@ const SITE = 'https://riccardocalabrese.github.io/odyssey-imax-brussels/';
 const NEED   = Number(process.env.KIN_ALERT_SEATS || 2);
 const CENTRE = (process.env.KIN_ALERT_CENTRE ?? 'true') !== 'false';
 const TOKEN  = process.env.TELEGRAM_TOKEN;
-const CHAT   = process.env.TELEGRAM_CHAT;
+let   CHAT   = process.env.TELEGRAM_CHAT;
+
+// TELEGRAM_CHAT is optional. If it isn't set we ask Telegram who has messaged the bot
+// and reply to the most recent chat, so only the token has to be configured. Telegram
+// keeps those updates for ~24h, so setting TELEGRAM_CHAT makes it permanent.
+async function resolveChat() {
+  if (CHAT) return CHAT;
+  if (!TOKEN) return null;
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${TOKEN}/getUpdates`);
+    const b = await r.json();
+    const ids = (b.result || []).map(u => u.message?.chat?.id ?? u.edited_message?.chat?.id).filter(Boolean);
+    if (!ids.length) {
+      console.log('No chat found. Send your bot a message (any message), then re-run.');
+      return null;
+    }
+    CHAT = String(ids[ids.length - 1]);
+    console.log('Replying to the most recent chat that messaged the bot.');
+    return CHAT;
+  } catch (e) { console.log('Could not reach Telegram:', e.message); return null; }
+}
 const DRY    = process.argv.includes('--dry-run');
 
 const read = f => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null;
@@ -36,14 +56,15 @@ const qualifies = s => s.status === 'open'
 const esc = t => String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
 async function send(text) {
-  if (DRY || !TOKEN || !CHAT) {
-    console.log(DRY ? '--- dry run, would send ---' : '--- no TELEGRAM_TOKEN/CHAT set, would send ---');
+  const chat = DRY ? null : await resolveChat();
+  if (DRY || !TOKEN || !chat) {
+    console.log(DRY ? '--- dry run, would send ---' : '--- no Telegram credentials, would send ---');
     console.log(text.replace(/<[^>]+>/g, ''));
     return;
   }
   const r = await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: CHAT, text, parse_mode: 'HTML', disable_web_page_preview: true }),
+    body: JSON.stringify({ chat_id: chat, text, parse_mode: 'HTML', disable_web_page_preview: true }),
   });
   const body = await r.json().catch(() => ({}));
   if (!r.ok || body.ok === false) throw new Error(`Telegram refused: ${r.status} ${JSON.stringify(body).slice(0,200)}`);
