@@ -51,7 +51,28 @@ const now  = read(join(HERE, 'data.json'));
 const prev = read(join(HERE, process.env.KIN_PREV || 'prev.json'));
 if (!now) { console.log('no data.json — nothing to do'); process.exit(0); }
 
-const qualifies = s => s.status === 'open'
+// isoDate has appeared as 2026-Sept-25 and as 2026-09-25. Normalise before comparing,
+// or a format change alone would announce every date as new.
+const MON={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};
+const normDate = v => {
+  const m=/^(\d{4})-([A-Za-z]+|\d{1,2})-(\d{1,2})$/.exec(String(v||''));
+  if(!m) return String(v||'');
+  const mo = isNaN(+m[2]) ? MON[m[2].toLowerCase()] : +m[2];
+  return mo ? `${m[1]}-${String(mo).padStart(2,'0')}-${String(+m[3]).padStart(2,'0')}` : String(v);
+};
+const pretty = iso => { const [y,m,d]=iso.split('-');
+  return `${+d} ${['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m]}`; };
+
+// Optional: restrict alerts to certain slots. 'any' (default), 'weekend' or 'golden'.
+const GOLDEN_SLOTS={Fri:['late','evening'],Sat:['afternoon','late','evening'],Sun:['afternoon','late']};
+const bandOf = t => { let h=+((/^(\d{1,2}):/.exec(t)||[])[1]||0); if(h<5)h+=24;
+  return h<12?'morning':h<16?'afternoon':h<19?'late':'evening'; };
+const WHEN = (process.env.KIN_ALERT_WHEN || 'any').toLowerCase();
+const inWindow = s => WHEN==='golden' ? (GOLDEN_SLOTS[s.day]||[]).includes(bandOf(s.time))
+  : WHEN==='weekend' ? (s.day==='Sat'||s.day==='Sun'||(s.day==='Fri'&&(+(/^(\d{1,2}):/.exec(s.time)||[])[1]||0)>=18))
+  : true;
+
+const qualifies = s => inWindow(s) && s.status === 'open'
   && (CENTRE ? (s.goldenMaxBlock || 0) : (s.maxBlock || 0)) >= NEED;
 
 const esc = t => String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -102,6 +123,26 @@ if (now.verified === false) {
 }
 
 if (!prev) { console.log('no previous data — recording a baseline, no alert'); process.exit(0); }
+
+// New dates on the programme - the thing worth knowing about the moment it happens.
+const hadDates = new Set(prev.shows.map(s => normDate(s.isoDate)));
+const nowDates = [...new Set(now.shows.map(s => normDate(s.isoDate)))].sort();
+const addedDates = nowDates.filter(d => !hadDates.has(d));
+if (addedDates.length) {
+  const withSeats = addedDates.filter(d =>
+    now.shows.some(s => normDate(s.isoDate) === d && qualifies(s)));
+  const span = addedDates.length === 1
+    ? pretty(addedDates[0])
+    : `${pretty(addedDates[0])} – ${pretty(addedDates.at(-1))}`;
+  await send(
+    `🗓 <b>New dates on the programme</b>\n`
+    + `<b>${esc(now.movie)}</b> · ${esc(now.format)} at ${esc(now.cinema)}\n\n`
+    + `${addedDates.length} new date${addedDates.length===1?'':'s'}: <b>${esc(span)}</b>\n`
+    + (withSeats.length
+        ? `${withSeats.length} of them already ${withSeats.length===1?'has':'have'} ${NEED}+ seats ${CENTRE?'together in the centre':'together'}.`
+        : `None with ${NEED}+ seats ${CENTRE?'in the centre':'together'} yet — worth watching.`)
+    + `\n\n${SITE}`);
+}
 
 const was = new Map(prev.shows.map(s => [s.vistaSessionId, s]));
 const fresh = now.shows.filter(s => qualifies(s) && !(was.get(s.vistaSessionId) && qualifies(was.get(s.vistaSessionId))));

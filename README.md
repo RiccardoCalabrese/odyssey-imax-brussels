@@ -96,8 +96,15 @@ stores both as encrypted GitHub secrets without ever printing or saving them. Ma
    gh secret set TELEGRAM_CHAT
    ```
 
-Tune what you get alerted about in the workflow's env block:
-`KIN_ALERT_SEATS` (default 2) and `KIN_ALERT_CENTRE` (default true).
+Two kinds of message:
+
+- **New dates on the programme** — fires the first run after Kinepolis extends the
+  schedule, whether or not those dates have seats yet.
+- **Newly available seats** — a screening that has just crossed your threshold.
+
+Tune it in the workflow's env block: `KIN_ALERT_SEATS` (default 2),
+`KIN_ALERT_CENTRE` (default true) and `KIN_ALERT_WHEN`
+(`any` | `weekend` | `golden`, default `any`).
 
 Test locally without sending anything: `node notify.mjs --dry-run`
 

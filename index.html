@@ -114,8 +114,9 @@ footer{margin-top:30px;color:var(--muted);font-size:12.5px;line-height:1.65;
   <div class="controls">
     <div class="label">Seats together</div>
     <div class="seg" id="seg" role="group" aria-label="Group size"></div>
+    <div class="label" style="margin-top:18px">When</div>
+    <div class="seg" id="segWhen" role="group" aria-label="When"></div>
     <label class="toggle"><input type="checkbox" id="centreOnly"><span>Centre of the theatre only</span></label>
-    <label class="toggle"><input type="checkbox" id="weekendOnly"><span>Weekend only (Fri from 18:00, Sat &amp; Sun)</span></label>
   </div>
 
   <p class="summary" id="summary">Loading…</p>
@@ -140,15 +141,24 @@ OPTS.forEach(o=>{
 });
 
 document.getElementById('centreOnly').addEventListener('change',()=>render());
-document.getElementById('weekendOnly').addEventListener('change',()=>render());
 
-// Weekend = Friday evening through the end of Sunday.
-const isWeekend=s=>{
-  const mins=(()=>{const m=/^(\d{1,2}):(\d{2})$/.exec(s.time||'');return m?(+m[1])*60+(+m[2]):0;})();
-  if(s.day==='Sat'||s.day==='Sun') return true;
-  if(s.day==='Fri') return mins>=18*60;
-  return false;
-};
+// The slots worth going to, by day. Weekend = Friday evening through Sunday.
+// Golden = the ones actually worth planning around.
+const GOLDEN_SLOTS={Fri:['late','evening'],Sat:['afternoon','late','evening'],Sun:['afternoon','late']};
+const minsOf=s=>{const m=/^(\d{1,2}):(\d{2})$/.exec(s.time||'');return m?(+m[1])*60+(+m[2]):0;};
+const isWeekend=s=>(s.day==='Sat'||s.day==='Sun')||(s.day==='Fri'&&minsOf(s)>=18*60);
+const isGolden=s=>(GOLDEN_SLOTS[s.day]||[]).includes(bandOf(s.time));
+const matchesWhen=s=>when==='weekend'?isWeekend(s):when==='golden'?isGolden(s):true;
+
+let when='any';
+const WHENS=[{k:'any',t:'Any day'},{k:'weekend',t:'Weekend'},{k:'golden',t:'Golden'}];
+const segW=document.getElementById('segWhen');
+WHENS.forEach(o=>{
+  const b=document.createElement('button');
+  b.textContent=o.t; b.dataset.k=o.k; b.setAttribute('aria-pressed',o.k===when);
+  b.onclick=()=>{when=o.k;[...segW.children].forEach(c=>c.setAttribute('aria-pressed',c.dataset.k===o.k));render();};
+  segW.appendChild(b);
+});
 const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
   if(m<1)return'just now'; if(m<60)return m+' min ago';
   const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
@@ -174,23 +184,24 @@ let picked=null;
 function render(){
   const cal=document.getElementById('cal'), sum=document.getElementById('summary');
   const centre=document.getElementById('centreOnly').checked;
-  const weekend=document.getElementById('weekendOnly').checked;
+
   const need=party==='any'?1:party;
 
   // Colour earns its place only when a filter narrows things. With nothing selected,
   // every screening qualifies, so accenting them all would say nothing.
-  const narrowed = centre || weekend || party!=='any';
+  const narrowed = centre || when!=='any' || party!=='any';
   const withSeats=data.shows.filter(s=>s.status==='open'&&s.seatsFree>0);
-  const passes=s=>(!weekend||isWeekend(s))
+  const passes=s=>matchesWhen(s)
     && (centre ? (s.goldenMaxBlock||0)>=Math.max(need,2) : (s.maxBlock||0)>=need);
   const shown=withSeats.filter(passes);
 
   const what = centre
     ? `<b>${need>1?need:2}</b> together in the centre`
     : (party==='any' ? 'seats' : `<b>${party}</b> together`);
+  const wlabel = when==='weekend'?'weekend ':when==='golden'?'golden-slot ':'';
   sum.innerHTML = shown.length
-    ? `<b>${shown.length}</b> ${weekend?'weekend ':''}screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
-    : `No ${weekend?'weekend ':''}screening has ${what} right now · ${data.counts.checked} checked.`;
+    ? `<b>${shown.length}</b> ${wlabel}screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
+    : `No ${wlabel}screening has ${what} right now · ${data.counts.checked} checked.`;
 
   // day -> band -> screenings
   const days=new Map();
@@ -304,6 +315,7 @@ function foot(){
     `${v}${errs}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
     + `rechecked automatically every hour.<br>`
     + `“Together” means consecutive seats in one row, with aisles breaking the run.<br>`
+    + `“Golden” = Fri late &amp; evening · Sat afternoon–evening · Sun afternoon &amp; late.<br>`
     + `“Centre” = the middle seating block only (never the side blocks), its middle `
     + `${Math.round((data.golden.widthFrac||0.5)*100)}% of width, rows `
     + `${Math.round((data.golden.depthFrom||0.33)*100)}%–${Math.round((data.golden.depthTo||0.67)*100)}% of the way back.`;
