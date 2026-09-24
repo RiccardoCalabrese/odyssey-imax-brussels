@@ -46,9 +46,7 @@ jobs:
           TELEGRAM_CHAT:  ${{ secrets.TELEGRAM_CHAT }}
           KIN_ALERT_SEATS: '2'
           KIN_ALERT_CENTRE: 'true'
-        run: |
-          node -e "const t=process.env.TELEGRAM_TOKEN||'';console.log('token present:',!!t,'| length:',t.length,'| looks like a bot token:',/^\\d+:[\\w-]{30,}$/.test(t.trim()))"
-          node notify.mjs --test
+        run: node notify.mjs --test
 
       - run: google-chrome --version
         if: '!inputs.test_alert'
