@@ -26,6 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The copy that is currently published - what we diff against to find what's NEW.
+      - name: Keep the previous results
+        if: inputs.probe == ''
+        run: cp data.json prev.json || true
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -40,6 +45,17 @@ jobs:
       - name: Scrape seat availability
         if: inputs.probe == ''
         run: node scrape.mjs
+
+      # Runs before publishing so a Telegram outage can never block the site update.
+      - name: Telegram alert for newly available seats
+        if: inputs.probe == ''
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT:  ${{ secrets.TELEGRAM_CHAT }}
+          KIN_ALERT_SEATS: '2'
+          KIN_ALERT_CENTRE: 'true'
+        run: node notify.mjs
 
       - name: Publish if changed
         if: inputs.probe == ''

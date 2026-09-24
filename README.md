@@ -76,6 +76,30 @@ node scrape.mjs --probe <id> # self-test one session
 Both the workflow and `refresh.sh` rebase-and-retry on push, so a manual run and a
 scheduled run can't clobber each other.
 
+## Telegram alerts
+
+`notify.mjs` messages a Telegram bot **only when a screening newly crosses the
+threshold** — it diffs the fresh scrape against the previously published `data.json`.
+An hourly job that messaged every run would just get muted. It also speaks up if a run
+fails its own verification, since a blind scraper and a full cinema look identical.
+
+Setup (the token stays yours — it lives only in GitHub Actions secrets):
+
+1. Message **@BotFather** on Telegram → `/newbot` → copy the token.
+2. Send your new bot any message (it can't message you until you do).
+3. Get your chat id:
+   `curl -s "https://api.telegram.org/bot<TOKEN>/getUpdates" | grep -o '"id":[0-9-]*' | head -1`
+4. Add both as repository secrets:
+   ```
+   gh secret set TELEGRAM_TOKEN
+   gh secret set TELEGRAM_CHAT
+   ```
+
+Tune what you get alerted about in the workflow's env block:
+`KIN_ALERT_SEATS` (default 2) and `KIN_ALERT_CENTRE` (default true).
+
+Test locally without sending anything: `node notify.mjs --dry-run`
+
 ## Being a good citizen
 
 Each run opens the booking flow once per tracked screening (18 at the moment) and stops
