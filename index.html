@@ -91,6 +91,7 @@ footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
     <div class="label">Seats together</div>
     <div class="seg" id="seg" role="group" aria-label="Group size"></div>
     <label class="toggle"><input type="checkbox" id="centreOnly"><span>Centre of the theatre only</span></label>
+    <label class="toggle"><input type="checkbox" id="weekendOnly"><span>Weekend only (Fri from 18:00, Sat &amp; Sun)</span></label>
   </div>
 
   <p class="summary" id="summary">Loading…</p>
@@ -115,6 +116,15 @@ OPTS.forEach(o=>{
 });
 
 document.getElementById('centreOnly').addEventListener('change',()=>render());
+document.getElementById('weekendOnly').addEventListener('change',()=>render());
+
+// Weekend = Friday evening through the end of Sunday.
+const isWeekend=s=>{
+  const mins=(()=>{const m=/^(\d{1,2}):(\d{2})$/.exec(s.time||'');return m?(+m[1])*60+(+m[2]):0;})();
+  if(s.day==='Sat'||s.day==='Sun') return true;
+  if(s.day==='Fri') return mins>=18*60;
+  return false;
+};
 const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
   if(m<1)return'just now'; if(m<60)return m+' min ago';
   const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
@@ -123,10 +133,13 @@ const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
 function render(){
   const list=document.getElementById('list'), sum=document.getElementById('summary');
   const centre=document.getElementById('centreOnly').checked;
+  const weekend=document.getElementById('weekendOnly').checked;
   const need=party==='any'?1:party;
 
   // Only screenings the booking system actually offered seats for.
-  const withSeats=data.shows.filter(s=>s.status==='open'&&s.seatsFree>0);
+  const withSeats=data.shows
+    .filter(s=>s.status==='open'&&s.seatsFree>0)
+    .filter(s=>!weekend||isWeekend(s));
   const shown=withSeats.filter(s=> centre
     ? (s.goldenMaxBlock||0) >= Math.max(need,2)
     : (s.maxBlock||0) >= need);
@@ -134,9 +147,10 @@ function render(){
   const what = centre
     ? `<b>${need>1?need:2}</b> together in the centre`
     : (party==='any' ? 'seats' : `<b>${party}</b> together`);
+  const when = weekend ? ' this weekend or later' : '';
   sum.innerHTML = shown.length
-    ? `<b>${shown.length}</b> screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
-    : `No screening has ${what} right now · ${data.counts.checked} checked.`;
+    ? `<b>${shown.length}</b> ${weekend?'weekend ':''}screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
+    : `No ${weekend?'weekend ':''}screening has ${what} right now · ${data.counts.checked} checked.`;
 
   list.innerHTML='';
   if(!shown.length){
