@@ -46,6 +46,7 @@ jobs:
           TELEGRAM_CHAT:  ${{ secrets.TELEGRAM_CHAT }}
           KIN_ALERT_SEATS: '2'
           KIN_ALERT_CENTRE: 'true'
+          KIN_ALERT_WHEN: 'weekend+golden'
         run: node notify.mjs --test
 
       - run: google-chrome --version
@@ -69,6 +70,7 @@ jobs:
           TELEGRAM_CHAT:  ${{ secrets.TELEGRAM_CHAT }}
           KIN_ALERT_SEATS: '2'
           KIN_ALERT_CENTRE: 'true'
+          KIN_ALERT_WHEN: 'weekend+golden'
         run: node notify.mjs
 
       - name: Publish if changed

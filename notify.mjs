@@ -63,13 +63,18 @@ const normDate = v => {
 const pretty = iso => { const [y,m,d]=iso.split('-');
   return `${+d} ${['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m]}`; };
 
-// Optional: restrict alerts to certain slots. 'any' (default), 'weekend' or 'golden'.
+// Restrict alerts to certain slots: 'any', 'weekend', 'golden', or 'weekend+golden'
+// (either one - the safer reading, so nothing worth knowing about is dropped).
 const GOLDEN_SLOTS={Fri:['late','evening'],Sat:['afternoon','late','evening'],Sun:['afternoon','late']};
 const bandOf = t => { let h=+((/^(\d{1,2}):/.exec(t)||[])[1]||0); if(h<5)h+=24;
   return h<12?'morning':h<16?'afternoon':h<19?'late':'evening'; };
 const WHEN = (process.env.KIN_ALERT_WHEN || 'any').toLowerCase();
-const inWindow = s => WHEN==='golden' ? (GOLDEN_SLOTS[s.day]||[]).includes(bandOf(s.time))
-  : WHEN==='weekend' ? (s.day==='Sat'||s.day==='Sun'||(s.day==='Fri'&&(+(/^(\d{1,2}):/.exec(s.time)||[])[1]||0)>=18))
+const isGolden  = s => (GOLDEN_SLOTS[s.day]||[]).includes(bandOf(s.time));
+const isWeekend = s => s.day==='Sat' || s.day==='Sun'
+  || (s.day==='Fri' && (+(/^(\d{1,2}):/.exec(s.time)||[])[1]||0) >= 18);
+const inWindow = s => WHEN==='golden' ? isGolden(s)
+  : WHEN==='weekend' ? isWeekend(s)
+  : (WHEN==='weekend+golden' || WHEN==='golden+weekend') ? (isWeekend(s) || isGolden(s))
   : true;
 
 const qualifies = s => inWindow(s) && s.status === 'open'

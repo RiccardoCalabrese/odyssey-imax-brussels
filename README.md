@@ -102,9 +102,16 @@ Two kinds of message:
   schedule, whether or not those dates have seats yet.
 - **Newly available seats** — a screening that has just crossed your threshold.
 
-Tune it in the workflow's env block: `KIN_ALERT_SEATS` (default 2),
-`KIN_ALERT_CENTRE` (default true) and `KIN_ALERT_WHEN`
-(`any` | `weekend` | `golden`, default `any`).
+Tune it in the workflow's env block:
+
+| | current | meaning |
+|---|---|---|
+| `KIN_ALERT_SEATS` | `2` | how many seats side by side |
+| `KIN_ALERT_CENTRE` | `true` | only count seats in the centre block |
+| `KIN_ALERT_WHEN` | `weekend+golden` | `any`, `weekend`, `golden`, or either |
+
+`weekend` = Fri from 18:00, all Sat & Sun. `golden` = Fri late & evening,
+Sat afternoon–evening, Sun afternoon & late. `weekend+golden` alerts on either.
 
 Test locally without sending anything: `node notify.mjs --dry-run`
 
