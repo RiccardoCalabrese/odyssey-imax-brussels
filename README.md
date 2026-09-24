@@ -12,6 +12,20 @@ Kinepolis' own site is slow to check and its public API is misleading: the `isSo
 flag it returns is stale, marking shows as available that the booking engine refuses.
 The only trustworthy source is the Vista booking engine's seat map.
 
+## Rebuilt September 2026
+
+Kinepolis replaced their Drupal site with a React front-end and a Next.js booking app,
+which broke the original scraper. The current version targets the new stack:
+
+| | Old (until Sep 2026) | New |
+|---|---|---|
+| Film page | `/fr/movies/detail/…` (Drupal) | `/fr/films/<slug>/<HO>/` (React) |
+| Booking entry | `/fr/direct-vista-redirect/…` + 2-step flow | `web.kinepolis.be/fr-fr/order/showtimes/<CINEMA>-<id>/seats` |
+| Seat data | HTML checkboxes, `data-seats-status` | SVG seats, `aria-label` + class + position |
+
+The showtime feed (`kinepolisweb-programmation.kinepolis.com`) is unchanged — including
+its unreliable `isSoldOut` flag, which is still ignored.
+
 ## How it works
 
 `scrape.mjs` drives real Chrome (Akamai rejects non-browser TLS on both hosts):
@@ -19,8 +33,10 @@ The only trustworthy source is the Vista booking engine's seat map.
 1. Reads the showtime list from the programmation API.
 2. Keeps only Brussels · IMAX 2D 70MM · Fri night / Sat night / Sun afternoon.
 3. For each one, opens the booking flow and reads the **actual seat map**.
-4. Counts free seats and the largest run of *consecutive seats in one row* —
-   the number that matters for a group.
+4. Counts free seats and the largest run of *consecutive seats in one row* (aisles
+   break a run, detected from real seat geometry).
+5. Works out how many of those sit in the **centre of the auditorium** — the middle
+   50% of each row, between 40% and 75% of the way back. Tunable via `KIN_GOLD_*`.
 5. Writes `data.json`, which `index.html` renders.
 
 It stops at the seat map (step 2 of 5). No seat is selected, nothing is held or booked.

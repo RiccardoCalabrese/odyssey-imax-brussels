@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T22:26:08.207Z",
+  "updated": "2026-09-24T20:01:21.791Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -12,686 +12,31 @@
     4,
     2
   ],
+  "golden": {
+    "lateral": 0.25,
+    "depthFrom": 0.4,
+    "depthTo": 0.75
+  },
   "verified": true,
   "verification": {
     "ok": true,
-    "controlSessionId": 375290,
-    "controlSeatsFree": 353,
+    "controlSessionId": 396982,
+    "controlSeatsFree": 148,
     "tried": [
       {
-        "vs": 375290,
-        "status": "open",
-        "note": null
+        "vs": 396982,
+        "status": "open"
       }
     ]
   },
   "counts": {
-    "checked": 45,
-    "open": 0,
-    "soldOut": 45,
-    "errors": 0
+    "checked": 92,
+    "open": 79,
+    "soldOut": 13,
+    "errors": 0,
+    "withGolden": 35
   },
   "shows": [
-    {
-      "vistaSessionId": 391430,
-      "isoDate": "2026-Sept-14",
-      "day": "Mon",
-      "date": "14 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391430/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391431,
-      "isoDate": "2026-Sept-14",
-      "day": "Mon",
-      "date": "14 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391431/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391432,
-      "isoDate": "2026-Sept-14",
-      "day": "Mon",
-      "date": "14 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391432/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391433,
-      "isoDate": "2026-Sept-15",
-      "day": "Tue",
-      "date": "15 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391433/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391434,
-      "isoDate": "2026-Sept-15",
-      "day": "Tue",
-      "date": "15 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391434/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391435,
-      "isoDate": "2026-Sept-15",
-      "day": "Tue",
-      "date": "15 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391435/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391438,
-      "isoDate": "2026-Sept-16",
-      "day": "Wed",
-      "date": "16 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391438/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391437,
-      "isoDate": "2026-Sept-16",
-      "day": "Wed",
-      "date": "16 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391437/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391436,
-      "isoDate": "2026-Sept-16",
-      "day": "Wed",
-      "date": "16 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391436/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391439,
-      "isoDate": "2026-Sept-17",
-      "day": "Thu",
-      "date": "17 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391439/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391440,
-      "isoDate": "2026-Sept-17",
-      "day": "Thu",
-      "date": "17 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391440/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391441,
-      "isoDate": "2026-Sept-17",
-      "day": "Thu",
-      "date": "17 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391441/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391442,
-      "isoDate": "2026-Sept-18",
-      "day": "Fri",
-      "date": "18 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391442/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391443,
-      "isoDate": "2026-Sept-18",
-      "day": "Fri",
-      "date": "18 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391443/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391444,
-      "isoDate": "2026-Sept-19",
-      "day": "Sat",
-      "date": "19 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391444/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391445,
-      "isoDate": "2026-Sept-19",
-      "day": "Sat",
-      "date": "19 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391445/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391446,
-      "isoDate": "2026-Sept-19",
-      "day": "Sat",
-      "date": "19 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391446/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391662,
-      "isoDate": "2026-Sept-20",
-      "day": "Sun",
-      "date": "20 Sep",
-      "time": "09:45",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391662/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391447,
-      "isoDate": "2026-Sept-20",
-      "day": "Sun",
-      "date": "20 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391447/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391448,
-      "isoDate": "2026-Sept-20",
-      "day": "Sun",
-      "date": "20 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391448/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391449,
-      "isoDate": "2026-Sept-20",
-      "day": "Sun",
-      "date": "20 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391449/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391450,
-      "isoDate": "2026-Sept-21",
-      "day": "Mon",
-      "date": "21 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391450/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391451,
-      "isoDate": "2026-Sept-21",
-      "day": "Mon",
-      "date": "21 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391451/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391452,
-      "isoDate": "2026-Sept-21",
-      "day": "Mon",
-      "date": "21 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391452/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391453,
-      "isoDate": "2026-Sept-22",
-      "day": "Tue",
-      "date": "22 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391453/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391454,
-      "isoDate": "2026-Sept-22",
-      "day": "Tue",
-      "date": "22 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391454/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 391455,
-      "isoDate": "2026-Sept-22",
-      "day": "Tue",
-      "date": "22 Sep",
-      "time": "21:00",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/391455/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394273,
-      "isoDate": "2026-Sept-23",
-      "day": "Wed",
-      "date": "23 Sep",
-      "time": "09:45",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394273/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394274,
-      "isoDate": "2026-Sept-23",
-      "day": "Wed",
-      "date": "23 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394274/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394276,
-      "isoDate": "2026-Sept-23",
-      "day": "Wed",
-      "date": "23 Sep",
-      "time": "21:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394276/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394277,
-      "isoDate": "2026-Sept-24",
-      "day": "Thu",
-      "date": "24 Sep",
-      "time": "09:45",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394277/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394278,
-      "isoDate": "2026-Sept-24",
-      "day": "Thu",
-      "date": "24 Sep",
-      "time": "13:30",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394278/0/KBRU/0"
-    },
-    {
-      "vistaSessionId": 394279,
-      "isoDate": "2026-Sept-24",
-      "day": "Thu",
-      "date": "24 Sep",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394279/0/KBRU/0"
-    },
     {
       "vistaSessionId": 394281,
       "isoDate": "2026-Sept-25",
@@ -704,13 +49,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394281/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394281/seats"
     },
     {
       "vistaSessionId": 394283,
@@ -724,13 +74,43 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394283/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394283/seats"
+    },
+    {
+      "vistaSessionId": 396899,
+      "isoDate": "2026-Sept-25",
+      "day": "Fri",
+      "date": "25 Sep",
+      "time": "20:30",
+      "hall": 28,
+      "status": "soldout",
+      "note": null,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396899/seats"
     },
     {
       "vistaSessionId": 394285,
@@ -744,13 +124,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394285/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394285/seats"
     },
     {
       "vistaSessionId": 394286,
@@ -764,13 +149,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394286/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394286/seats"
     },
     {
       "vistaSessionId": 394287,
@@ -784,13 +174,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394287/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394287/seats"
     },
     {
       "vistaSessionId": 394289,
@@ -804,13 +199,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394289/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394289/seats"
     },
     {
       "vistaSessionId": 394290,
@@ -824,13 +224,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394290/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394290/seats"
     },
     {
       "vistaSessionId": 394291,
@@ -844,13 +249,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394291/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394291/seats"
     },
     {
       "vistaSessionId": 394292,
@@ -864,13 +274,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394292/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394292/seats"
     },
     {
       "vistaSessionId": 394293,
@@ -884,13 +299,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394293/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394293/seats"
     },
     {
       "vistaSessionId": 394296,
@@ -904,13 +324,18 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394296/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394296/seats"
     },
     {
       "vistaSessionId": 394297,
@@ -924,13 +349,3712 @@
       "seatsFree": 0,
       "seatsTotal": 0,
       "maxBlock": 0,
+      "goldenFree": 0,
+      "goldenTotal": 0,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
       "fits": {
         "2": false,
         "4": false,
         "6": false,
         "8": false
       },
-      "bookUrl": "https://kinepolis.be/fr/direct-vista-redirect/394297/0/KBRU/0"
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-394297/seats"
+    },
+    {
+      "vistaSessionId": 396668,
+      "isoDate": "2026-Oct-08",
+      "day": "Thu",
+      "date": "08 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 240,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396668/seats"
+    },
+    {
+      "vistaSessionId": 396669,
+      "isoDate": "2026-Oct-08",
+      "day": "Thu",
+      "date": "08 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 159,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396669/seats"
+    },
+    {
+      "vistaSessionId": 396671,
+      "isoDate": "2026-Oct-09",
+      "day": "Fri",
+      "date": "09 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 214,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396671/seats"
+    },
+    {
+      "vistaSessionId": 396673,
+      "isoDate": "2026-Oct-09",
+      "day": "Fri",
+      "date": "09 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 5,
+      "seatsTotal": 400,
+      "maxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396673/seats"
+    },
+    {
+      "vistaSessionId": 396675,
+      "isoDate": "2026-Oct-10",
+      "day": "Sat",
+      "date": "10 Oct",
+      "time": "19:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 9,
+      "seatsTotal": 400,
+      "maxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396675/seats"
+    },
+    {
+      "vistaSessionId": 396676,
+      "isoDate": "2026-Oct-11",
+      "day": "Sun",
+      "date": "11 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 112,
+      "seatsTotal": 400,
+      "maxBlock": 8,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396676/seats"
+    },
+    {
+      "vistaSessionId": 396677,
+      "isoDate": "2026-Oct-11",
+      "day": "Sun",
+      "date": "11 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 8,
+      "seatsTotal": 400,
+      "maxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": false,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396677/seats"
+    },
+    {
+      "vistaSessionId": 396679,
+      "isoDate": "2026-Oct-11",
+      "day": "Sun",
+      "date": "11 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 35,
+      "seatsTotal": 400,
+      "maxBlock": 4,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396679/seats"
+    },
+    {
+      "vistaSessionId": 396683,
+      "isoDate": "2026-Oct-13",
+      "day": "Tue",
+      "date": "13 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 265,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 7,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396683/seats"
+    },
+    {
+      "vistaSessionId": 396684,
+      "isoDate": "2026-Oct-13",
+      "day": "Tue",
+      "date": "13 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 209,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396684/seats"
+    },
+    {
+      "vistaSessionId": 396686,
+      "isoDate": "2026-Oct-14",
+      "day": "Wed",
+      "date": "14 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 281,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 12,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396686/seats"
+    },
+    {
+      "vistaSessionId": 396687,
+      "isoDate": "2026-Oct-14",
+      "day": "Wed",
+      "date": "14 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 204,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396687/seats"
+    },
+    {
+      "vistaSessionId": 396689,
+      "isoDate": "2026-Oct-15",
+      "day": "Thu",
+      "date": "15 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 287,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 11,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 3,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396689/seats"
+    },
+    {
+      "vistaSessionId": 396691,
+      "isoDate": "2026-Oct-15",
+      "day": "Thu",
+      "date": "15 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 88,
+      "seatsTotal": 400,
+      "maxBlock": 7,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396691/seats"
+    },
+    {
+      "vistaSessionId": 396693,
+      "isoDate": "2026-Oct-16",
+      "day": "Fri",
+      "date": "16 Oct",
+      "time": "17:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 156,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396693/seats"
+    },
+    {
+      "vistaSessionId": 396696,
+      "isoDate": "2026-Oct-17",
+      "day": "Sat",
+      "date": "17 Oct",
+      "time": "17:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 19,
+      "seatsTotal": 400,
+      "maxBlock": 3,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": false,
+        "6": false,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396696/seats"
+    },
+    {
+      "vistaSessionId": 396698,
+      "isoDate": "2026-Oct-18",
+      "day": "Sun",
+      "date": "18 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 169,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396698/seats"
+    },
+    {
+      "vistaSessionId": 396699,
+      "isoDate": "2026-Oct-18",
+      "day": "Sun",
+      "date": "18 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 46,
+      "seatsTotal": 400,
+      "maxBlock": 6,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396699/seats"
+    },
+    {
+      "vistaSessionId": 396701,
+      "isoDate": "2026-Oct-18",
+      "day": "Sun",
+      "date": "18 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 112,
+      "seatsTotal": 400,
+      "maxBlock": 8,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396701/seats"
+    },
+    {
+      "vistaSessionId": 396702,
+      "isoDate": "2026-Oct-19",
+      "day": "Mon",
+      "date": "19 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 321,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 24,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396702/seats"
+    },
+    {
+      "vistaSessionId": 396703,
+      "isoDate": "2026-Oct-19",
+      "day": "Mon",
+      "date": "19 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 283,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 10,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396703/seats"
+    },
+    {
+      "vistaSessionId": 396705,
+      "isoDate": "2026-Oct-19",
+      "day": "Mon",
+      "date": "19 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 128,
+      "seatsTotal": 400,
+      "maxBlock": 9,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396705/seats"
+    },
+    {
+      "vistaSessionId": 396706,
+      "isoDate": "2026-Oct-20",
+      "day": "Tue",
+      "date": "20 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 337,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 35,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "9",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 5
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396706/seats"
+    },
+    {
+      "vistaSessionId": 396707,
+      "isoDate": "2026-Oct-20",
+      "day": "Tue",
+      "date": "20 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 307,
+      "seatsTotal": 400,
+      "maxBlock": 16,
+      "goldenFree": 22,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396707/seats"
+    },
+    {
+      "vistaSessionId": 396709,
+      "isoDate": "2026-Oct-20",
+      "day": "Tue",
+      "date": "20 Oct",
+      "time": "20:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 167,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396709/seats"
+    },
+    {
+      "vistaSessionId": 396611,
+      "isoDate": "2026-Oct-21",
+      "day": "Wed",
+      "date": "21 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 326,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 30,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 7,
+      "goldenRuns": [
+        {
+          "row": "9",
+          "seats": [
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 7
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396611/seats"
+    },
+    {
+      "vistaSessionId": 396612,
+      "isoDate": "2026-Oct-21",
+      "day": "Wed",
+      "date": "21 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 314,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 20,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396612/seats"
+    },
+    {
+      "vistaSessionId": 396613,
+      "isoDate": "2026-Oct-21",
+      "day": "Wed",
+      "date": "21 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 244,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 2,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396613/seats"
+    },
+    {
+      "vistaSessionId": 396614,
+      "isoDate": "2026-Oct-21",
+      "day": "Wed",
+      "date": "21 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 185,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396614/seats"
+    },
+    {
+      "vistaSessionId": 396615,
+      "isoDate": "2026-Oct-22",
+      "day": "Thu",
+      "date": "22 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 336,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 34,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396615/seats"
+    },
+    {
+      "vistaSessionId": 396616,
+      "isoDate": "2026-Oct-22",
+      "day": "Thu",
+      "date": "22 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 310,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 19,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396616/seats"
+    },
+    {
+      "vistaSessionId": 396617,
+      "isoDate": "2026-Oct-22",
+      "day": "Thu",
+      "date": "22 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 285,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 12,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "9",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396617/seats"
+    },
+    {
+      "vistaSessionId": 396618,
+      "isoDate": "2026-Oct-22",
+      "day": "Thu",
+      "date": "22 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 186,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396618/seats"
+    },
+    {
+      "vistaSessionId": 396619,
+      "isoDate": "2026-Oct-23",
+      "day": "Fri",
+      "date": "23 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 324,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 27,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396619/seats"
+    },
+    {
+      "vistaSessionId": 396620,
+      "isoDate": "2026-Oct-23",
+      "day": "Fri",
+      "date": "23 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 295,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 14,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396620/seats"
+    },
+    {
+      "vistaSessionId": 396621,
+      "isoDate": "2026-Oct-23",
+      "day": "Fri",
+      "date": "23 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 235,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 3,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396621/seats"
+    },
+    {
+      "vistaSessionId": 396622,
+      "isoDate": "2026-Oct-23",
+      "day": "Fri",
+      "date": "23 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 150,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396622/seats"
+    },
+    {
+      "vistaSessionId": 396623,
+      "isoDate": "2026-Oct-24",
+      "day": "Sat",
+      "date": "24 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 232,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396623/seats"
+    },
+    {
+      "vistaSessionId": 396624,
+      "isoDate": "2026-Oct-24",
+      "day": "Sat",
+      "date": "24 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 139,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396624/seats"
+    },
+    {
+      "vistaSessionId": 396625,
+      "isoDate": "2026-Oct-24",
+      "day": "Sat",
+      "date": "24 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 92,
+      "seatsTotal": 400,
+      "maxBlock": 7,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": false
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396625/seats"
+    },
+    {
+      "vistaSessionId": 396626,
+      "isoDate": "2026-Oct-24",
+      "day": "Sat",
+      "date": "24 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 139,
+      "seatsTotal": 400,
+      "maxBlock": 8,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396626/seats"
+    },
+    {
+      "vistaSessionId": 396627,
+      "isoDate": "2026-Oct-25",
+      "day": "Sun",
+      "date": "25 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 200,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396627/seats"
+    },
+    {
+      "vistaSessionId": 396628,
+      "isoDate": "2026-Oct-25",
+      "day": "Sun",
+      "date": "25 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 110,
+      "seatsTotal": 400,
+      "maxBlock": 8,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396628/seats"
+    },
+    {
+      "vistaSessionId": 396629,
+      "isoDate": "2026-Oct-25",
+      "day": "Sun",
+      "date": "25 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 111,
+      "seatsTotal": 400,
+      "maxBlock": 8,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396629/seats"
+    },
+    {
+      "vistaSessionId": 396630,
+      "isoDate": "2026-Oct-25",
+      "day": "Sun",
+      "date": "25 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 191,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396630/seats"
+    },
+    {
+      "vistaSessionId": 396631,
+      "isoDate": "2026-Oct-26",
+      "day": "Mon",
+      "date": "26 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 332,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 34,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396631/seats"
+    },
+    {
+      "vistaSessionId": 396632,
+      "isoDate": "2026-Oct-26",
+      "day": "Mon",
+      "date": "26 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 317,
+      "seatsTotal": 400,
+      "maxBlock": 16,
+      "goldenFree": 28,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        },
+        {
+          "row": "9",
+          "seats": [
+            "20",
+            "21"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396632/seats"
+    },
+    {
+      "vistaSessionId": 396633,
+      "isoDate": "2026-Oct-26",
+      "day": "Mon",
+      "date": "26 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 279,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 7,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396633/seats"
+    },
+    {
+      "vistaSessionId": 396634,
+      "isoDate": "2026-Oct-26",
+      "day": "Mon",
+      "date": "26 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 236,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 3,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396634/seats"
+    },
+    {
+      "vistaSessionId": 396635,
+      "isoDate": "2026-Oct-27",
+      "day": "Tue",
+      "date": "27 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 335,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 35,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 10
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ],
+          "size": 5
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396635/seats"
+    },
+    {
+      "vistaSessionId": 396636,
+      "isoDate": "2026-Oct-27",
+      "day": "Tue",
+      "date": "27 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 314,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 23,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396636/seats"
+    },
+    {
+      "vistaSessionId": 396637,
+      "isoDate": "2026-Oct-28",
+      "day": "Wed",
+      "date": "28 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 336,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 36,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ],
+          "size": 5
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396637/seats"
+    },
+    {
+      "vistaSessionId": 396638,
+      "isoDate": "2026-Oct-28",
+      "day": "Wed",
+      "date": "28 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 315,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 23,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "9",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396638/seats"
+    },
+    {
+      "vistaSessionId": 396639,
+      "isoDate": "2026-Oct-28",
+      "day": "Wed",
+      "date": "28 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 282,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 11,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396639/seats"
+    },
+    {
+      "vistaSessionId": 396640,
+      "isoDate": "2026-Oct-28",
+      "day": "Wed",
+      "date": "28 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 208,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396640/seats"
+    },
+    {
+      "vistaSessionId": 396641,
+      "isoDate": "2026-Oct-29",
+      "day": "Thu",
+      "date": "29 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 341,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 39,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 10
+        },
+        {
+          "row": "8",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 5
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396641/seats"
+    },
+    {
+      "vistaSessionId": 396642,
+      "isoDate": "2026-Oct-29",
+      "day": "Thu",
+      "date": "29 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 325,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 28,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396642/seats"
+    },
+    {
+      "vistaSessionId": 396643,
+      "isoDate": "2026-Oct-29",
+      "day": "Thu",
+      "date": "29 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 299,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 19,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396643/seats"
+    },
+    {
+      "vistaSessionId": 396644,
+      "isoDate": "2026-Oct-29",
+      "day": "Thu",
+      "date": "29 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 224,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396644/seats"
+    },
+    {
+      "vistaSessionId": 396645,
+      "isoDate": "2026-Oct-30",
+      "day": "Fri",
+      "date": "30 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 331,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 34,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 10
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396645/seats"
+    },
+    {
+      "vistaSessionId": 396646,
+      "isoDate": "2026-Oct-30",
+      "day": "Fri",
+      "date": "30 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 314,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 24,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 5,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 5
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396646/seats"
+    },
+    {
+      "vistaSessionId": 396647,
+      "isoDate": "2026-Oct-30",
+      "day": "Fri",
+      "date": "30 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 264,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 8,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396647/seats"
+    },
+    {
+      "vistaSessionId": 396648,
+      "isoDate": "2026-Oct-30",
+      "day": "Fri",
+      "date": "30 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 147,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396648/seats"
+    },
+    {
+      "vistaSessionId": 396649,
+      "isoDate": "2026-Oct-31",
+      "day": "Sat",
+      "date": "31 Oct",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 240,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396649/seats"
+    },
+    {
+      "vistaSessionId": 396650,
+      "isoDate": "2026-Oct-31",
+      "day": "Sat",
+      "date": "31 Oct",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 181,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396650/seats"
+    },
+    {
+      "vistaSessionId": 396651,
+      "isoDate": "2026-Oct-31",
+      "day": "Sat",
+      "date": "31 Oct",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 162,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396651/seats"
+    },
+    {
+      "vistaSessionId": 396652,
+      "isoDate": "2026-Oct-31",
+      "day": "Sat",
+      "date": "31 Oct",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 181,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396652/seats"
+    },
+    {
+      "vistaSessionId": 396653,
+      "isoDate": "2026-Nov-01",
+      "day": "Sun",
+      "date": "01 Nov",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 292,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396653/seats"
+    },
+    {
+      "vistaSessionId": 396654,
+      "isoDate": "2026-Nov-01",
+      "day": "Sun",
+      "date": "01 Nov",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 227,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396654/seats"
+    },
+    {
+      "vistaSessionId": 396655,
+      "isoDate": "2026-Nov-01",
+      "day": "Sun",
+      "date": "01 Nov",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 199,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396655/seats"
+    },
+    {
+      "vistaSessionId": 396656,
+      "isoDate": "2026-Nov-01",
+      "day": "Sun",
+      "date": "01 Nov",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 275,
+      "seatsTotal": 400,
+      "maxBlock": 10,
+      "goldenFree": 3,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396656/seats"
+    },
+    {
+      "vistaSessionId": 396657,
+      "isoDate": "2026-Nov-02",
+      "day": "Mon",
+      "date": "02 Nov",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 392,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 33,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396657/seats"
+    },
+    {
+      "vistaSessionId": 396658,
+      "isoDate": "2026-Nov-02",
+      "day": "Mon",
+      "date": "02 Nov",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 358,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 17,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 4,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396658/seats"
+    },
+    {
+      "vistaSessionId": 396659,
+      "isoDate": "2026-Nov-02",
+      "day": "Mon",
+      "date": "02 Nov",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 321,
+      "seatsTotal": 400,
+      "maxBlock": 14,
+      "goldenFree": 6,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396659/seats"
+    },
+    {
+      "vistaSessionId": 396660,
+      "isoDate": "2026-Nov-02",
+      "day": "Mon",
+      "date": "02 Nov",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 293,
+      "seatsTotal": 400,
+      "maxBlock": 14,
+      "goldenFree": 1,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396660/seats"
+    },
+    {
+      "vistaSessionId": 396661,
+      "isoDate": "2026-Nov-03",
+      "day": "Tue",
+      "date": "03 Nov",
+      "time": "09:45",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 390,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 34,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 10,
+      "goldenRuns": [
+        {
+          "row": "7",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 10
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 10
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396661/seats"
+    },
+    {
+      "vistaSessionId": 396662,
+      "isoDate": "2026-Nov-03",
+      "day": "Tue",
+      "date": "03 Nov",
+      "time": "13:30",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 369,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 21,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 5,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 5
+        },
+        {
+          "row": "9",
+          "seats": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "9",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396662/seats"
+    },
+    {
+      "vistaSessionId": 396663,
+      "isoDate": "2026-Nov-03",
+      "day": "Tue",
+      "date": "03 Nov",
+      "time": "17:15",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 336,
+      "seatsTotal": 400,
+      "maxBlock": 15,
+      "goldenFree": 9,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 3,
+      "goldenRuns": [
+        {
+          "row": "9",
+          "seats": [
+            "22",
+            "23",
+            "24"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "14",
+            "15"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "23",
+            "24"
+          ],
+          "size": 2
+        }
+      ],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396663/seats"
+    },
+    {
+      "vistaSessionId": 396664,
+      "isoDate": "2026-Nov-03",
+      "day": "Tue",
+      "date": "03 Nov",
+      "time": "21:00",
+      "hall": 28,
+      "status": "open",
+      "note": null,
+      "seatsFree": 290,
+      "seatsTotal": 400,
+      "maxBlock": 14,
+      "goldenFree": 0,
+      "goldenTotal": 40,
+      "goldenMaxBlock": 0,
+      "goldenRuns": [],
+      "cosyFree": 0,
+      "fits": {
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
+      },
+      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396664/seats"
     }
   ]
 }

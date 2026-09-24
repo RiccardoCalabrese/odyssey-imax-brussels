@@ -46,6 +46,11 @@ h1{font-size:26px;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
 h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
   margin:26px 0 10px;font-weight:600}
 
+.toggle{display:flex;align-items:center;gap:9px;margin-top:12px;font-size:14px;color:var(--muted);cursor:pointer}
+.toggle input{width:17px;height:17px;accent-color:var(--ok);cursor:pointer}
+.toggle span{user-select:none}
+.seats-line{color:var(--muted);font-size:13px;margin-top:2px}
+.where{font-size:12.5px;color:var(--ok);margin-top:4px}
 ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
   padding:14px 16px;display:flex;align-items:center;gap:14px}
@@ -85,6 +90,7 @@ footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65;
   <div class="controls">
     <div class="label">Seats together</div>
     <div class="seg" id="seg" role="group" aria-label="Group size"></div>
+    <label class="toggle"><input type="checkbox" id="centreOnly"><span>Centre of the theatre only</span></label>
   </div>
 
   <p class="summary" id="summary">Loading…</p>
@@ -108,6 +114,7 @@ OPTS.forEach(o=>{
   seg.appendChild(b);
 });
 
+document.getElementById('centreOnly').addEventListener('change',()=>render());
 const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
   if(m<1)return'just now'; if(m<60)return m+' min ago';
   const h=Math.round(m/60); if(h<24)return h+(h==1?' hour ago':' hours ago');
@@ -115,17 +122,21 @@ const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/60000);
 
 function render(){
   const list=document.getElementById('list'), sum=document.getElementById('summary');
+  const centre=document.getElementById('centreOnly').checked;
+  const need=party==='any'?1:party;
+
   // Only screenings the booking system actually offered seats for.
   const withSeats=data.shows.filter(s=>s.status==='open'&&s.seatsFree>0);
-  const shown=party==='any'?withSeats:withSeats.filter(s=>s.maxBlock>=party);
+  const shown=withSeats.filter(s=> centre
+    ? (s.goldenMaxBlock||0) >= Math.max(need,2)
+    : (s.maxBlock||0) >= need);
 
+  const what = centre
+    ? `<b>${need>1?need:2}</b> together in the centre`
+    : (party==='any' ? 'seats' : `<b>${party}</b> together`);
   sum.innerHTML = shown.length
-    ? `<b>${shown.length}</b> screening${shown.length===1?'':'s'} with seats`
-      + (party==='any'?'':` for <b>${party}</b> together`)
-      + ` · of ${data.counts.checked} checked.`
-    : (party==='any'
-        ? `<b>No seats anywhere.</b> All ${data.counts.soldOut} screenings checked are sold out.`
-        : `No screening can seat <b>${party}</b> together. ${withSeats.length} have some seats — try “Any”.`);
+    ? `<b>${shown.length}</b> screening${shown.length===1?'':'s'} with ${what} · of ${data.counts.checked} checked.`
+    : `No screening has ${what} right now · ${data.counts.checked} checked.`;
 
   list.innerHTML='';
   if(!shown.length){
@@ -135,13 +146,21 @@ function render(){
   }
   for(const s of shown){
     const li=document.createElement('li');
-    li.className=s.maxBlock>=(party==='any'?2:party)?'fits':'';
+    li.className='fits';
+    const runs=(s.goldenRuns||[]).filter(r=>r.size>=Math.max(need,2)).slice(0,2);
+    const where = centre && runs.length
+      ? `<div class="where">${runs.map(r=>`Row ${r.row}, seats ${r.seats[0]}–${r.seats[r.seats.length-1]}`).join(' · ')}</div>`
+      : '';
+    const badge = centre
+      ? `${s.goldenMaxBlock} together in centre`
+      : `${s.maxBlock} together`;
     li.innerHTML=`<div class="when">
         <div class="day">${s.day} ${s.date} · ${s.time}</div>
-        <div class="meta">${s.seatsFree} seat${s.seatsFree===1?'':'s'} available</div>
+        <div class="seats-line">${s.seatsFree} seat${s.seatsFree===1?'':'s'} available${s.goldenFree?` · ${s.goldenFree} in the centre`:''}</div>
+        ${where}
       </div>
       <div class="state">
-        <span class="pill">${s.maxBlock} together</span><br>
+        <span class="pill">${badge}</span><br>
         <a class="book" href="${s.bookUrl}" target="_blank" rel="noopener">Book</a>
       </div>`;
     list.appendChild(li);
@@ -183,7 +202,8 @@ function foot(){
   document.getElementById('foot').innerHTML=
     `${v}${errs}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
     + `rechecked automatically every hour.<br>`
-    + `“Together” means consecutive seats in one row — what matters for a group.`;
+    + `“Together” means consecutive seats in one row, with aisles breaking the run.<br>`
+    + `“Centre” = the middle ${Math.round(data.golden.lateral*200)}% of each row, between ${Math.round(data.golden.depthFrom*100)}% and ${Math.round(data.golden.depthTo*100)}% of the way back.`;
 }
 
 // Live check: the showtime list is readable straight from the browser, so we can spot
@@ -206,7 +226,7 @@ async function liveCheck(){
     const known=new Map(data.shows.map(s=>[s.vistaSessionId,s]));
     const added=[],maybe=[];
     for(const s of live){
-      const mk=()=>({...fmt(s.showtime),bookUrl:`https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/${data.complex}/0`});
+      const mk=()=>({...fmt(s.showtime),bookUrl:`https://web.kinepolis.be/fr-fr/order/showtimes/${data.complex}-${s.vistaSessionId}/seats`});
       const k=known.get(s.vistaSessionId);
       // Only newly-added screenings. We deliberately ignore Kinepolis' isSoldOut flag:
       // it was wrong for 41% of screenings, always claiming seats that don't exist.

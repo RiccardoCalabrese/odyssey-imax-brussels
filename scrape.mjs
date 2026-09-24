@@ -1,17 +1,21 @@
 #!/usr/bin/env node
-// Odyssey · IMAX 2D 70MM · Kinepolis Brussels — real seat-availability scraper.
+// Kinepolis seat watcher — rebuilt for the September 2026 site rebuild.
 //
-// Trust model — the whole point of this file:
-//  - The programmation API's `isSoldOut` flag is NOT trustworthy. It marks shows
-//    available that the booking engine then refuses. We never use it to decide
-//    anything; every screening is verified against the real seat map.
-//  - "Everything is sold out" and "the scraper is silently broken" produce
-//    identical output. So each run also checks a CONTROL session from a different
-//    film that is known-bookable. If we cannot prove the open-path still works,
-//    the run is published as UNVERIFIED rather than as a confident "all sold out".
-//  - Akamai fronts both hosts and rejects non-browser TLS, so we drive real Chrome.
+// What changed on their side:
+//   - The old Drupal site is gone. /movies/detail/... and /direct-vista-redirect/...
+//     no longer exist, which is what broke the previous version.
+//   - Booking moved to a Next.js app at web.kinepolis.be with a DIRECT seat URL:
+//       https://web.kinepolis.be/fr-fr/order/showtimes/<CINEMA>-<vistaSessionId>/seats
+//     No ticket-quantity step, so no multi-page walk and no shared booking state.
+//   - The seat map is an SVG. Each seat carries its availability in its class, its
+//     identity in aria-label ("Siège normal Rangée 01 Siège 19") and a real on-screen
+//     position — which is what makes "centre of the theatre" computable.
 //
-// We stop at the seat map (step 2 of 5). No seat is selected, held, or booked.
+// What did NOT change: the programmation feed still lists showtimes, and its
+// `isSoldOut` flag is still untrustworthy, so it is never used to decide anything.
+//
+// Both hosts reject non-browser TLS (Akamai / Cloudflare), so we drive real Chrome.
+// We only ever READ the seat page. Nothing is selected, held or booked.
 
 import { spawn } from 'node:child_process';
 import { mkdtempSync, writeFileSync } from 'node:fs';
@@ -26,47 +30,43 @@ const CHROME = process.env.CHROME_PATH
       : 'google-chrome');
 const EXTRA_FLAGS = process.platform === 'darwin' ? [] : ['--no-sandbox','--disable-dev-shm-usage'];
 
-// Target is configurable so the same scraper can check any film / format / language.
-// Defaults to Odyssey in IMAX 70mm; override with env vars (see README).
-const MOVIE_ID = process.env.KIN_MOVIE  || '35300';
-const COMPLEX  = process.env.KIN_CINEMA || 'KBRU';
-const FORMAT   = process.env.KIN_FORMAT || 'IMAX 2D 70MM';
-const LANGUAGE = process.env.KIN_LANG   || 'Version Anglaise';
-const OUTFILE  = process.env.KIN_OUT    || 'data.json';
-const HOME = 'https://kinepolis.be/fr';
-const PAGE = HOME;
-const API  = `https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/${MOVIE_ID}/WWW/Cinema/KinepolisBelgium`;
-const GROUPS = [8, 6, 4, 2];
-const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-const MAX_CONTROLS = 5;   // how many control sessions to try before giving up
+const MOVIE_ID = process.env.KIN_MOVIE   || '35300';            // The Odyssey
+const COMPLEX  = process.env.KIN_CINEMA  || 'KBRU';             // Kinepolis Brussel
+const FORMAT   = process.env.KIN_FORMAT  || 'IMAX 2D 70MM';
+const LANGUAGE = process.env.KIN_LANG    || 'Version Anglaise';
+const OUTFILE  = process.env.KIN_OUT     || 'data.json';
+const CONTROL_MOVIE = process.env.KIN_CONTROL || '35287';       // a film that normally has seats
+const API = id => `https://kinepolisweb-programmation.kinepolis.com/api/Sessions/BE/FR/${id}/WWW/Cinema/KinepolisBelgium`;
+const seatsUrl = vs => `https://web.kinepolis.be/fr-fr/order/showtimes/${COMPLEX}-${vs}/seats`;
 
+// "Golden square": the central block people actually want. Defined on real geometry,
+// not row numbers, so it works in any auditorium.
+//   lateral 0 = dead centre of the row, 1 = far side wall
+//   depth   0 = front row (nearest screen), 1 = back row
+const GOLDEN = {
+  lateral: Number(process.env.KIN_GOLD_LATERAL ?? 0.25),  // middle 50% of the width
+  depthFrom: Number(process.env.KIN_GOLD_FROM ?? 0.40),   // from 40% back...
+  depthTo:   Number(process.env.KIN_GOLD_TO   ?? 0.75),   // ...to 75% back
+};
+const GROUPS = [8, 6, 4, 2];
 const argv = process.argv.slice(2);
 const argOf = n => { const i = argv.indexOf(n); return i > -1 ? argv[i+1] : null; };
-const LIMIT = Number(argOf('--limit') || 0);   // for quick local testing
+const LIMIT = Number(argOf('--limit') || 0);
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-// The booking page prints the session as e.g. "Mardi 25 août 2026 à 13:30".
-// We rebuild that string and refuse to trust any page that doesn't show it.
-const FR_DATE = new Intl.DateTimeFormat('fr-BE', { timeZone:'Europe/Brussels', day:'numeric', month:'long', year:'numeric' });
-const FR_TIME = new Intl.DateTimeFormat('fr-BE', { timeZone:'Europe/Brussels', hour:'2-digit', minute:'2-digit', hour12:false });
-const expectOf = iso => ({ date: FR_DATE.format(new Date(iso)), time: FR_TIME.format(new Date(iso)) });
-
-// Showtimes from the API are genuine UTC. Verified against the booking engine:
-// API 19:00Z renders as "21:00" in Brussels. Convert via Intl, never by hand.
+const eq = (a,b) => String(a??'').trim().toLowerCase() === String(b??'').trim().toLowerCase();
 const BRU = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Brussels', weekday:'short',
   year:'numeric', month:'short', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false });
 const parts = iso => {
   const o = BRU.formatToParts(new Date(iso)).reduce((a,x)=>(a[x.type]=x.value,a),{});
-  const mon = o.month.slice(0,3); // en-GB yields 'Sept'; keep all months 3 letters
-  return { h:+o.hour, dow: DAYS.indexOf(o.weekday), day:o.weekday,
-           time:`${o.hour}:${o.minute}`, date:`${o.day} ${mon}`, iso:`${o.year}-${o.month}-${o.day}` };
+  return { day:o.weekday, date:`${o.day} ${o.month.slice(0,3)}`, time:`${o.hour}:${o.minute}`,
+           isoDate:`${o.year}-${o.month}-${o.day}`, dayNum:o.day };
 };
 
 async function chrome() {
-  const dir = mkdtempSync(join(tmpdir(), 'ody-'));
+  const dir = mkdtempSync(join(tmpdir(), 'kin-'));
   const proc = spawn(CHROME, [...EXTRA_FLAGS,'--headless=new','--disable-gpu','--no-first-run',
-    '--remote-debugging-port=0', `--user-data-dir=${dir}`,'--window-size=1280,1000','--lang=fr-BE',
+    '--remote-debugging-port=0', `--user-data-dir=${dir}`,'--window-size=1600,1200','--lang=fr-BE',
     '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
     'about:blank'], { stdio:['ignore','ignore','pipe'] });
   const wsUrl = await new Promise((res, rej) => {
@@ -88,144 +88,163 @@ async function chrome() {
     if (r?.result?.exceptionDetails) throw new Error(r.result.exceptionDetails.text || 'js error');
     return r?.result?.result?.value;
   };
-  const ready = async (ms=20000) => { const t0=Date.now();
-    while (Date.now()-t0 < ms) {
-      if (await evalJs("document.readyState") === 'complete') return true;
-      await sleep(400);
-    } return false; };
-  const goto = async url => { await send('Page.navigate', { url }, sessionId); await ready(); await sleep(800); };
-  // Park on a blank page between screenings. Without this, the NEXT navigation can be
-  // read while the PREVIOUS booking page is still on screen - which silently attributes
-  // one screening's seat map to another.
-  const reset = async () => { await send('Page.navigate', { url:'about:blank' }, sessionId);
-    const t0=Date.now();
-    while (Date.now()-t0 < 10000) { if (/about:blank/.test(await evalJs('location.href')||'')) return true; await sleep(200); }
-    return false; };
-  // document.body can be null while a navigation is committing; poll until it exists.
-  const bodyText = async (ms=15000) => { const t0 = Date.now();
-    while (Date.now()-t0 < ms) {
-      const t = await evalJs('(document.body && document.body.innerText) || ""');
-      if (t && t.trim()) return t; await sleep(600);
-    } return ''; };
-  const waitUrl = async (rx, ms=20000) => { const t0=Date.now();
-    while (Date.now()-t0 < ms) { const u = await evalJs('location.href'); if (rx.test(u||'')) return u; await sleep(700); }
-    return null; };
-  return { evalJs, goto, waitUrl, bodyText, reset, ready,
-    clearCookies: () => send('Network.clearBrowserCookies', {}, sessionId),
+  const goto = async url => { await send('Page.navigate', { url }, sessionId); };
+  const reset = async () => { await send('Page.navigate', { url:'about:blank' }, sessionId); await sleep(300); };
+  return { evalJs, goto, reset,
     close: () => { try { ws.close(); } catch {} proc.kill('SIGKILL'); } };
 }
 
-// Largest run of consecutive free seats within a single row.
-function analyseSeats(all) {
-  const seats = all.filter(s => !s.cosy);   // standard seats only
-  const free = seats.filter(s => s.free);
-  const rows = {};
-  for (const s of free) (rows[s.row] ||= []).push(s.col);
-  let best = 0;
-  for (const cols of Object.values(rows)) {
-    cols.sort((a,b) => a-b);
-    let run = 1;
-    for (let i = 1; i <= cols.length; i++) {
-      if (i < cols.length && cols[i] === cols[i-1] + 1) run++;
-      else { if (run > best) best = run; run = 1; }
-    }
+// Read every seat with its state, identity and true on-screen position.
+const READ_SEATS = `(()=>{
+  const els=[...document.querySelectorAll('svg.v-seat-picker-seat')];
+  if(!els.length) return null;
+  const screenEl=document.querySelector('[class*=seat-picker-screen]');
+  const sr=screenEl?screenEl.getBoundingClientRect():null;
+  const seats=els.map(e=>{
+    const cls=e.getAttribute('class')||'';
+    const lab=e.getAttribute('aria-label')||'';
+    const m=/Rang[eé]+e?\\s*(\\S+)[\\s\\S]*?Si[eè]ge\\s*(\\S+)/i.exec(lab);
+    const r=e.getBoundingClientRect();
+    return { row:m?m[1]:null, seat:m?m[2]:null,
+             cx:r.left+r.width/2, cy:r.top+r.height/2, w:r.width,
+             available:/--available/.test(cls), cosy:/sofa/.test(cls) };
+  });
+  return { seats, screenY: sr ? sr.top+sr.height/2 : null };
+})()`;
+
+function analyse(raw) {
+  const all = raw.seats.filter(s => s.w > 0);
+  const standard = all.filter(s => !s.cosy);
+  if (!standard.length) return null;
+
+  const seatW = standard.reduce((a,s)=>a+s.w,0) / standard.length || 24;
+
+  // Group seats into physical rows by their vertical position.
+  const rowsMap = new Map();
+  for (const s of standard) {
+    const key = Math.round(s.cy / Math.max(seatW * 0.6, 1));
+    if (!rowsMap.has(key)) rowsMap.set(key, []);
+    rowsMap.get(key).push(s);
   }
-  return { total: seats.length, free: free.length, taken: seats.length - free.length,
-           cosy: all.length - seats.length, maxBlock: best };
+  // Sorted front-to-back. Row 1 sits at the top of the map, nearest the screen, and
+  // auditoria are drawn screen-at-top - verified against a real hall.
+  const rows = [...rowsMap.entries()].sort((a,b) => a[0] - b[0]).map(e => e[1]);
+  const rowCount = rows.length;
+  // Depth uses the row's ORDER, not its pixel position: halls are split into seating
+  // zones with big blank gaps between them, which makes raw pixel depth meaningless.
+  const depthByRow = new Map();
+  rows.forEach((row, i) => { const d = rowCount > 1 ? i / (rowCount - 1) : 0.5;
+    row.forEach(s => depthByRow.set(s, d)); });
+
+  const xs = standard.map(s => s.cx);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const midX = (minX + maxX) / 2, halfW = Math.max((maxX - minX) / 2, 1);
+
+  const inGolden = s => Math.abs(s.cx - midX) / halfW <= GOLDEN.lateral
+                     && depthByRow.get(s) >= GOLDEN.depthFrom
+                     && depthByRow.get(s) <= GOLDEN.depthTo;
+
+  // Adjacency from geometry, so an aisle breaks a run even when seat numbers don't.
+  const runsOf = list => {
+    const byRow = new Map();
+    for (const s of list) {
+      const key = Math.round(s.cy / Math.max(seatW * 0.6, 1));
+      if (!byRow.has(key)) byRow.set(key, []);
+      byRow.get(key).push(s);
+    }
+    const runs = [];
+    for (const row of byRow.values()) {
+      row.sort((a,b) => a.cx - b.cx);
+      let cur = [row[0]];
+      for (let i = 1; i < row.length; i++) {
+        if (row[i].cx - row[i-1].cx <= seatW * 1.6) cur.push(row[i]);
+        else { runs.push(cur); cur = [row[i]]; }
+      }
+      runs.push(cur);
+    }
+    return runs;
+  };
+
+  const free = standard.filter(s => s.available);
+  const goldenFree = free.filter(inGolden);
+  const bestRun = rs => rs.reduce((m,r) => Math.max(m, r.length), 0);
+  const goldenRuns = runsOf(goldenFree).filter(r => r.length >= 2)
+    .sort((a,b) => b.length - a.length).slice(0, 6)
+    .map(r => {
+      const nums = r.map(s => s.seat).filter(Boolean).sort((a,b) => Number(a) - Number(b));
+      return { row: r[0].row, seats: nums, size: r.length };
+    });
+
+  return {
+    seatsTotal: standard.length,
+    seatsFree: free.length,
+    maxBlock: bestRun(runsOf(free)),
+    rows: rowCount,
+    goldenTotal: standard.filter(inGolden).length,
+    goldenFree: goldenFree.length,
+    goldenMaxBlock: bestRun(runsOf(goldenFree)),
+    goldenRuns,
+    cosyFree: all.filter(s => s.cosy && s.available).length,
+  };
 }
 
 async function checkSession(br, vs, expect) {
-  await br.clearCookies();
-  await br.reset();               // guarantees the page below is genuinely new
-  await br.goto(`https://kinepolis.be/fr/direct-vista-redirect/${vs}/0/${COMPLEX}/0`);
-  if (!await br.waitUrl(/tickets\.kinepolis\.be/)) return { status:'error', note:'no redirect' };
-  const txt = await br.bodyText();
-  if (/complète|complete|sold ?out/i.test(txt)) return { status:'soldout' };
+  await br.reset();
+  await br.goto(seatsUrl(vs));
+  // The page renders a skeleton first; wait for a real outcome, not a timer.
+  const outcome = await br.evalJs(`(async()=>{
+    const t0=Date.now();
+    while(Date.now()-t0<45000){
+      const txt=(document.body&&document.body.innerText)||'';
+      if(/compl[èe]te/i.test(txt)) return {kind:'soldout',txt:txt.slice(0,400)};
+      if(document.querySelectorAll('svg.v-seat-picker-seat').length>0) return {kind:'seats',txt:txt.slice(0,400)};
+      if(/introuvable|not found|error|erreur/i.test(txt) && txt.length>80) return {kind:'error',txt:txt.slice(0,300)};
+      await new Promise(r=>setTimeout(r,700));
+    }
+    return {kind:'timeout',txt:((document.body&&document.body.innerText)||'').slice(0,300)};
+  })()`, true);
+  if (!outcome) return { status:'error', note:'no page' };
 
-  // Identity gate. The booking page names the screening; if it doesn't match the one
-  // we asked for, we are looking at the wrong session and must not report its seats.
+  // Identity gate: the page prints the hall and the local start time.
   if (expect) {
-    const okDate = txt.includes(expect.date), okTime = txt.includes(expect.time);
-    if (!okDate || !okTime) {
-      return { status:'error', note:`session mismatch (wanted ${expect.date} ${expect.time})` };
+    const okTime = outcome.txt.includes(expect.time);
+    const okHall = expect.hall == null || new RegExp(`Zaal\\s*0*${expect.hall}\\b`, 'i').test(outcome.txt);
+    if (!okTime || !okHall) {
+      return { status:'error', note:`session mismatch (wanted ${expect.time}, hall ${expect.hall})` };
     }
   }
+  if (outcome.kind === 'soldout') return { status:'soldout' };
+  if (outcome.kind !== 'seats')   return { status:'error', note:outcome.kind };
 
-  const picked = await br.evalJs(`(()=>{const s=[...document.querySelectorAll('select')].find(x=>/^ticket/.test(x.name||''));
-    if(!s) return /Complet|Uitverkocht|Full/i.test((document.body&&document.body.innerText)||'')?'full':'nosel';
-    s.value='1'; s.dispatchEvent(new Event('change',{bubbles:true}));
-    const b=[...document.querySelectorAll('button')].find(x=>/Continuer|Continue|Doorgaan/i.test(x.innerText||''));
-    if(!b)return 'nobtn'; b.click(); return 'ok';})()`);
-  if (picked === 'full') return { status:'soldout' };
-  if (picked !== 'ok')  return { status:'error', note:picked };
-
-  // Wait for a seat map that has actually rendered seats, not just the URL changing.
-  const t0 = Date.now(); let seats = null;
-  while (Date.now() - t0 < 25000) {
-    const u = await br.evalJs('location.href') || '';
-    if (/Seating/i.test(u)) {
-      const n = await br.evalJs("document.querySelectorAll('.seat-input').length");
-      if (n > 0) {
-        // Seats render before occupancy is painted, so a map read too early looks
-        // completely empty. Poll until some seat is marked taken, or give up and let
-        // the zero-taken guard below reject it.
-        // What counts as available (confirmed against the rendered seat icons):
-        //   data-seats-status="0" -> seat-available.svg   (bookable)
-        //   data-seats-status="1" -> seat-unavailable.svg (taken - and NOT disabled,
-        //                            so `disabled` alone silently counts sold seats as free)
-        //   input.disabled        -> Cosy/sofa seats, not sellable on a standard ticket
-        const read = async () => br.evalJs(`(()=>[...document.querySelectorAll('.seat-input')].map(i=>{
-          let v={};try{v=JSON.parse(i.value)}catch(e){}
-          const st=i.parentElement.getAttribute('data-seats-status');
-          return {row:String(v.Row), col:Number(v.Column),
-                  free: st==='0' && !i.disabled,
-                  cosy: !!i.disabled};}))()`);
-        const tEnd = Date.now() + 10000;
-        do {
-          await sleep(1000);
-          seats = await read();
-        } while (seats && !seats.some(x => !x.free && !x.cosy) && Date.now() < tEnd);
-        break;
-      }
-    } else if (/complète|sold ?out/i.test(await br.bodyText(2000))) {
-      return { status:'soldout' };
-    }
-    await sleep(700);
-  }
-  if (!seats?.length) {
-    // Vista sometimes offers ticket quantities and only then refuses. Re-read the page:
-    // if it now says full, that's a genuine sold-out, not a scraper failure.
-    const last = await br.bodyText(3000);
-    if (/complète|Complet|Uitverkocht|sold ?out/i.test(last)) return { status:'soldout' };
-    return { status:'error', note:'no seat map' };
-  }
-
-  const a = analyseSeats(seats);
-  // A map where nothing at all is taken is what a mis-attributed page looks like.
-  // Flag it rather than publishing "everything is free".
-  if (a.taken === 0) return { status:'error', note:`suspicious: ${a.total} seats, none taken` };
+  await sleep(1200);                       // let the map settle before measuring geometry
+  const raw = await br.evalJs(READ_SEATS);
+  if (!raw?.seats?.length) return { status:'error', note:'seat map unreadable' };
+  const a = analyse(raw);
+  if (!a) return { status:'error', note:'no standard seats' };
+  if (a.seatsFree === 0) return { status:'soldout' };
   return { status:'open', ...a };
 }
 
-// Prove the open-path still works, using a bookable session from a DIFFERENT film.
-// Without this, a broken scraper and a genuinely sold-out cinema look identical.
+// Prove the scraper can still SEE availability. Without it, "all sold out" and
+// "quietly broken" are the same output.
 async function verifyPipeline(br) {
-  await br.goto(HOME);
-  const candidates = await br.evalJs(`(()=>{const cm=(Drupal.settings.variables||{}).current_movies;
-    if(!cm||!cm.sessions)return [];
-    const now=Date.now();
-    return cm.sessions
-      .filter(s=>s.mainComplex==='${COMPLEX}'&&!s.isSoldOut&&new Date(s.showtime).getTime()>now+3*86400000)
-      .slice(0,20).map(s=>({vs:s.vistaSessionId,showtime:s.showtime}));})()`);
-  if (!candidates?.length) return { ok:false, reason:'no control candidates found' };
+  let list;
+  try { list = await br.evalJs(`fetch(${JSON.stringify(API(CONTROL_MOVIE))}).then(r=>r.json())`, true); }
+  catch { return { ok:false, reason:'control film feed unreachable' }; }
+  if (!Array.isArray(list)) return { ok:false, reason:'control film feed unreachable' };
+  const now = Date.now();
+  const cands = list.filter(s => s.mainComplex === COMPLEX && new Date(s.showtime).getTime() > now + 2*86400000)
+                    .sort((a,b) => a.showtime < b.showtime ? -1 : 1).slice(0, 6);
   const tried = [];
-  for (const c of candidates.slice(0, MAX_CONTROLS)) {
-    let r; try { r = await checkSession(br, c.vs, expectOf(c.showtime)); } catch (e) { r = { status:'error', note:e.message }; }
-    tried.push({ vs:c.vs, status:r.status, note:r.note || null });
-    if (r.status === 'open') return { ok:true, controlSessionId:c.vs, controlSeatsFree:r.free, tried };
-    await sleep(1200);
+  for (const c of cands) {
+    const p = parts(c.showtime);
+    let r; try { r = await checkSession(br, c.vistaSessionId, { time:p.time, hall:c.hall }); }
+    catch (e) { r = { status:'error', note:e.message }; }
+    tried.push({ vs:c.vistaSessionId, status:r.status });
+    if (r.status === 'open') return { ok:true, controlSessionId:c.vistaSessionId, controlSeatsFree:r.seatsFree, tried };
+    await sleep(800);
   }
-  return { ok:false, reason:`no control session reached its seat map (${MAX_CONTROLS} tried)`, tried };
+  return { ok:false, reason:'no control session showed seats', tried };
 }
 
 // ---- run ----
@@ -233,62 +252,67 @@ const br = await chrome();
 try {
   const probeIx = argv.indexOf('--probe');
   if (probeIx > -1) {
-    console.log(`probe ${argv[probeIx+1]}:`, JSON.stringify(await checkSession(br, argv[probeIx+1])));  // no identity gate: id given by hand
+    console.log(`probe ${argv[probeIx+1]}:`, JSON.stringify(await checkSession(br, argv[probeIx+1]), null, 1));
     br.close(); process.exit(0);
   }
 
-  await br.goto(PAGE);
-  const all = await br.evalJs(`fetch(${JSON.stringify(API)}).then(r=>r.json())`, true);
-  if (!Array.isArray(all)) throw new Error('programmation API blocked');
+  await br.goto('https://web.kinepolis.be/fr-fr/'); await sleep(2500);
+  const all = await br.evalJs(`fetch(${JSON.stringify(API(MOVIE_ID))}).then(r=>r.json())`, true);
+  if (!Array.isArray(all)) throw new Error('programmation feed blocked or changed');
 
   const now = Date.now();
   let targets = all
+    // Case-insensitive: they renamed "Version Anglaise" to "version anglaise" in the
+    // rebuild, which silently matched nothing.
     .filter(s => s.mainComplex === COMPLEX
-              && s.film?.format?.name === FORMAT
-              && s.film?.data?.spokenLanguage?.name === LANGUAGE)
-    .filter(s => new Date(s.showtime).getTime() > now)
+              && eq(s.film?.format?.name, FORMAT)
+              && eq(s.film?.data?.spokenLanguage?.name, LANGUAGE)
+              && new Date(s.showtime).getTime() > now)
     .sort((a,b) => a.showtime < b.showtime ? -1 : 1);
   if (LIMIT) targets = targets.slice(0, LIMIT);
+  if (!targets.length) throw new Error(`no future screenings matched ${FORMAT} / ${LANGUAGE} at ${COMPLEX}`);
 
-  if (!targets.length) throw new Error(`no future screenings matched: ${FORMAT} / ${LANGUAGE} at ${COMPLEX}`);
   console.log(`Checking ${targets.length} screenings — ${targets[0].film.data.title} · ${FORMAT} · ${LANGUAGE} · ${COMPLEX}…`);
   const shows = [];
   for (const s of targets) {
     const p = parts(s.showtime);
-    let r; try { r = await checkSession(br, s.vistaSessionId, expectOf(s.showtime)); }
+    let r; try { r = await checkSession(br, s.vistaSessionId, { time:p.time, hall:s.hall }); }
     catch (e) { r = { status:'error', note:e.message }; }
     const fits = {}; for (const g of GROUPS) fits[g] = r.status === 'open' && r.maxBlock >= g;
     shows.push({
-      vistaSessionId: s.vistaSessionId, isoDate: p.iso,
+      vistaSessionId: s.vistaSessionId, isoDate: p.isoDate,
       day: p.day, date: p.date, time: p.time, hall: s.hall,
       status: r.status, note: r.note || null,
-      seatsFree: r.free ?? 0, seatsTotal: r.total ?? 0, maxBlock: r.maxBlock ?? 0, fits,
-      bookUrl: `https://kinepolis.be/fr/direct-vista-redirect/${s.vistaSessionId}/0/${COMPLEX}/0`,
+      seatsFree: r.seatsFree ?? 0, seatsTotal: r.seatsTotal ?? 0, maxBlock: r.maxBlock ?? 0,
+      goldenFree: r.goldenFree ?? 0, goldenTotal: r.goldenTotal ?? 0,
+      goldenMaxBlock: r.goldenMaxBlock ?? 0, goldenRuns: r.goldenRuns ?? [],
+      cosyFree: r.cosyFree ?? 0, fits,
+      bookUrl: seatsUrl(s.vistaSessionId),
     });
-    console.log(`  ${p.day} ${p.date} ${p.time}  ${r.status.padEnd(8)} free=${r.free ?? '-'} block=${r.maxBlock ?? '-'}`);
-    await sleep(900);
+    const g = r.status === 'open' ? ` golden=${r.goldenFree}(max ${r.goldenMaxBlock})` : '';
+    console.log(`  ${p.day} ${p.date} ${p.time}  ${r.status.padEnd(8)} free=${r.seatsFree ?? '-'} block=${r.maxBlock ?? '-'}${g}${r.note?' ('+r.note+')':''}`);
+    await sleep(600);
   }
 
   console.log('\nVerifying the scraper can still detect availability…');
   const verification = await verifyPipeline(br);
   console.log(verification.ok
-    ? `  OK — control session ${verification.controlSessionId} reported ${verification.controlSeatsFree} free seats.`
+    ? `  OK — control session ${verification.controlSessionId} showed ${verification.controlSeatsFree} free seats.`
     : `  FAILED — ${verification.reason}`);
 
-  const open = shows.filter(s => s.status === 'open' && s.seatsFree > 0);
-  const errors = shows.filter(s => s.status === 'error');
+  const open = shows.filter(s => s.status === 'open');
   const out = {
     updated: new Date().toISOString(),
     movie: targets[0].film.data.title, cinema: targets[0].cinemaLabel || 'Kinepolis Brussel',
-    format: FORMAT, version: LANGUAGE,
-    movieId: MOVIE_ID, complex: COMPLEX,
-    groups: GROUPS,
-    verified: verification.ok,
-    verification,
+    format: FORMAT, version: LANGUAGE, movieId: MOVIE_ID, complex: COMPLEX,
+    groups: GROUPS, golden: GOLDEN,
+    verified: verification.ok, verification,
     counts: { checked: shows.length, open: open.length,
-              soldOut: shows.filter(s=>s.status==='soldout').length, errors: errors.length },
+              soldOut: shows.filter(s=>s.status==='soldout').length,
+              errors: shows.filter(s=>s.status==='error').length,
+              withGolden: open.filter(s=>s.goldenMaxBlock>=2).length },
     shows,
   };
   writeFileSync(join(HERE, OUTFILE), JSON.stringify(out, null, 2));
-  console.log(`\nWrote ${OUTFILE} — ${open.length} with seats, ${out.counts.soldOut} sold out, ${errors.length} errors, verified=${verification.ok}`);
+  console.log(`\nWrote ${OUTFILE} — ${open.length} with seats, ${out.counts.withGolden} with 2+ together in the centre, ${out.counts.soldOut} sold out, ${out.counts.errors} errors, verified=${verification.ok}`);
 } finally { br.close(); }
