@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:32:33.094Z",
+  "updated": "2026-09-24T23:19:56.190Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -34,12 +34,12 @@
     "open": 79,
     "soldOut": 13,
     "errors": 0,
-    "withGolden": 37
+    "withGolden": 38
   },
   "shows": [
     {
       "vistaSessionId": 394281,
-      "isoDate": "2026-Sept-25",
+      "isoDate": "2026-09-25",
       "day": "Fri",
       "date": "25 Sep",
       "time": "09:30",
@@ -64,7 +64,7 @@
     },
     {
       "vistaSessionId": 394283,
-      "isoDate": "2026-Sept-25",
+      "isoDate": "2026-09-25",
       "day": "Fri",
       "date": "25 Sep",
       "time": "16:45",
@@ -89,7 +89,7 @@
     },
     {
       "vistaSessionId": 396899,
-      "isoDate": "2026-Sept-25",
+      "isoDate": "2026-09-25",
       "day": "Fri",
       "date": "25 Sep",
       "time": "20:30",
@@ -114,7 +114,7 @@
     },
     {
       "vistaSessionId": 394285,
-      "isoDate": "2026-Sept-26",
+      "isoDate": "2026-09-26",
       "day": "Sat",
       "date": "26 Sep",
       "time": "00:15",
@@ -139,7 +139,7 @@
     },
     {
       "vistaSessionId": 394286,
-      "isoDate": "2026-Sept-26",
+      "isoDate": "2026-09-26",
       "day": "Sat",
       "date": "26 Sep",
       "time": "09:30",
@@ -164,7 +164,7 @@
     },
     {
       "vistaSessionId": 394287,
-      "isoDate": "2026-Sept-26",
+      "isoDate": "2026-09-26",
       "day": "Sat",
       "date": "26 Sep",
       "time": "13:00",
@@ -189,7 +189,7 @@
     },
     {
       "vistaSessionId": 394289,
-      "isoDate": "2026-Sept-26",
+      "isoDate": "2026-09-26",
       "day": "Sat",
       "date": "26 Sep",
       "time": "20:30",
@@ -214,7 +214,7 @@
     },
     {
       "vistaSessionId": 394290,
-      "isoDate": "2026-Sept-27",
+      "isoDate": "2026-09-27",
       "day": "Sun",
       "date": "27 Sep",
       "time": "00:15",
@@ -239,7 +239,7 @@
     },
     {
       "vistaSessionId": 394291,
-      "isoDate": "2026-Sept-27",
+      "isoDate": "2026-09-27",
       "day": "Sun",
       "date": "27 Sep",
       "time": "09:45",
@@ -264,7 +264,7 @@
     },
     {
       "vistaSessionId": 394292,
-      "isoDate": "2026-Sept-27",
+      "isoDate": "2026-09-27",
       "day": "Sun",
       "date": "27 Sep",
       "time": "13:30",
@@ -289,7 +289,7 @@
     },
     {
       "vistaSessionId": 394293,
-      "isoDate": "2026-Sept-27",
+      "isoDate": "2026-09-27",
       "day": "Sun",
       "date": "27 Sep",
       "time": "17:15",
@@ -314,7 +314,7 @@
     },
     {
       "vistaSessionId": 394296,
-      "isoDate": "2026-Sept-28",
+      "isoDate": "2026-09-28",
       "day": "Mon",
       "date": "28 Sep",
       "time": "17:15",
@@ -339,7 +339,7 @@
     },
     {
       "vistaSessionId": 394297,
-      "isoDate": "2026-Sept-28",
+      "isoDate": "2026-09-28",
       "day": "Mon",
       "date": "28 Sep",
       "time": "21:00",
@@ -364,7 +364,7 @@
     },
     {
       "vistaSessionId": 396668,
-      "isoDate": "2026-Oct-08",
+      "isoDate": "2026-10-08",
       "day": "Thu",
       "date": "08 Oct",
       "time": "13:30",
@@ -389,14 +389,14 @@
     },
     {
       "vistaSessionId": 396669,
-      "isoDate": "2026-Oct-08",
+      "isoDate": "2026-10-08",
       "day": "Thu",
       "date": "08 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 161,
+      "seatsFree": 159,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -414,7 +414,7 @@
     },
     {
       "vistaSessionId": 396671,
-      "isoDate": "2026-Oct-09",
+      "isoDate": "2026-10-09",
       "day": "Fri",
       "date": "09 Oct",
       "time": "13:30",
@@ -439,14 +439,14 @@
     },
     {
       "vistaSessionId": 396673,
-      "isoDate": "2026-Oct-09",
+      "isoDate": "2026-10-09",
       "day": "Fri",
       "date": "09 Oct",
       "time": "20:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 5,
+      "seatsFree": 1,
       "seatsTotal": 400,
       "maxBlock": 1,
       "goldenFree": 0,
@@ -464,7 +464,7 @@
     },
     {
       "vistaSessionId": 396675,
-      "isoDate": "2026-Oct-10",
+      "isoDate": "2026-10-10",
       "day": "Sat",
       "date": "10 Oct",
       "time": "19:45",
@@ -489,14 +489,14 @@
     },
     {
       "vistaSessionId": 396676,
-      "isoDate": "2026-Oct-11",
+      "isoDate": "2026-10-11",
       "day": "Sun",
       "date": "11 Oct",
       "time": "09:45",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 107,
+      "seatsFree": 112,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -514,7 +514,7 @@
     },
     {
       "vistaSessionId": 396677,
-      "isoDate": "2026-Oct-11",
+      "isoDate": "2026-10-11",
       "day": "Sun",
       "date": "11 Oct",
       "time": "13:30",
@@ -539,7 +539,7 @@
     },
     {
       "vistaSessionId": 396679,
-      "isoDate": "2026-Oct-11",
+      "isoDate": "2026-10-11",
       "day": "Sun",
       "date": "11 Oct",
       "time": "20:15",
@@ -564,17 +564,17 @@
     },
     {
       "vistaSessionId": 396683,
-      "isoDate": "2026-Oct-13",
+      "isoDate": "2026-10-13",
       "day": "Tue",
       "date": "13 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 267,
+      "seatsFree": 265,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 9,
+      "goldenFree": 8,
       "goldenTotal": 32,
       "goldenMaxBlock": 2,
       "goldenRuns": [
@@ -614,14 +614,14 @@
     },
     {
       "vistaSessionId": 396684,
-      "isoDate": "2026-Oct-13",
+      "isoDate": "2026-10-13",
       "day": "Tue",
       "date": "13 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 209,
+      "seatsFree": 204,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -639,14 +639,14 @@
     },
     {
       "vistaSessionId": 396686,
-      "isoDate": "2026-Oct-14",
+      "isoDate": "2026-10-14",
       "day": "Wed",
       "date": "14 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 281,
+      "seatsFree": 279,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 8,
@@ -682,14 +682,14 @@
     },
     {
       "vistaSessionId": 396687,
-      "isoDate": "2026-Oct-14",
+      "isoDate": "2026-10-14",
       "day": "Wed",
       "date": "14 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 204,
+      "seatsFree": 202,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -707,7 +707,7 @@
     },
     {
       "vistaSessionId": 396689,
-      "isoDate": "2026-Oct-15",
+      "isoDate": "2026-10-15",
       "day": "Thu",
       "date": "15 Oct",
       "time": "13:30",
@@ -760,14 +760,14 @@
     },
     {
       "vistaSessionId": 396691,
-      "isoDate": "2026-Oct-15",
+      "isoDate": "2026-10-15",
       "day": "Thu",
       "date": "15 Oct",
       "time": "20:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 94,
+      "seatsFree": 90,
       "seatsTotal": 400,
       "maxBlock": 7,
       "goldenFree": 0,
@@ -785,14 +785,14 @@
     },
     {
       "vistaSessionId": 396693,
-      "isoDate": "2026-Oct-16",
+      "isoDate": "2026-10-16",
       "day": "Fri",
       "date": "16 Oct",
       "time": "17:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 156,
+      "seatsFree": 154,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -810,7 +810,7 @@
     },
     {
       "vistaSessionId": 396696,
-      "isoDate": "2026-Oct-17",
+      "isoDate": "2026-10-17",
       "day": "Sat",
       "date": "17 Oct",
       "time": "17:00",
@@ -835,14 +835,14 @@
     },
     {
       "vistaSessionId": 396698,
-      "isoDate": "2026-Oct-18",
+      "isoDate": "2026-10-18",
       "day": "Sun",
       "date": "18 Oct",
       "time": "09:45",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 170,
+      "seatsFree": 171,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -860,14 +860,14 @@
     },
     {
       "vistaSessionId": 396699,
-      "isoDate": "2026-Oct-18",
+      "isoDate": "2026-10-18",
       "day": "Sun",
       "date": "18 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 46,
+      "seatsFree": 44,
       "seatsTotal": 400,
       "maxBlock": 6,
       "goldenFree": 0,
@@ -885,14 +885,14 @@
     },
     {
       "vistaSessionId": 396701,
-      "isoDate": "2026-Oct-18",
+      "isoDate": "2026-10-18",
       "day": "Sun",
       "date": "18 Oct",
       "time": "20:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 110,
+      "seatsFree": 102,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -910,14 +910,14 @@
     },
     {
       "vistaSessionId": 396702,
-      "isoDate": "2026-Oct-19",
+      "isoDate": "2026-10-19",
       "day": "Mon",
       "date": "19 Oct",
       "time": "09:45",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 319,
+      "seatsFree": 321,
       "seatsTotal": 400,
       "maxBlock": 18,
       "goldenFree": 20,
@@ -985,7 +985,7 @@
     },
     {
       "vistaSessionId": 396703,
-      "isoDate": "2026-Oct-19",
+      "isoDate": "2026-10-19",
       "day": "Mon",
       "date": "19 Oct",
       "time": "13:30",
@@ -1020,7 +1020,7 @@
     },
     {
       "vistaSessionId": 396705,
-      "isoDate": "2026-Oct-19",
+      "isoDate": "2026-10-19",
       "day": "Mon",
       "date": "19 Oct",
       "time": "20:15",
@@ -1045,7 +1045,7 @@
     },
     {
       "vistaSessionId": 396706,
-      "isoDate": "2026-Oct-20",
+      "isoDate": "2026-10-20",
       "day": "Tue",
       "date": "20 Oct",
       "time": "09:45",
@@ -1135,34 +1135,20 @@
     },
     {
       "vistaSessionId": 396707,
-      "isoDate": "2026-Oct-20",
+      "isoDate": "2026-10-20",
       "day": "Tue",
       "date": "20 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 307,
+      "seatsFree": 305,
       "seatsTotal": 400,
-      "maxBlock": 16,
-      "goldenFree": 19,
+      "maxBlock": 15,
+      "goldenFree": 17,
       "goldenTotal": 32,
-      "goldenMaxBlock": 8,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
-        {
-          "row": "6",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22"
-          ],
-          "size": 8
-        },
         {
           "row": "5",
           "seats": [
@@ -1174,6 +1160,24 @@
         },
         {
           "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
           "seats": [
             "15",
             "16",
@@ -1209,7 +1213,7 @@
     },
     {
       "vistaSessionId": 396709,
-      "isoDate": "2026-Oct-20",
+      "isoDate": "2026-10-20",
       "day": "Tue",
       "date": "20 Oct",
       "time": "20:15",
@@ -1234,7 +1238,7 @@
     },
     {
       "vistaSessionId": 396611,
-      "isoDate": "2026-Oct-21",
+      "isoDate": "2026-10-21",
       "day": "Wed",
       "date": "21 Oct",
       "time": "09:45",
@@ -1318,7 +1322,7 @@
     },
     {
       "vistaSessionId": 396612,
-      "isoDate": "2026-Oct-21",
+      "isoDate": "2026-10-21",
       "day": "Wed",
       "date": "21 Oct",
       "time": "13:30",
@@ -1379,7 +1383,7 @@
     },
     {
       "vistaSessionId": 396613,
-      "isoDate": "2026-Oct-21",
+      "isoDate": "2026-10-21",
       "day": "Wed",
       "date": "21 Oct",
       "time": "17:15",
@@ -1404,14 +1408,14 @@
     },
     {
       "vistaSessionId": 396614,
-      "isoDate": "2026-Oct-21",
+      "isoDate": "2026-10-21",
       "day": "Wed",
       "date": "21 Oct",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 185,
+      "seatsFree": 183,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 1,
@@ -1429,7 +1433,7 @@
     },
     {
       "vistaSessionId": 396615,
-      "isoDate": "2026-Oct-22",
+      "isoDate": "2026-10-22",
       "day": "Thu",
       "date": "22 Oct",
       "time": "09:45",
@@ -1519,7 +1523,7 @@
     },
     {
       "vistaSessionId": 396616,
-      "isoDate": "2026-Oct-22",
+      "isoDate": "2026-10-22",
       "day": "Thu",
       "date": "22 Oct",
       "time": "13:30",
@@ -1590,7 +1594,7 @@
     },
     {
       "vistaSessionId": 396617,
-      "isoDate": "2026-Oct-22",
+      "isoDate": "2026-10-22",
       "day": "Thu",
       "date": "22 Oct",
       "time": "17:15",
@@ -1632,7 +1636,7 @@
     },
     {
       "vistaSessionId": 396618,
-      "isoDate": "2026-Oct-22",
+      "isoDate": "2026-10-22",
       "day": "Thu",
       "date": "22 Oct",
       "time": "21:00",
@@ -1657,7 +1661,7 @@
     },
     {
       "vistaSessionId": 396619,
-      "isoDate": "2026-Oct-23",
+      "isoDate": "2026-10-23",
       "day": "Fri",
       "date": "23 Oct",
       "time": "09:45",
@@ -1742,7 +1746,7 @@
     },
     {
       "vistaSessionId": 396620,
-      "isoDate": "2026-Oct-23",
+      "isoDate": "2026-10-23",
       "day": "Fri",
       "date": "23 Oct",
       "time": "13:30",
@@ -1796,14 +1800,14 @@
     },
     {
       "vistaSessionId": 396621,
-      "isoDate": "2026-Oct-23",
+      "isoDate": "2026-10-23",
       "day": "Fri",
       "date": "23 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 235,
+      "seatsFree": 233,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 1,
@@ -1821,7 +1825,7 @@
     },
     {
       "vistaSessionId": 396622,
-      "isoDate": "2026-Oct-23",
+      "isoDate": "2026-10-23",
       "day": "Fri",
       "date": "23 Oct",
       "time": "21:00",
@@ -1830,7 +1834,7 @@
       "note": null,
       "seatsFree": 148,
       "seatsTotal": 400,
-      "maxBlock": 10,
+      "maxBlock": 9,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -1846,7 +1850,7 @@
     },
     {
       "vistaSessionId": 396623,
-      "isoDate": "2026-Oct-24",
+      "isoDate": "2026-10-24",
       "day": "Sat",
       "date": "24 Oct",
       "time": "09:45",
@@ -1871,7 +1875,7 @@
     },
     {
       "vistaSessionId": 396624,
-      "isoDate": "2026-Oct-24",
+      "isoDate": "2026-10-24",
       "day": "Sat",
       "date": "24 Oct",
       "time": "13:30",
@@ -1896,14 +1900,14 @@
     },
     {
       "vistaSessionId": 396625,
-      "isoDate": "2026-Oct-24",
+      "isoDate": "2026-10-24",
       "day": "Sat",
       "date": "24 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 92,
+      "seatsFree": 90,
       "seatsTotal": 400,
       "maxBlock": 7,
       "goldenFree": 0,
@@ -1921,14 +1925,14 @@
     },
     {
       "vistaSessionId": 396626,
-      "isoDate": "2026-Oct-24",
+      "isoDate": "2026-10-24",
       "day": "Sat",
       "date": "24 Oct",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 137,
+      "seatsFree": 134,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -1946,7 +1950,7 @@
     },
     {
       "vistaSessionId": 396627,
-      "isoDate": "2026-Oct-25",
+      "isoDate": "2026-10-25",
       "day": "Sun",
       "date": "25 Oct",
       "time": "09:45",
@@ -1971,7 +1975,7 @@
     },
     {
       "vistaSessionId": 396628,
-      "isoDate": "2026-Oct-25",
+      "isoDate": "2026-10-25",
       "day": "Sun",
       "date": "25 Oct",
       "time": "13:30",
@@ -1996,7 +2000,7 @@
     },
     {
       "vistaSessionId": 396629,
-      "isoDate": "2026-Oct-25",
+      "isoDate": "2026-10-25",
       "day": "Sun",
       "date": "25 Oct",
       "time": "17:15",
@@ -2021,14 +2025,14 @@
     },
     {
       "vistaSessionId": 396630,
-      "isoDate": "2026-Oct-25",
+      "isoDate": "2026-10-25",
       "day": "Sun",
       "date": "25 Oct",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 191,
+      "seatsFree": 193,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -2046,7 +2050,7 @@
     },
     {
       "vistaSessionId": 396631,
-      "isoDate": "2026-Oct-26",
+      "isoDate": "2026-10-26",
       "day": "Mon",
       "date": "26 Oct",
       "time": "09:45",
@@ -2130,7 +2134,7 @@
     },
     {
       "vistaSessionId": 396632,
-      "isoDate": "2026-Oct-26",
+      "isoDate": "2026-10-26",
       "day": "Mon",
       "date": "26 Oct",
       "time": "13:30",
@@ -2210,7 +2214,7 @@
     },
     {
       "vistaSessionId": 396633,
-      "isoDate": "2026-Oct-26",
+      "isoDate": "2026-10-26",
       "day": "Mon",
       "date": "26 Oct",
       "time": "17:15",
@@ -2254,7 +2258,7 @@
     },
     {
       "vistaSessionId": 396634,
-      "isoDate": "2026-Oct-26",
+      "isoDate": "2026-10-26",
       "day": "Mon",
       "date": "26 Oct",
       "time": "21:00",
@@ -2288,7 +2292,7 @@
     },
     {
       "vistaSessionId": 396635,
-      "isoDate": "2026-Oct-27",
+      "isoDate": "2026-10-27",
       "day": "Tue",
       "date": "27 Oct",
       "time": "09:45",
@@ -2372,7 +2376,7 @@
     },
     {
       "vistaSessionId": 396636,
-      "isoDate": "2026-Oct-27",
+      "isoDate": "2026-10-27",
       "day": "Tue",
       "date": "27 Oct",
       "time": "13:30",
@@ -2456,7 +2460,7 @@
     },
     {
       "vistaSessionId": 396637,
-      "isoDate": "2026-Oct-28",
+      "isoDate": "2026-10-28",
       "day": "Wed",
       "date": "28 Oct",
       "time": "09:45",
@@ -2543,7 +2547,7 @@
     },
     {
       "vistaSessionId": 396638,
-      "isoDate": "2026-Oct-28",
+      "isoDate": "2026-10-28",
       "day": "Wed",
       "date": "28 Oct",
       "time": "13:30",
@@ -2621,14 +2625,14 @@
     },
     {
       "vistaSessionId": 396639,
-      "isoDate": "2026-Oct-28",
+      "isoDate": "2026-10-28",
       "day": "Wed",
       "date": "28 Oct",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 282,
+      "seatsFree": 278,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 13,
@@ -2670,14 +2674,14 @@
     },
     {
       "vistaSessionId": 396640,
-      "isoDate": "2026-Oct-28",
+      "isoDate": "2026-10-28",
       "day": "Wed",
       "date": "28 Oct",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 208,
+      "seatsFree": 210,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -2695,7 +2699,7 @@
     },
     {
       "vistaSessionId": 396641,
-      "isoDate": "2026-Oct-29",
+      "isoDate": "2026-10-29",
       "day": "Thu",
       "date": "29 Oct",
       "time": "09:45",
@@ -2782,7 +2786,7 @@
     },
     {
       "vistaSessionId": 396642,
-      "isoDate": "2026-Oct-29",
+      "isoDate": "2026-10-29",
       "day": "Thu",
       "date": "29 Oct",
       "time": "13:30",
@@ -2863,7 +2867,7 @@
     },
     {
       "vistaSessionId": 396643,
-      "isoDate": "2026-Oct-29",
+      "isoDate": "2026-10-29",
       "day": "Thu",
       "date": "29 Oct",
       "time": "17:15",
@@ -2932,7 +2936,7 @@
     },
     {
       "vistaSessionId": 396644,
-      "isoDate": "2026-Oct-29",
+      "isoDate": "2026-10-29",
       "day": "Thu",
       "date": "29 Oct",
       "time": "21:00",
@@ -2957,7 +2961,7 @@
     },
     {
       "vistaSessionId": 396645,
-      "isoDate": "2026-Oct-30",
+      "isoDate": "2026-10-30",
       "day": "Fri",
       "date": "30 Oct",
       "time": "09:45",
@@ -3047,31 +3051,21 @@
     },
     {
       "vistaSessionId": 396646,
-      "isoDate": "2026-Oct-30",
+      "isoDate": "2026-10-30",
       "day": "Fri",
       "date": "30 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 314,
+      "seatsFree": 310,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 18,
+      "goldenFree": 14,
       "goldenTotal": 32,
-      "goldenMaxBlock": 4,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "6",
-          "seats": [
-            "19",
-            "20",
-            "21",
-            "22"
-          ],
-          "size": 4
-        },
-        {
           "row": "5",
           "seats": [
             "20",
@@ -3082,15 +3076,6 @@
         },
         {
           "row": "5",
-          "seats": [
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 3
-        },
-        {
-          "row": "6",
           "seats": [
             "15",
             "16",
@@ -3106,6 +3091,14 @@
             "23"
           ],
           "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -3119,7 +3112,7 @@
     },
     {
       "vistaSessionId": 396647,
-      "isoDate": "2026-Oct-30",
+      "isoDate": "2026-10-30",
       "day": "Fri",
       "date": "30 Oct",
       "time": "17:15",
@@ -3179,16 +3172,16 @@
     },
     {
       "vistaSessionId": 396648,
-      "isoDate": "2026-Oct-30",
+      "isoDate": "2026-10-30",
       "day": "Fri",
       "date": "30 Oct",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 147,
+      "seatsFree": 142,
       "seatsTotal": 400,
-      "maxBlock": 10,
+      "maxBlock": 9,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -3204,17 +3197,17 @@
     },
     {
       "vistaSessionId": 396649,
-      "isoDate": "2026-Oct-31",
+      "isoDate": "2026-10-31",
       "day": "Sat",
       "date": "31 Oct",
       "time": "09:45",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 240,
+      "seatsFree": 236,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 6,
+      "goldenFree": 3,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -3224,15 +3217,6 @@
             "20",
             "21",
             "22"
-          ],
-          "size": 3
-        },
-        {
-          "row": "5",
-          "seats": [
-            "15",
-            "16",
-            "17"
           ],
           "size": 3
         }
@@ -3248,14 +3232,14 @@
     },
     {
       "vistaSessionId": 396650,
-      "isoDate": "2026-Oct-31",
+      "isoDate": "2026-10-31",
       "day": "Sat",
       "date": "31 Oct",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 179,
+      "seatsFree": 181,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -3273,7 +3257,7 @@
     },
     {
       "vistaSessionId": 396651,
-      "isoDate": "2026-Oct-31",
+      "isoDate": "2026-10-31",
       "day": "Sat",
       "date": "31 Oct",
       "time": "17:15",
@@ -3298,7 +3282,7 @@
     },
     {
       "vistaSessionId": 396652,
-      "isoDate": "2026-Oct-31",
+      "isoDate": "2026-10-31",
       "day": "Sat",
       "date": "31 Oct",
       "time": "21:00",
@@ -3323,7 +3307,7 @@
     },
     {
       "vistaSessionId": 396653,
-      "isoDate": "2026-Nov-01",
+      "isoDate": "2026-11-01",
       "day": "Sun",
       "date": "01 Nov",
       "time": "09:45",
@@ -3357,14 +3341,14 @@
     },
     {
       "vistaSessionId": 396654,
-      "isoDate": "2026-Nov-01",
+      "isoDate": "2026-11-01",
       "day": "Sun",
       "date": "01 Nov",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 234,
+      "seatsFree": 233,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -3382,14 +3366,14 @@
     },
     {
       "vistaSessionId": 396655,
-      "isoDate": "2026-Nov-01",
+      "isoDate": "2026-11-01",
       "day": "Sun",
       "date": "01 Nov",
       "time": "17:15",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 197,
+      "seatsFree": 194,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -3407,14 +3391,14 @@
     },
     {
       "vistaSessionId": 396656,
-      "isoDate": "2026-Nov-01",
+      "isoDate": "2026-11-01",
       "day": "Sun",
       "date": "01 Nov",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 275,
+      "seatsFree": 271,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -3432,7 +3416,7 @@
     },
     {
       "vistaSessionId": 396657,
-      "isoDate": "2026-Nov-02",
+      "isoDate": "2026-11-02",
       "day": "Mon",
       "date": "02 Nov",
       "time": "09:45",
@@ -3518,7 +3502,7 @@
     },
     {
       "vistaSessionId": 396658,
-      "isoDate": "2026-Nov-02",
+      "isoDate": "2026-11-02",
       "day": "Mon",
       "date": "02 Nov",
       "time": "13:30",
@@ -3561,7 +3545,7 @@
     },
     {
       "vistaSessionId": 396659,
-      "isoDate": "2026-Nov-02",
+      "isoDate": "2026-11-02",
       "day": "Mon",
       "date": "02 Nov",
       "time": "17:15",
@@ -3596,14 +3580,14 @@
     },
     {
       "vistaSessionId": 396660,
-      "isoDate": "2026-Nov-02",
+      "isoDate": "2026-11-02",
       "day": "Mon",
       "date": "02 Nov",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 293,
+      "seatsFree": 291,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 1,
@@ -3621,7 +3605,7 @@
     },
     {
       "vistaSessionId": 396661,
-      "isoDate": "2026-Nov-03",
+      "isoDate": "2026-11-03",
       "day": "Tue",
       "date": "03 Nov",
       "time": "09:45",
@@ -3709,17 +3693,17 @@
     },
     {
       "vistaSessionId": 396662,
-      "isoDate": "2026-Nov-03",
+      "isoDate": "2026-11-03",
       "day": "Tue",
       "date": "03 Nov",
       "time": "13:30",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 368,
+      "seatsFree": 370,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 15,
+      "goldenFree": 16,
       "goldenTotal": 32,
       "goldenMaxBlock": 4,
       "goldenRuns": [
@@ -3759,6 +3743,14 @@
             "22"
           ],
           "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -3772,7 +3764,7 @@
     },
     {
       "vistaSessionId": 396663,
-      "isoDate": "2026-Nov-03",
+      "isoDate": "2026-11-03",
       "day": "Tue",
       "date": "03 Nov",
       "time": "17:15",
@@ -3815,20 +3807,29 @@
     },
     {
       "vistaSessionId": 396664,
-      "isoDate": "2026-Nov-03",
+      "isoDate": "2026-11-03",
       "day": "Tue",
       "date": "03 Nov",
       "time": "21:00",
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 288,
+      "seatsFree": 290,
       "seatsTotal": 400,
       "maxBlock": 14,
-      "goldenFree": 1,
+      "goldenFree": 3,
       "goldenTotal": 32,
-      "goldenMaxBlock": 1,
-      "goldenRuns": [],
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
         "2": true,
