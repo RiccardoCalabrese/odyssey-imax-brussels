@@ -43,10 +43,13 @@ const seatsUrl = vs => `https://web.kinepolis.be/fr-fr/order/showtimes/${COMPLEX
 // not row numbers, so it works in any auditorium.
 //   lateral 0 = dead centre of the row, 1 = far side wall
 //   depth   0 = front row (nearest screen), 1 = back row
+// "Golden square": the prime central block. Defined the way a person points at it -
+// the middle seating block only (never the side blocks, however central a side seat
+// looks in raw pixels), the middle slice of that block's width, and the middle rows.
 const GOLDEN = {
-  lateral: Number(process.env.KIN_GOLD_LATERAL ?? 0.25),  // middle 50% of the width
-  depthFrom: Number(process.env.KIN_GOLD_FROM ?? 0.40),   // from 40% back...
-  depthTo:   Number(process.env.KIN_GOLD_TO   ?? 0.75),   // ...to 75% back
+  widthFrac: Number(process.env.KIN_GOLD_WIDTH ?? 0.50),  // middle 50% of the centre block
+  depthFrom: Number(process.env.KIN_GOLD_FROM  ?? 0.33),  // from a third of the way back...
+  depthTo:   Number(process.env.KIN_GOLD_TO    ?? 0.67),  // ...to two thirds back
 };
 const GROUPS = [8, 6, 4, 2];
 const argv = process.argv.slice(2);
@@ -136,11 +139,25 @@ function analyse(raw) {
   rows.forEach((row, i) => { const d = rowCount > 1 ? i / (rowCount - 1) : 0.5;
     row.forEach(s => depthByRow.set(s, d)); });
 
-  const xs = standard.map(s => s.cx);
-  const minX = Math.min(...xs), maxX = Math.max(...xs);
-  const midX = (minX + maxX) / 2, halfW = Math.max((maxX - minX) / 2, 1);
+  // Split the hall into seating blocks: a horizontal gap wider than a couple of seats
+  // is an aisle between blocks, not a gap between neighbours.
+  const uniqX = [...new Set(standard.map(s => Math.round(s.cx)))].sort((a,b) => a-b);
+  const blocks = [];
+  let cur = [uniqX[0]];
+  for (let i = 1; i < uniqX.length; i++) {
+    if (uniqX[i] - uniqX[i-1] <= seatW * 2) cur.push(uniqX[i]);
+    else { blocks.push(cur); cur = [uniqX[i]]; }
+  }
+  blocks.push(cur);
+  const hallMid = (uniqX[0] + uniqX[uniqX.length-1]) / 2;
+  // The centre block is the one containing the middle of the hall.
+  const centreBlock = blocks.find(b => hallMid >= b[0] - seatW && hallMid <= b[b.length-1] + seatW)
+    || blocks.sort((a,b) => b.length - a.length)[0];
+  const bMin = centreBlock[0], bMax = centreBlock[centreBlock.length-1];
+  const bMid = (bMin + bMax) / 2, bHalf = Math.max((bMax - bMin) / 2, 1);
 
-  const inGolden = s => Math.abs(s.cx - midX) / halfW <= GOLDEN.lateral
+  const inGolden = s => s.cx >= bMin - seatW && s.cx <= bMax + seatW        // centre block only
+                     && Math.abs(s.cx - bMid) / bHalf <= GOLDEN.widthFrac   // its middle slice
                      && depthByRow.get(s) >= GOLDEN.depthFrom
                      && depthByRow.get(s) <= GOLDEN.depthTo;
 
@@ -180,6 +197,7 @@ function analyse(raw) {
     seatsFree: free.length,
     maxBlock: bestRun(runsOf(free)),
     rows: rowCount,
+    blocks: blocks.length,
     goldenTotal: standard.filter(inGolden).length,
     goldenFree: goldenFree.length,
     goldenMaxBlock: bestRun(runsOf(goldenFree)),

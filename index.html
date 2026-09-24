@@ -203,7 +203,9 @@ function foot(){
     `${v}${errs}<br>Seat counts read from the real Kinepolis booking system ${ago(data.updated)}, `
     + `rechecked automatically every hour.<br>`
     + `“Together” means consecutive seats in one row, with aisles breaking the run.<br>`
-    + `“Centre” = the middle ${Math.round(data.golden.lateral*200)}% of each row, between ${Math.round(data.golden.depthFrom*100)}% and ${Math.round(data.golden.depthTo*100)}% of the way back.`;
+    + `“Centre” = the middle seating block only (never the side blocks), its middle `
+    + `${Math.round((data.golden.widthFrac||0.5)*100)}% of width, rows `
+    + `${Math.round((data.golden.depthFrom||0.33)*100)}%–${Math.round((data.golden.depthTo||0.67)*100)}% of the way back.`;
 }
 
 // Live check: the showtime list is readable straight from the browser, so we can spot
