@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:01:21.791Z",
+  "updated": "2026-09-24T20:32:33.094Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -13,18 +13,18 @@
     2
   ],
   "golden": {
-    "lateral": 0.25,
-    "depthFrom": 0.4,
-    "depthTo": 0.75
+    "widthFrac": 0.5,
+    "depthFrom": 0.33,
+    "depthTo": 0.67
   },
   "verified": true,
   "verification": {
     "ok": true,
-    "controlSessionId": 396982,
-    "controlSeatsFree": 148,
+    "controlSessionId": 397289,
+    "controlSeatsFree": 309,
     "tried": [
       {
-        "vs": 396982,
+        "vs": 397289,
         "status": "open"
       }
     ]
@@ -34,7 +34,7 @@
     "open": 79,
     "soldOut": 13,
     "errors": 0,
-    "withGolden": 35
+    "withGolden": 37
   },
   "shows": [
     {
@@ -375,7 +375,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 1,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -396,12 +396,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 159,
+      "seatsFree": 161,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 1,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -421,11 +421,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 214,
+      "seatsFree": 212,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -450,7 +450,7 @@
       "seatsTotal": 400,
       "maxBlock": 1,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -475,7 +475,7 @@
       "seatsTotal": 400,
       "maxBlock": 1,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -496,11 +496,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 112,
+      "seatsFree": 107,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -525,7 +525,7 @@
       "seatsTotal": 400,
       "maxBlock": 1,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -550,7 +550,7 @@
       "seatsTotal": 400,
       "maxBlock": 4,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -571,34 +571,34 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 265,
+      "seatsFree": 267,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 7,
-      "goldenTotal": 40,
+      "goldenFree": 9,
+      "goldenTotal": 32,
       "goldenMaxBlock": 2,
       "goldenRuns": [
         {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        },
+        {
           "row": "6",
           "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15"
+            "21",
+            "22"
           ],
           "size": 2
         }
@@ -625,7 +625,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -649,47 +649,24 @@
       "seatsFree": 281,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 12,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 2,
+      "goldenFree": 8,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "22",
-            "23"
+            "20",
+            "21",
+            "22"
           ],
-          "size": 2
-        },
-        {
-          "row": "6",
-          "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "21",
             "22"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16"
           ],
           "size": 2
         }
@@ -716,7 +693,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -740,32 +717,34 @@
       "seatsFree": 287,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 11,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 3,
+      "goldenFree": 10,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 4,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "5",
+          "seats": [
+            "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
           "size": 3
         },
         {
-          "row": "7",
+          "row": "6",
           "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "9",
-          "seats": [
-            "23",
-            "24"
+            "21",
+            "22"
           ],
           "size": 2
         }
@@ -788,11 +767,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 88,
+      "seatsFree": 94,
       "seatsTotal": 400,
       "maxBlock": 7,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -817,7 +796,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -842,7 +821,7 @@
       "seatsTotal": 400,
       "maxBlock": 3,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -863,11 +842,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 169,
+      "seatsFree": 170,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -892,7 +871,7 @@
       "seatsTotal": 400,
       "maxBlock": 6,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -913,11 +892,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 112,
+      "seatsFree": 110,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -938,67 +917,59 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 321,
+      "seatsFree": 319,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 24,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 20,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
-            "16",
-            "17"
+            "22"
           ],
           "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
-            "15"
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17"
           ],
           "size": 2
         }
@@ -1024,25 +995,18 @@
       "seatsFree": 283,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 10,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 2,
+      "goldenFree": 6,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "22",
-            "23"
+            "20",
+            "21",
+            "22"
           ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -1067,7 +1031,7 @@
       "seatsTotal": 400,
       "maxBlock": 9,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1091,14 +1055,13 @@
       "seatsFree": 337,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 35,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -1106,61 +1069,59 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
         },
         {
-          "row": "9",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 5
-        },
-        {
-          "row": "7",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
+          "row": "6",
           "seats": [
             "15",
             "16",
             "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
             "18"
           ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -1184,14 +1145,13 @@
       "seatsFree": 307,
       "seatsTotal": 400,
       "maxBlock": 16,
-      "goldenFree": 22,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 19,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -1199,42 +1159,41 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "21",
-            "22",
-            "23"
-          ],
-          "size": 3
-        },
-        {
-          "row": "8",
-          "seats": [
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 3
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
-            "16"
+            "22"
           ],
           "size": 2
         },
         {
-          "row": "9",
+          "row": "8",
           "seats": [
-            "23",
-            "24"
+            "22",
+            "23"
           ],
           "size": 2
         }
@@ -1257,11 +1216,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 167,
+      "seatsFree": 165,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1285,71 +1244,67 @@
       "seatsFree": 326,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 30,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 7,
+      "goldenFree": 24,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "9",
+          "row": "5",
           "seats": [
+            "15",
+            "16",
+            "17",
             "18",
             "19",
             "20",
             "21",
-            "22",
-            "23",
-            "24"
+            "22"
           ],
-          "size": 7
+          "size": 8
         },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
             "21",
             "22",
-            "23",
-            "24"
+            "23"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18"
           ],
-          "size": 4
+          "size": 3
         },
         {
-          "row": "7",
+          "row": "6",
           "seats": [
-            "14",
-            "15",
-            "16"
+            "16",
+            "17"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -1373,60 +1328,42 @@
       "seatsFree": 314,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 20,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 15,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
-          "row": "9",
+          "row": "5",
           "seats": [
             "15",
             "16",
-            "17",
-            "18"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15",
-            "16"
+            "17"
           ],
           "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
-            "15"
+            "20",
+            "21",
+            "22"
           ],
-          "size": 2
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "23",
-            "24"
+            "15",
+            "16"
           ],
           "size": 2
         }
@@ -1453,7 +1390,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 2,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1478,7 +1415,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 1,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1502,14 +1439,13 @@
       "seatsFree": 336,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 34,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -1517,60 +1453,59 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
             "21",
             "22",
-            "23",
-            "24"
+            "23"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18"
           ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -1594,63 +1529,54 @@
       "seatsFree": 310,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 19,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 16,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18"
           ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "9",
-          "seats": [
-            "23",
-            "24"
-          ],
-          "size": 2
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -1674,47 +1600,23 @@
       "seatsFree": 285,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 12,
-      "goldenTotal": 40,
+      "goldenFree": 8,
+      "goldenTotal": 32,
       "goldenMaxBlock": 2,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "22",
-            "23"
+            "21",
+            "22"
           ],
           "size": 2
         },
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "9",
-          "seats": [
-            "23",
-            "24"
+            "15",
+            "16"
           ],
           "size": 2
         }
@@ -1741,7 +1643,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1762,69 +1664,69 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 324,
+      "seatsFree": 325,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 27,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 24,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "6",
-          "seats": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
+          "row": "5",
           "seats": [
             "15",
             "16",
             "17",
-            "18"
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
           ],
-          "size": 4
+          "size": 8
         },
         {
-          "row": "9",
+          "row": "6",
           "seats": [
+            "20",
             "21",
-            "22",
-            "23",
-            "24"
+            "22"
           ],
-          "size": 4
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
             "15",
-            "16"
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
           ],
           "size": 3
         }
@@ -1850,52 +1752,37 @@
       "seatsFree": 295,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 14,
-      "goldenTotal": 40,
+      "goldenFree": 13,
+      "goldenTotal": 32,
       "goldenMaxBlock": 4,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
+            "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
           "size": 4
         },
         {
-          "row": "9",
+          "row": "5",
           "seats": [
-            "22",
-            "23",
-            "24"
+            "15",
+            "16",
+            "17"
           ],
           "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
-            "15"
+            "20",
+            "21",
+            "22"
           ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "23",
-            "24"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -1919,19 +1806,10 @@
       "seatsFree": 235,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 3,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 2,
-      "goldenRuns": [
-        {
-          "row": "6",
-          "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        }
-      ],
+      "goldenFree": 1,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
         "2": true,
@@ -1950,11 +1828,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 150,
+      "seatsFree": 148,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -1978,9 +1856,9 @@
       "seatsFree": 232,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 0,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 0,
+      "goldenFree": 1,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -2004,7 +1882,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2029,7 +1907,7 @@
       "seatsTotal": 400,
       "maxBlock": 7,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2050,12 +1928,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 139,
+      "seatsFree": 137,
       "seatsTotal": 400,
       "maxBlock": 8,
-      "goldenFree": 1,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -2079,7 +1957,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2100,11 +1978,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 110,
+      "seatsFree": 106,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2129,7 +2007,7 @@
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2153,9 +2031,9 @@
       "seatsFree": 191,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 1,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -2178,14 +2056,13 @@
       "seatsFree": 332,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 34,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2193,15 +2070,27 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2209,48 +2098,25 @@
             "19",
             "20",
             "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
             "22",
             "23"
           ],
-          "size": 10
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "size": 4
+          "size": 2
         },
         {
           "row": "8",
           "seats": [
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 3
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
             "16",
             "17"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -2274,14 +2140,13 @@
       "seatsFree": 317,
       "seatsTotal": 400,
       "maxBlock": 16,
-      "goldenFree": 28,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 24,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2289,55 +2154,47 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
             "21",
             "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15",
-            "16"
+            "23"
           ],
           "size": 3
         },
         {
-          "row": "9",
+          "row": "7",
           "seats": [
-            "20",
-            "21"
+            "15",
+            "16"
           ],
           "size": 2
         }
@@ -2364,18 +2221,26 @@
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 7,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -2399,10 +2264,19 @@
       "seatsFree": 236,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 3,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
-      "goldenRuns": [],
+      "goldenFree": 2,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
         "2": true,
@@ -2424,14 +2298,13 @@
       "seatsFree": 335,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 35,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2439,15 +2312,27 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18",
@@ -2455,49 +2340,25 @@
             "20",
             "21",
             "22",
-            "23",
-            "24"
-          ],
-          "size": 10
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18",
-            "19"
-          ],
-          "size": 5
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "21",
-            "22",
             "23"
           ],
-          "size": 3
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
-            "14",
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
+          "row": "7",
+          "seats": [
             "15",
             "16"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -2521,52 +2382,35 @@
       "seatsFree": 314,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 23,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 22,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
-          "seats": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
           "seats": [
             "15",
             "16",
@@ -2575,10 +2419,28 @@
           "size": 3
         },
         {
-          "row": "9",
+          "row": "7",
           "seats": [
             "15",
-            "16"
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17"
           ],
           "size": 2
         }
@@ -2604,14 +2466,13 @@
       "seatsFree": 336,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 36,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 31,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2619,15 +2480,27 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2635,48 +2508,26 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18",
             "19"
           ],
-          "size": 5
+          "size": 4
         },
         {
           "row": "8",
           "seats": [
             "21",
             "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17"
+            "23"
           ],
           "size": 3
         }
@@ -2699,68 +2550,64 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 315,
+      "seatsFree": 311,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 23,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 17,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16"
           ],
-          "size": 3
+          "size": 2
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17"
           ],
-          "size": 3
-        },
-        {
-          "row": "9",
-          "seats": [
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 3
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -2784,35 +2631,32 @@
       "seatsFree": 282,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 11,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 13,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
-        },
-        {
-          "row": "6",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -2837,7 +2681,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -2861,14 +2705,13 @@
       "seatsFree": 341,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 39,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 31,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -2876,63 +2719,56 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
             "18",
             "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
             "20",
             "21",
             "22",
             "23"
           ],
-          "size": 10
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 10
+          "size": 4
         },
         {
           "row": "8",
           "seats": [
-            "20",
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 5
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
             "16",
             "17",
             "18"
           ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -2956,66 +2792,62 @@
       "seatsFree": 325,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 28,
-      "goldenTotal": 40,
+      "goldenFree": 24,
+      "goldenTotal": 32,
       "goldenMaxBlock": 4,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
+            "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
           "size": 4
         },
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "22",
-            "23",
-            "24"
           ],
           "size": 3
         }
@@ -3038,45 +2870,24 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 299,
+      "seatsFree": 297,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 19,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 14,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
-          "seats": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
-            "20",
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
           "seats": [
             "15",
             "16",
@@ -3085,10 +2896,27 @@
           "size": 3
         },
         {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
           "row": "8",
           "seats": [
-            "23",
-            "24"
+            "16",
+            "17"
           ],
           "size": 2
         }
@@ -3115,7 +2943,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3139,12 +2967,12 @@
       "seatsFree": 331,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 34,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
-          "row": "8",
+          "row": "5",
           "seats": [
             "15",
             "16",
@@ -3153,61 +2981,59 @@
             "19",
             "20",
             "21",
-            "22",
-            "23",
-            "24"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
         },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -3231,9 +3057,9 @@
       "seatsFree": 314,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 24,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 5,
+      "goldenFree": 18,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 4,
       "goldenRuns": [
         {
           "row": "6",
@@ -3241,56 +3067,45 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 5
+          "size": 4
         },
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
             "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "7",
-          "seats": [
             "22",
             "23"
           ],
-          "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "15",
-            "16"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -3314,28 +3129,43 @@
       "seatsFree": 264,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 8,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 10,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
         },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -3360,7 +3190,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3384,10 +3214,29 @@
       "seatsFree": 240,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 0,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "goldenFree": 6,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
         "2": true,
@@ -3406,11 +3255,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 181,
+      "seatsFree": 179,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3431,12 +3280,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 162,
+      "seatsFree": 160,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 0,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 0,
+      "goldenFree": 1,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -3460,7 +3309,7 @@
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3484,10 +3333,19 @@
       "seatsFree": 292,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 1,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
-      "goldenRuns": [],
+      "goldenFree": 2,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 2,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
         "2": true,
@@ -3506,11 +3364,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 227,
+      "seatsFree": 234,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3531,11 +3389,11 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 199,
+      "seatsFree": 197,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3559,9 +3417,9 @@
       "seatsFree": 275,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 3,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 1,
+      "goldenFree": 0,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
@@ -3584,14 +3442,13 @@
       "seatsFree": 392,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 33,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 26,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -3599,60 +3456,55 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
+          "size": 8
+        },
+        {
+          "row": "5",
+          "seats": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 4
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "8",
           "seats": [
-            "15",
             "16",
             "17",
             "18"
           ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "size": 4
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -3676,52 +3528,24 @@
       "seatsFree": 358,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 17,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 4,
+      "goldenFree": 9,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
-          ],
-          "size": 4
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 4
-        },
-        {
-          "row": "6",
-          "seats": [
-            "14",
-            "15",
-            "16"
+            "22"
           ],
           "size": 3
         },
         {
-          "row": "7",
+          "row": "6",
           "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "14",
-            "15"
+            "15",
+            "16"
           ],
           "size": 2
         }
@@ -3748,24 +3572,17 @@
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 6,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 2,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "22",
-            "23"
+            "20",
+            "21",
+            "22"
           ],
-          "size": 2
-        },
-        {
-          "row": "7",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
+          "size": 3
         }
       ],
       "cosyFree": 0,
@@ -3790,7 +3607,7 @@
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 1,
-      "goldenTotal": 40,
+      "goldenTotal": 32,
       "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -3814,14 +3631,27 @@
       "seatsFree": 390,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 34,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 10,
+      "goldenFree": 26,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
         {
           "row": "7",
           "seats": [
-            "14",
             "15",
             "16",
             "17",
@@ -3829,64 +3659,43 @@
             "19",
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 10
-        },
-        {
-          "row": "9",
-          "seats": [
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 10
+          "size": 8
         },
         {
           "row": "6",
           "seats": [
             "20",
             "21",
-            "22",
-            "23"
+            "22"
           ],
-          "size": 4
+          "size": 3
         },
         {
           "row": "6",
           "seats": [
-            "14",
             "15",
             "16",
             "17"
-          ],
-          "size": 4
-        },
-        {
-          "row": "8",
-          "seats": [
-            "22",
-            "23",
-            "24"
           ],
           "size": 3
         },
         {
           "row": "8",
           "seats": [
-            "15",
+            "22",
+            "23"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
             "16",
             "17"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -3907,54 +3716,35 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 369,
+      "seatsFree": 368,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 21,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 5,
+      "goldenFree": 15,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 4,
       "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 4
+        },
         {
           "row": "6",
           "seats": [
             "19",
             "20",
             "21",
-            "22",
-            "23"
-          ],
-          "size": 5
-        },
-        {
-          "row": "9",
-          "seats": [
-            "21",
-            "22",
-            "23",
-            "24"
+            "22"
           ],
           "size": 4
         },
         {
-          "row": "7",
-          "seats": [
-            "21",
-            "22",
-            "23"
-          ],
-          "size": 3
-        },
-        {
-          "row": "8",
-          "seats": [
-            "22",
-            "23",
-            "24"
-          ],
-          "size": 3
-        },
-        {
-          "row": "9",
+          "row": "5",
           "seats": [
             "15",
             "16",
@@ -3963,10 +3753,10 @@
           "size": 3
         },
         {
-          "row": "8",
+          "row": "7",
           "seats": [
-            "15",
-            "16"
+            "21",
+            "22"
           ],
           "size": 2
         }
@@ -3992,32 +3782,24 @@
       "seatsFree": 336,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 9,
-      "goldenTotal": 40,
+      "goldenFree": 7,
+      "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
         {
-          "row": "9",
+          "row": "5",
           "seats": [
-            "22",
-            "23",
-            "24"
+            "15",
+            "16",
+            "17"
           ],
           "size": 3
         },
         {
-          "row": "6",
+          "row": "5",
           "seats": [
-            "14",
-            "15"
-          ],
-          "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "23",
-            "24"
+            "21",
+            "22"
           ],
           "size": 2
         }
@@ -4040,12 +3822,12 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 290,
+      "seatsFree": 288,
       "seatsTotal": 400,
       "maxBlock": 14,
-      "goldenFree": 0,
-      "goldenTotal": 40,
-      "goldenMaxBlock": 0,
+      "goldenFree": 1,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 1,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
