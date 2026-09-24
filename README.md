@@ -83,7 +83,8 @@ threshold** — it diffs the fresh scrape against the previously published `data
 An hourly job that messaged every run would just get muted. It also speaks up if a run
 fails its own verification, since a blind scraper and a full cinema look identical.
 
-Setup (the token stays yours — it lives only in GitHub Actions secrets):
+Setup — run `./setup-telegram.sh`, which prompts for the token, finds your chat id and
+stores both as encrypted GitHub secrets without ever printing or saving them. Manually:
 
 1. Message **@BotFather** on Telegram → `/newbot` → copy the token.
 2. Send your new bot any message (it can't message you until you do).
