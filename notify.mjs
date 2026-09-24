@@ -76,11 +76,20 @@ async function send(text) {
 // something has actually changed.
 if (TEST) {
   const n = now.shows.filter(qualifies).length;
+  // Telegram only remembers who messaged the bot for ~24h, so auto-discovery is a
+  // convenience, not a foundation. Tell the owner their chat id HERE, in a private
+  // message, rather than in a public Actions log, so they can pin it down for good.
+  const id = await resolveChat();
+  const pin = (id && !process.env.TELEGRAM_CHAT)
+    ? `\n\n<b>Make this permanent:</b> add <code>${esc(id)}</code> as a repository secret `
+      + `named <code>TELEGRAM_CHAT</code>, otherwise alerts may stop once Telegram `
+      + `forgets this chat.\nhttps://github.com/RiccardoCalabrese/odyssey-imax-brussels/settings/secrets/actions/new`
+    : '';
   await send(`✅ <b>Alerts are working.</b>\n`
     + `Watching <b>${esc(now.movie)}</b> · ${esc(now.format)} at ${esc(now.cinema)}.\n`
     + `Right now <b>${n}</b> screening${n===1?'':'s'} ${n===1?'has':'have'} ${NEED}+ seats `
     + `${CENTRE?'together in the centre':'together'}.\n\n`
-    + `You'll only hear from me when that changes.\n\n${SITE}`);
+    + `You'll only hear from me when that changes.\n\n${SITE}${pin}`);
   process.exit(0);
 }
 
