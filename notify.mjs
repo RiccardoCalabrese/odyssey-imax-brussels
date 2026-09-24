@@ -44,6 +44,7 @@ async function resolveChat() {
   } catch (e) { console.log('Could not reach Telegram:', e.message); return null; }
 }
 const DRY    = process.argv.includes('--dry-run');
+const TEST   = process.argv.includes('--test');
 
 const read = f => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null;
 const now  = read(join(HERE, 'data.json'));
@@ -69,6 +70,18 @@ async function send(text) {
   const body = await r.json().catch(() => ({}));
   if (!r.ok || body.ok === false) throw new Error(`Telegram refused: ${r.status} ${JSON.stringify(body).slice(0,200)}`);
   console.log('Telegram message sent.');
+}
+
+// A plumbing check you can fire any time, since a normal run stays silent unless
+// something has actually changed.
+if (TEST) {
+  const n = now.shows.filter(qualifies).length;
+  await send(`✅ <b>Alerts are working.</b>\n`
+    + `Watching <b>${esc(now.movie)}</b> · ${esc(now.format)} at ${esc(now.cinema)}.\n`
+    + `Right now <b>${n}</b> screening${n===1?'':'s'} ${n===1?'has':'have'} ${NEED}+ seats `
+    + `${CENTRE?'together in the centre':'together'}.\n\n`
+    + `You'll only hear from me when that changes.\n\n${SITE}`);
+  process.exit(0);
 }
 
 // The scraper going blind and the cinema being full look identical from outside.
