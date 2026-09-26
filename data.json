@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T23:23:24.447Z",
+  "updated": "2026-09-26T04:57:03.691Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -471,10 +471,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 262,
+      "seatsFree": 260,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 8,
+      "goldenFree": 7,
       "goldenTotal": 32,
       "goldenMaxBlock": 2,
       "goldenRuns": [
@@ -614,10 +614,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 280,
+      "seatsFree": 282,
       "seatsTotal": 400,
       "maxBlock": 10,
-      "goldenFree": 9,
+      "goldenFree": 10,
       "goldenTotal": 32,
       "goldenMaxBlock": 4,
       "goldenRuns": [
