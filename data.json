@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T21:23:28.384Z",
+  "updated": "2026-09-28T00:41:57.399Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -115,7 +115,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 129,
+      "seatsFree": 127,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -140,7 +140,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 167,
+      "seatsFree": 171,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -215,7 +215,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 72,
+      "seatsFree": 71,
       "seatsTotal": 400,
       "maxBlock": 6,
       "goldenFree": 0,
@@ -712,7 +712,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 98,
+      "seatsFree": 100,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -737,7 +737,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 331,
+      "seatsFree": 329,
       "seatsTotal": 400,
       "maxBlock": 18,
       "goldenFree": 26,
@@ -996,7 +996,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 304,
+      "seatsFree": 303,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 14,
@@ -1479,7 +1479,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 101,
+      "seatsFree": 99,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -1654,9 +1654,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 73,
+      "seatsFree": 71,
       "seatsTotal": 400,
-      "maxBlock": 6,
+      "maxBlock": 5,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -1665,7 +1665,7 @@
       "fits": {
         "2": true,
         "4": true,
-        "6": true,
+        "6": false,
         "8": false
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396629/seats"
@@ -1679,7 +1679,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 164,
+      "seatsFree": 167,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -1901,10 +1901,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 329,
+      "seatsFree": 326,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 28,
+      "goldenFree": 25,
       "goldenTotal": 32,
       "goldenMaxBlock": 8,
       "goldenRuns": [
@@ -1939,16 +1939,11 @@
         {
           "row": "8",
           "seats": [
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
             "21",
             "22",
             "23"
           ],
-          "size": 8
+          "size": 3
         },
         {
           "row": "7",
@@ -1963,6 +1958,14 @@
           "seats": [
             "15",
             "16"
+          ],
+          "size": 2
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17"
           ],
           "size": 2
         }
@@ -2491,7 +2494,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 185,
+      "seatsFree": 189,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -2737,7 +2740,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 158,
+      "seatsFree": 154,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -2787,7 +2790,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 156,
+      "seatsFree": 150,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -3147,7 +3150,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 358,
+      "seatsFree": 359,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 13,
