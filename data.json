@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T23:13:26.773Z",
+  "updated": "2026-10-02T02:18:50.133Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -421,7 +421,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 18,
+      "seatsFree": 17,
       "seatsTotal": 400,
       "maxBlock": 7,
       "goldenFree": 0,
@@ -821,10 +821,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 332,
+      "seatsFree": 330,
       "seatsTotal": 400,
       "maxBlock": 14,
-      "goldenFree": 11,
+      "goldenFree": 10,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -1088,10 +1088,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 360,
+      "seatsFree": 359,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 17,
+      "goldenFree": 16,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -1134,11 +1134,10 @@
         {
           "row": "7",
           "seats": [
-            "20",
             "21",
             "22"
           ],
-          "size": 3
+          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -1583,10 +1582,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 376,
+      "seatsFree": 375,
       "seatsTotal": 400,
       "maxBlock": 18,
-      "goldenFree": 23,
+      "goldenFree": 22,
       "goldenTotal": 32,
       "goldenMaxBlock": 8,
       "goldenRuns": [
@@ -1607,16 +1606,21 @@
         {
           "row": "6",
           "seats": [
-            "15",
-            "16",
-            "17",
-            "18",
             "19",
             "20",
             "21",
             "22"
           ],
-          "size": 8
+          "size": 4
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
         },
         {
           "row": "7",
