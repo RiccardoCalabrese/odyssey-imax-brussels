@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T00:56:17.000Z",
+  "updated": "2026-10-05T07:00:36.027Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -90,7 +90,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 157,
+      "seatsFree": 156,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -817,7 +817,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 217,
+      "seatsFree": 211,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -1101,7 +1101,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 184,
+      "seatsFree": 180,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -1176,7 +1176,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 85,
+      "seatsFree": 82,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -2269,7 +2269,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 169,
+      "seatsFree": 168,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -2389,7 +2389,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 211,
+      "seatsFree": 207,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -2414,10 +2414,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 365,
+      "seatsFree": 364,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 14,
+      "goldenFree": 13,
       "goldenTotal": 32,
       "goldenMaxBlock": 4,
       "goldenRuns": [
@@ -2455,14 +2455,6 @@
             "16"
           ],
           "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "16",
-            "17"
-          ],
-          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -2483,7 +2475,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 303,
+      "seatsFree": 300,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 3,
