@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T14:31:06.469Z",
+  "updated": "2026-10-30T19:43:31.102Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -20,48 +20,23 @@
   "verified": true,
   "verification": {
     "ok": true,
-    "controlSessionId": 401241,
+    "controlSessionId": 401737,
     "controlSeatsFree": 307,
     "tried": [
       {
-        "vs": 401241,
+        "vs": 401737,
         "status": "open"
       }
     ]
   },
   "counts": {
-    "checked": 54,
-    "open": 11,
-    "soldOut": 7,
+    "checked": 53,
+    "open": 9,
+    "soldOut": 8,
     "errors": 36,
     "withGolden": 0
   },
   "shows": [
-    {
-      "vistaSessionId": 396647,
-      "isoDate": "2026-10-30",
-      "day": "Fri",
-      "date": "30 Oct",
-      "time": "17:15",
-      "hall": 28,
-      "status": "open",
-      "note": null,
-      "seatsFree": 15,
-      "seatsTotal": 400,
-      "maxBlock": 4,
-      "goldenFree": 0,
-      "goldenTotal": 32,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
-      "cosyFree": 0,
-      "fits": {
-        "2": true,
-        "4": true,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396647/seats"
-    },
     {
       "vistaSessionId": 396648,
       "isoDate": "2026-10-30",
@@ -96,9 +71,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 32,
+      "seatsFree": 20,
       "seatsTotal": 400,
-      "maxBlock": 7,
+      "maxBlock": 5,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -107,7 +82,7 @@
       "fits": {
         "2": true,
         "4": true,
-        "6": true,
+        "6": false,
         "8": false
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396649/seats"
@@ -119,13 +94,13 @@
       "date": "31 Oct",
       "time": "13:30",
       "hall": 28,
-      "status": "open",
+      "status": "soldout",
       "note": null,
-      "seatsFree": 4,
-      "seatsTotal": 400,
-      "maxBlock": 1,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
       "goldenFree": 0,
-      "goldenTotal": 32,
+      "goldenTotal": 0,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -296,7 +271,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 83,
+      "seatsFree": 76,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -321,9 +296,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 36,
+      "seatsFree": 27,
       "seatsTotal": 400,
-      "maxBlock": 8,
+      "maxBlock": 4,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -332,8 +307,8 @@
       "fits": {
         "2": true,
         "4": true,
-        "6": true,
-        "8": true
+        "6": false,
+        "8": false
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396658/seats"
     },
@@ -346,17 +321,17 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 12,
+      "seatsFree": 5,
       "seatsTotal": 400,
-      "maxBlock": 5,
+      "maxBlock": 1,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
-        "2": true,
-        "4": true,
+        "2": false,
+        "4": false,
         "6": false,
         "8": false
       },
@@ -396,7 +371,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 201,
+      "seatsFree": 194,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -421,7 +396,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 103,
+      "seatsFree": 96,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -446,9 +421,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 25,
+      "seatsFree": 20,
       "seatsTotal": 400,
-      "maxBlock": 6,
+      "maxBlock": 4,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -457,7 +432,7 @@
       "fits": {
         "2": true,
         "4": true,
-        "6": true,
+        "6": false,
         "8": false
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396663/seats"
@@ -471,7 +446,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 4,
+      "seatsFree": 3,
       "seatsTotal": 400,
       "maxBlock": 1,
       "goldenFree": 0,
