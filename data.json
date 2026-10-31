@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T12:43:13.330Z",
+  "updated": "2026-10-31T17:43:34.889Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -20,73 +20,23 @@
   "verified": true,
   "verification": {
     "ok": true,
-    "controlSessionId": 401737,
-    "controlSeatsFree": 305,
+    "controlSessionId": 401741,
+    "controlSeatsFree": 309,
     "tried": [
       {
-        "vs": 401737,
+        "vs": 401741,
         "status": "open"
       }
     ]
   },
   "counts": {
-    "checked": 51,
-    "open": 8,
-    "soldOut": 7,
-    "errors": 36,
-    "withGolden": 0
+    "checked": 49,
+    "open": 45,
+    "soldOut": 4,
+    "errors": 0,
+    "withGolden": 36
   },
   "shows": [
-    {
-      "vistaSessionId": 396650,
-      "isoDate": "2026-10-31",
-      "day": "Sat",
-      "date": "31 Oct",
-      "time": "13:30",
-      "hall": 28,
-      "status": "open",
-      "note": null,
-      "seatsFree": 3,
-      "seatsTotal": 400,
-      "maxBlock": 1,
-      "goldenFree": 0,
-      "goldenTotal": 32,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
-      "cosyFree": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396650/seats"
-    },
-    {
-      "vistaSessionId": 396651,
-      "isoDate": "2026-10-31",
-      "day": "Sat",
-      "date": "31 Oct",
-      "time": "17:15",
-      "hall": 28,
-      "status": "soldout",
-      "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
-      "cosyFree": 0,
-      "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
-      },
-      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396651/seats"
-    },
     {
       "vistaSessionId": 396652,
       "isoDate": "2026-10-31",
@@ -144,18 +94,18 @@
       "date": "01 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 3,
+      "seatsTotal": 400,
+      "maxBlock": 2,
       "goldenFree": 0,
-      "goldenTotal": 0,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -169,20 +119,20 @@
       "date": "01 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 7,
+      "seatsTotal": 400,
+      "maxBlock": 6,
       "goldenFree": 0,
-      "goldenTotal": 0,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
+        "2": true,
+        "4": true,
+        "6": true,
         "8": false
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-396655/seats"
@@ -221,7 +171,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 67,
+      "seatsFree": 51,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -246,16 +196,16 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 6,
+      "seatsFree": 7,
       "seatsTotal": 400,
-      "maxBlock": 1,
+      "maxBlock": 3,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -269,13 +219,13 @@
       "date": "02 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "open",
+      "status": "soldout",
       "note": null,
-      "seatsFree": 4,
-      "seatsTotal": 400,
-      "maxBlock": 1,
+      "seatsFree": 0,
+      "seatsTotal": 0,
+      "maxBlock": 0,
       "goldenFree": 0,
-      "goldenTotal": 32,
+      "goldenTotal": 0,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
@@ -294,18 +244,18 @@
       "date": "02 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "soldout",
+      "status": "open",
       "note": null,
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
+      "seatsFree": 4,
+      "seatsTotal": 400,
+      "maxBlock": 3,
       "goldenFree": 0,
-      "goldenTotal": 0,
+      "goldenTotal": 32,
       "goldenMaxBlock": 0,
       "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
-        "2": false,
+        "2": true,
         "4": false,
         "6": false,
         "8": false
@@ -321,7 +271,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 176,
+      "seatsFree": 174,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -346,7 +296,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 86,
+      "seatsFree": 76,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -419,21 +369,78 @@
       "date": "04 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401098/seats"
     },
@@ -444,21 +451,82 @@
       "date": "04 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 393,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401099/seats"
     },
@@ -469,21 +537,83 @@
       "date": "05 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 397,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 31,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401102/seats"
     },
@@ -494,21 +624,58 @@
       "date": "05 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 386,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 20,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401103/seats"
     },
@@ -519,21 +686,82 @@
       "date": "06 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401105/seats"
     },
@@ -544,21 +772,78 @@
       "date": "06 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401106/seats"
     },
@@ -569,21 +854,78 @@
       "date": "06 Nov",
       "time": "17:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 390,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401107/seats"
     },
@@ -594,21 +936,78 @@
       "date": "07 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401109/seats"
     },
@@ -619,21 +1018,81 @@
       "date": "07 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 388,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 26,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401110/seats"
     },
@@ -644,21 +1103,81 @@
       "date": "07 Nov",
       "time": "21:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 393,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 29,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "22",
+            "23"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401112/seats"
     },
@@ -669,21 +1188,78 @@
       "date": "08 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 395,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401113/seats"
     },
@@ -694,21 +1270,78 @@
       "date": "08 Nov",
       "time": "17:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 384,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 22,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
+          "row": "6",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401115/seats"
     },
@@ -719,21 +1352,82 @@
       "date": "08 Nov",
       "time": "21:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401116/seats"
     },
@@ -744,21 +1438,83 @@
       "date": "09 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 397,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 31,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401117/seats"
     },
@@ -769,21 +1525,82 @@
       "date": "09 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401118/seats"
     },
@@ -794,21 +1611,78 @@
       "date": "09 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 392,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401119/seats"
     },
@@ -819,21 +1693,78 @@
       "date": "10 Nov",
       "time": "14:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 14:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401120/seats"
     },
@@ -844,21 +1775,78 @@
       "date": "11 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401128/seats"
     },
@@ -869,21 +1857,78 @@
       "date": "11 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 394,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401129/seats"
     },
@@ -894,21 +1939,78 @@
       "date": "12 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401131/seats"
     },
@@ -919,21 +2021,82 @@
       "date": "12 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401132/seats"
     },
@@ -944,21 +2107,78 @@
       "date": "12 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401133/seats"
     },
@@ -969,21 +2189,83 @@
       "date": "13 Nov",
       "time": "14:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 14:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 397,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 31,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 4
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401134/seats"
     },
@@ -994,21 +2276,86 @@
       "date": "14 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 392,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 28,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401136/seats"
     },
@@ -1019,21 +2366,81 @@
       "date": "14 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 380,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 26,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "5",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401137/seats"
     },
@@ -1044,21 +2451,78 @@
       "date": "14 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401138/seats"
     },
@@ -1069,21 +2533,78 @@
       "date": "15 Nov",
       "time": "09:45",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 09:45, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401139/seats"
     },
@@ -1094,21 +2615,78 @@
       "date": "15 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401140/seats"
     },
@@ -1119,21 +2697,72 @@
       "date": "15 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 393,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 27,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "21",
+            "22"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401141/seats"
     },
@@ -1144,21 +2773,78 @@
       "date": "15 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 390,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401142/seats"
     },
@@ -1169,21 +2855,82 @@
       "date": "16 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 396,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401143/seats"
     },
@@ -1194,21 +2941,78 @@
       "date": "16 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401144/seats"
     },
@@ -1219,21 +3023,87 @@
       "date": "16 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 392,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 29,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19"
+          ],
+          "size": 4
+        },
+        {
+          "row": "7",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401145/seats"
     },
@@ -1244,21 +3114,82 @@
       "date": "17 Nov",
       "time": "13:30",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 13:30, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 393,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 30,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 3
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17"
+          ],
+          "size": 3
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401146/seats"
     },
@@ -1269,21 +3200,78 @@
       "date": "17 Nov",
       "time": "17:15",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 17:15, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 398,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 32,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 8
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401147/seats"
     },
@@ -1294,21 +3282,81 @@
       "date": "17 Nov",
       "time": "21:00",
       "hall": 28,
-      "status": "error",
-      "note": "session mismatch (wanted 21:00, hall 28)",
-      "seatsFree": 0,
-      "seatsTotal": 0,
-      "maxBlock": 0,
-      "goldenFree": 0,
-      "goldenTotal": 0,
-      "goldenMaxBlock": 0,
-      "goldenRuns": [],
+      "status": "open",
+      "note": null,
+      "seatsFree": 391,
+      "seatsTotal": 400,
+      "maxBlock": 18,
+      "goldenFree": 29,
+      "goldenTotal": 32,
+      "goldenMaxBlock": 8,
+      "goldenRuns": [
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "6",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "7",
+          "seats": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "size": 8
+        },
+        {
+          "row": "8",
+          "seats": [
+            "21",
+            "22",
+            "23"
+          ],
+          "size": 3
+        },
+        {
+          "row": "8",
+          "seats": [
+            "16",
+            "17"
+          ],
+          "size": 2
+        }
+      ],
       "cosyFree": 0,
       "fits": {
-        "2": false,
-        "4": false,
-        "6": false,
-        "8": false
+        "2": true,
+        "4": true,
+        "6": true,
+        "8": true
       },
       "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401148/seats"
     }
