@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T02:20:08.923Z",
+  "updated": "2026-11-06T10:45:51.281Z",
   "movie": "The Odyssey",
   "cinema": "Kinepolis Brussel",
   "format": "IMAX 2D 70MM",
@@ -30,55 +30,13 @@
     ]
   },
   "counts": {
-    "checked": 32,
-    "open": 32,
+    "checked": 31,
+    "open": 31,
     "soldOut": 0,
     "errors": 0,
-    "withGolden": 13
+    "withGolden": 11
   },
   "shows": [
-    {
-      "vistaSessionId": 401105,
-      "isoDate": "2026-11-06",
-      "day": "Fri",
-      "date": "06 Nov",
-      "time": "09:45",
-      "hall": 28,
-      "status": "open",
-      "note": null,
-      "seatsFree": 340,
-      "seatsTotal": 400,
-      "maxBlock": 14,
-      "goldenFree": 7,
-      "goldenTotal": 32,
-      "goldenMaxBlock": 2,
-      "goldenRuns": [
-        {
-          "row": "7",
-          "seats": [
-            "21",
-            "22"
-          ],
-          "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "22",
-            "23"
-          ],
-          "size": 2
-        }
-      ],
-      "cosyFree": 0,
-      "fits": {
-        "2": true,
-        "4": true,
-        "6": true,
-        "8": true
-      },
-      "bookUrl": "https://web.kinepolis.be/fr-fr/order/showtimes/KBRU-401105/seats"
-    },
     {
       "vistaSessionId": 401106,
       "isoDate": "2026-11-06",
@@ -88,7 +46,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 255,
+      "seatsFree": 242,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 1,
@@ -113,7 +71,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 156,
+      "seatsFree": 138,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -138,7 +96,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 283,
+      "seatsFree": 282,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -163,7 +121,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 155,
+      "seatsFree": 143,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -188,7 +146,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 77,
+      "seatsFree": 66,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -213,10 +171,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 280,
+      "seatsFree": 274,
       "seatsTotal": 400,
       "maxBlock": 14,
-      "goldenFree": 2,
+      "goldenFree": 1,
       "goldenTotal": 32,
       "goldenMaxBlock": 1,
       "goldenRuns": [],
@@ -238,7 +196,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 87,
+      "seatsFree": 83,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -263,7 +221,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 240,
+      "seatsFree": 238,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -288,10 +246,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 345,
+      "seatsFree": 344,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 13,
+      "goldenFree": 12,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -305,15 +263,6 @@
           "size": 3
         },
         {
-          "row": "5",
-          "seats": [
-            "15",
-            "16",
-            "17"
-          ],
-          "size": 3
-        },
-        {
           "row": "6",
           "seats": [
             "20",
@@ -321,6 +270,14 @@
             "22"
           ],
           "size": 3
+        },
+        {
+          "row": "5",
+          "seats": [
+            "15",
+            "16"
+          ],
+          "size": 2
         },
         {
           "row": "6",
@@ -349,7 +306,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 314,
+      "seatsFree": 312,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 4,
@@ -391,7 +348,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 255,
+      "seatsFree": 252,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -416,7 +373,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 338,
+      "seatsFree": 336,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 11,
@@ -476,9 +433,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 272,
+      "seatsFree": 260,
       "seatsTotal": 400,
-      "maxBlock": 14,
+      "maxBlock": 10,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -501,7 +458,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 154,
+      "seatsFree": 151,
       "seatsTotal": 400,
       "maxBlock": 8,
       "goldenFree": 0,
@@ -526,10 +483,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 355,
+      "seatsFree": 352,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 15,
+      "goldenFree": 13,
       "goldenTotal": 32,
       "goldenMaxBlock": 8,
       "goldenRuns": [
@@ -554,14 +511,6 @@
             "23"
           ],
           "size": 2
-        },
-        {
-          "row": "8",
-          "seats": [
-            "16",
-            "17"
-          ],
-          "size": 2
         }
       ],
       "cosyFree": 0,
@@ -582,22 +531,13 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 335,
+      "seatsFree": 325,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 7,
+      "goldenFree": 3,
       "goldenTotal": 32,
-      "goldenMaxBlock": 2,
-      "goldenRuns": [
-        {
-          "row": "6",
-          "seats": [
-            "21",
-            "22"
-          ],
-          "size": 2
-        }
-      ],
+      "goldenMaxBlock": 1,
+      "goldenRuns": [],
       "cosyFree": 0,
       "fits": {
         "2": true,
@@ -616,9 +556,9 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 263,
+      "seatsFree": 257,
       "seatsTotal": 400,
-      "maxBlock": 15,
+      "maxBlock": 14,
       "goldenFree": 0,
       "goldenTotal": 32,
       "goldenMaxBlock": 0,
@@ -641,7 +581,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 330,
+      "seatsFree": 324,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 6,
@@ -709,7 +649,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 209,
+      "seatsFree": 205,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -734,7 +674,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 227,
+      "seatsFree": 225,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -759,7 +699,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 287,
+      "seatsFree": 282,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 4,
@@ -794,7 +734,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 227,
+      "seatsFree": 224,
       "seatsTotal": 400,
       "maxBlock": 14,
       "goldenFree": 0,
@@ -819,7 +759,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 221,
+      "seatsFree": 206,
       "seatsTotal": 400,
       "maxBlock": 10,
       "goldenFree": 0,
@@ -879,10 +819,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 360,
+      "seatsFree": 355,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 13,
+      "goldenFree": 10,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -901,15 +841,6 @@
             "15",
             "16",
             "17"
-          ],
-          "size": 3
-        },
-        {
-          "row": "6",
-          "seats": [
-            "20",
-            "21",
-            "22"
           ],
           "size": 3
         }
@@ -932,10 +863,10 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 341,
+      "seatsFree": 339,
       "seatsTotal": 400,
       "maxBlock": 15,
-      "goldenFree": 11,
+      "goldenFree": 9,
       "goldenTotal": 32,
       "goldenMaxBlock": 3,
       "goldenRuns": [
@@ -958,14 +889,6 @@
         },
         {
           "row": "5",
-          "seats": [
-            "15",
-            "16"
-          ],
-          "size": 2
-        },
-        {
-          "row": "7",
           "seats": [
             "15",
             "16"
@@ -991,7 +914,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 295,
+      "seatsFree": 291,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 0,
@@ -1016,7 +939,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 375,
+      "seatsFree": 370,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 19,
@@ -1090,7 +1013,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 339,
+      "seatsFree": 336,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 10,
@@ -1142,7 +1065,7 @@
       "hall": 28,
       "status": "open",
       "note": null,
-      "seatsFree": 307,
+      "seatsFree": 305,
       "seatsTotal": 400,
       "maxBlock": 15,
       "goldenFree": 2,
